@@ -1,3 +1,5 @@
+# bashrc file made by @nolimitcarter 
+## sets path variables
 export PATH=\
 $HOME/bin:\
 $HOME/go/bin:\
@@ -11,11 +13,13 @@ $HOME/.cargo/bin:\
 /sbin:\
 /bin:\
 
+# aliases 
 if [ -f $HOME/.bash_aliases ]
 then
 	. $HOME/.bash_aliases
 fi
 
+# user? 
 if [[ ${EUID} == 0 ]] ; then
 	  PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
   else
