@@ -26,6 +26,5 @@ alias gitlab="cd gitlab.com/nolimitcarter"
 alias v="neofetch"
 
 # on startup 
-welcome.sh
 
 export PATH=$HOME/repos/github.com/nolimitcarter/dotfiles/scripts:$PATH
