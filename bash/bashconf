@@ -15,6 +15,8 @@ alias v="neofetch"
 alias kali="ssh carter@kalihome.local"
 alias size="bash size.sh"
 alias nmapscan="nmap --top-ports 1000 -T4 -sC"
+alias hub="cd repos/github.com/nolimitcarter"
+alias hub="cd github.com/nolimitcarter"
 
 
 export PATH=$HOME/repos/github.com/nolimitcarter/dotfiles/scripts:$PATH
