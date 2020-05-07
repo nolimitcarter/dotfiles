@@ -1,4 +1,8 @@
-# bashrc file made by @nolimitcarter 
+##########################
+# nolimitcarter's bashrc # 
+##########################
+
+
 ## sets path variables
 export PATH=\
 $HOME/bin:\
@@ -17,7 +21,7 @@ export EDITOR=vim
 export EDItoR="$VISUAL"
 
 # aliases 
-if [ -f $HOME/.bash_aliases ]
+if [ -f $HOME/.bash_aliases ];
 then
 	. $HOME/.bash_aliases
 fi
