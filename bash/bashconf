@@ -1,3 +1,7 @@
+##########################
+# nolimitcarters aliases #
+##########################
+
 alias cbd="cd .."
 alias sl="ls"
 alias la="ls -a"
@@ -18,6 +22,10 @@ alias hub="cd repos/github.com/nolimitcarter"
 alias lab="cd repos/gitlab.com/nolimitcarter"
 alias github="cd github.com/nolimitcarter"
 alias gitlab="cd gitlab.com/nolimitcarter"
+alias v="neofetch"
+
+# on startup 
+neofetch  
 
 
 export PATH=$HOME/repos/github.com/nolimitcarter/dotfiles/scripts:$PATH
