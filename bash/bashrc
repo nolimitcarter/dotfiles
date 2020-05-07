@@ -17,6 +17,7 @@ $HOME/.cargo/bin:\
 /sbin:\
 /bin:\
 
+# editor 
 export EDITOR=vim
 export EDItoR="$VISUAL"
 
