@@ -3,6 +3,9 @@
 ##########################
 
 alias ls="ls --color=auto"
+alias ll="ls -al"
+alias lss="ls -shAxSr" # list by size
+alias lsd="ls -lAtrh" # list by date/time
 alias cbd="cd .."
 alias sl="ls"
 alias la="ls -a"
@@ -13,7 +16,7 @@ alias push="git push"
 alias pull="git pull"
 alias charlie="add && commit && push"
 alias running="ps -ax"
-alias lls="ls -l"
+alias lls="ls -l -h -g -F --color=auto" 
 alias base64="base64 --decode"
 alias v="neofetch" 
 alias kali="ssh carter@kalihome.local"
@@ -24,6 +27,7 @@ alias lab="cd repos/gitlab.com/nolimitcarter"
 alias github="cd github.com/nolimitcarter"
 alias gitlab="cd gitlab.com/nolimitcarter"
 alias v="neofetch"
+alias nmapme="sudo nmap -sT -O localhost" 
 
 # on startup 
 
