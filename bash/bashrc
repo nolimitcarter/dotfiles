@@ -48,8 +48,11 @@ fi
 if [ "$TERM" != "dumb" ]; then
 	eval "`dircolors -b`"
 	alias ls='ls --color=auto'
+	alias dir='ls --color=auto --format=vertical'
+	alias vdir='ls --color=auto --format=long'
 fi
 
+# function
 # netinfo - shows system network info
 netinfo ()
 {
@@ -63,3 +66,7 @@ netinfo ()
 	echo "---------------------------------------------------"
 }
 
+# bash completion
+if [ -f /etc/bash_completion ]; then
+	./etc/bash_completion
+fi
