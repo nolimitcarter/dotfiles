@@ -1,0 +1,4 @@
+alias cbd="cd .."
+
+
+export PATH=$HOME/repos/github.com/nolimitcarter/dotfiles/scripts:$PATH
