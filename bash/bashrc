@@ -13,6 +13,9 @@ $HOME/.cargo/bin:\
 /sbin:\
 /bin:\
 
+export EDITOR=vim
+export EDItoR="$VISUAL"
+
 # aliases 
 if [ -f $HOME/.bash_aliases ]
 then
@@ -25,4 +28,5 @@ if [[ ${EUID} == 0 ]] ; then
   else
 	  PS1='\033[35m\][\W]\[\033[0m\] \[\033[00;34m\]\nboostmod3\[\033[1;33m\] -> \[\033[0m\]'
 fi
+
 
