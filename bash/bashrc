@@ -21,6 +21,8 @@ $HOME/.cargo/bin:\
 export EDITOR=vim
 export EDItoR="$VISUAL"
 
+set -o vi 
+
 # aliases 
 if [ -f $HOME/.bash_aliases ];
 then
@@ -35,3 +37,10 @@ if [[ ${EUID} == 0 ]] ; then
 fi
 
 # dircolors
+if [ -x /usr/bin/dircolors ]; then 
+	if [ -r ~/.dircolors ]; then
+		eval "$(dircolors -b ~/.dircolors)"
+	else
+		eval "$(dircolors -b)" 
+	fi
+fi
