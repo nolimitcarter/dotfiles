@@ -17,8 +17,8 @@ alias size="bash size.sh"
 alias nmapscan="nmap --top-ports 1000 -T4 -sC"
 alias hub="cd repos/github.com/nolimitcarter"
 alias lab="cd repos/gitlab.com/nolimitcarter"
-alias me="cd github.com/nolimitcarter"
-alias mel="cd gitlab.com/nolimitcarter"
+alias github="cd github.com/nolimitcarter"
+alias gitlab="cd gitlab.com/nolimitcarter"
 
 
 export PATH=$HOME/repos/github.com/nolimitcarter/dotfiles/scripts:$PATH
