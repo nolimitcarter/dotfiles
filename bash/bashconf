@@ -1,4 +1,4 @@
 alias cbd="cd .."
-
+alias sl
 
 export PATH=$HOME/repos/github.com/nolimitcarter/dotfiles/scripts:$PATH
