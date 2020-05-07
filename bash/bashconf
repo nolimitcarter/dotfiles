@@ -1,6 +1,6 @@
 alias cbd="cd .."
 alias sl="ls"
-alias la="ls-a"
+alias la="ls -a"
 alias rmv="rm -rf"
 alias add="git add -A"
 alias commit="git commit -m 'alias commit'"
