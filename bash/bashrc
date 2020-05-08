@@ -74,7 +74,24 @@ netinfo ()
 	echo "---------------------------------------------------"
 }
 
+# simple clock function 
 clock () 
 { 
 	while true;do clear;echo "===========";date +"%r";echo "===========";sleep 1;done 
+}
+
+
+# define a word using define dog and lynx
+define () 
+{ 
+	lynx- dump "http://www.google.com/search?hl=en&q=define%3A+${1}&btnG=Google+Search" | grep -m 3 -w "*"  | sed 's/;/ -/g' | cut -d- -f1 > /tmp/templookup.txt
+	if [[ -s /tmp/templookup.txt ]] ;then
+		until ! read response
+			do 
+			echo "${response}"
+			done < /tmp/templooup.txt
+		else 
+			echo "Sorry $USER, I can't find the term \"${1} \""
+	fi 
+\rm -f /tmp/templookup.txt
 }
