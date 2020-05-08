@@ -18,7 +18,6 @@ alias charlie="add && commit && push"
 alias running="ps -ax"
 alias lls="ls -l -h -g -F --color=auto" 
 alias base64="base64 --decode"
-alias v="neofetch" 
 alias kali="ssh carter@kalihome.local"
 alias size="bash size.sh"
 alias nmapscan="nmap --top-ports 1000 -T4 -sC"
@@ -26,9 +25,12 @@ alias hub="cd repos/github.com/nolimitcarter"
 alias lab="cd repos/gitlab.com/nolimitcarter"
 alias github="cd github.com/nolimitcarter"
 alias gitlab="cd gitlab.com/nolimitcarter"
-alias v="neofetch"
 alias nmapme="sudo nmap -sT -O localhost" 
 alias myip="ip -br a"
+
+# apt aliases
+alias v="neofetch"
+alias top="htop"
 
 # on startup 
 
@@ -41,4 +43,5 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
+# path variables
 export PATH=$HOME/repos/github.com/nolimitcarter/dotfiles/scripts:$PATH
