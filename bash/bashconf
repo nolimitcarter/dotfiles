@@ -27,6 +27,8 @@ alias github="cd github.com/nolimitcarter"
 alias gitlab="cd gitlab.com/nolimitcarter"
 alias nmapme="sudo nmap -sT -O localhost" 
 alias myip="ip -br a"
+alias connections="nmcli c"
+alias devices="nmcli d"
 alias status="nmcli g"
 
 # apt aliases
