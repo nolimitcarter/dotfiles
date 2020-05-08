@@ -57,9 +57,9 @@ if [ -f /etc/bash_completion ]; then
 	./etc/bash_completion 
 fi
 
-#############
-# functions #
-#############
+##################
+### functions ####
+##################
 
 # netinfo - shows system network info
 netinfo ()
@@ -94,4 +94,16 @@ define ()
 			echo "Sorry $USER, I can't find the term \"${1} \""
 	fi 
 \rm -f /tmp/templookup.txt
+}
+
+
+# lowercase all files in the current directory 
+lcfiles () 
+{ 
+        print -n 'Really lowercase all files? (y/n) '
+        if read -q ; then 
+                for i in * ; do 
+                        mv $i $i:l
+        done 
+        fi
 }
