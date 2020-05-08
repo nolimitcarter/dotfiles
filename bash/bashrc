@@ -127,3 +127,9 @@ mvg ()
                 mv $1 $2
         fi
 } 
+
+# show tilde
+tilde () 
+{ 
+        echo "~"
+}
