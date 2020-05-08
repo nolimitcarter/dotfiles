@@ -27,6 +27,7 @@ alias github="cd github.com/nolimitcarter"
 alias gitlab="cd gitlab.com/nolimitcarter"
 alias nmapme="sudo nmap -sT -O localhost" 
 alias myip="ip -br a"
+alias status="nmcli g"
 
 # apt aliases
 alias v="neofetch"
