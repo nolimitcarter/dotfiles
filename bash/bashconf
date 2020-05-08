@@ -2,7 +2,7 @@
 # nolimitcarters aliases #
 ##########################
 
-alias ls="ls --color=auto"
+alias ls="ls -x --color=auto"
 alias ll="ls -al"
 alias lss="ls -shAxSr" # list by size
 alias lsd="ls -lAtrh" # list by date/time
