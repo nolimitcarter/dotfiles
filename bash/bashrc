@@ -52,7 +52,15 @@ if [ "$TERM" != "dumb" ]; then
 	alias vdir='ls --color=auto --format=long'
 fi
 
-# function
+# bash completion 
+if [ -f /etc/bash_completion ]; then
+	./etc/bash_completion 
+fi
+
+#############
+# functions #
+#############
+
 # netinfo - shows system network info
 netinfo ()
 {
@@ -66,7 +74,7 @@ netinfo ()
 	echo "---------------------------------------------------"
 }
 
-# bash completion
-if [ -f /etc/bash_completion ]; then
-	./etc/bash_completion
-fi
+clock () 
+{ 
+	while true;do clear;echo "===========";date +"%r";echo "===========";sleep 1;done 
+}
