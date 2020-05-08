@@ -1,0 +1,11 @@
+" nolimitcarter's vimrc "
+"""""""""""""""""""""""""
+
+set number 
+set smartindent
+set linebreak
+set icon
+set ruler
+set expandtab
+set smarttab
+
