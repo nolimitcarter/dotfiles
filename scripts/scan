@@ -1,0 +1,21 @@
+#!/bin/bash
+
+ip="$1"
+
+if [ -z "$ip" ]; then
+        echo "usage: scan <ip>"
+        exit 1
+fi 
+
+while read -d line; do 
+        echo $line
+done < /tmp/foo
+
+exit 
+
+if [ -x "$ports" ]; then 
+        echo "No host (or ports) found." 
+        exit 0 
+fi 
+
+nmap -v -sC -sV -p$ports "$ip" | tee nmap.out
