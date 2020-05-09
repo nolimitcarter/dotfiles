@@ -1,12 +1,111 @@
-#!/usr/bin/env bash
+#!/bin/bash 
 
-q=; #=;q%
 
-# customization - what dimensions of the screen will be used -what color the main window and items that are done appaer: 
-export max_width=".4"
-export max_height="1" 
-# export style="44;97" 
-export done_style="90"
+# allows to curl config client
+httpGet () 
+{ 
+        case "$configureClient" in 
+                curl) curl -A curl -s "$@" ;;
+        esac
+} 
 
-# colour_header=" {fill}";
-# colour_footer
+# usage for the tool
+usage ()
+{ 
+        cat << EOF
+Todo List 
+        -c Clear current tasks
+        -r Remove 
+        -g Get current taks
+        -a Add a task
+        -h Help
+EOF
+}
+
+# adding tasks and adding todo file if there's not one
+ addTask () 
+{ 
+        if [ ! -f ~/.todo/list.txt ]; then 
+                if [ ! -d ~/.todo ]; then mkdir ~/.todo; fi
+                touch ~/.todo/list.txt
+       fi 
+       echo "$1        ;       $(date)" >> ~/.todo/list.txt
+} 
+
+#removeTask ()
+#{ 
+#        if { -f ~/.todo/temp.txt;then rm -f ~/.todo/temp.txt;fi
+#        touch ~/.todo/temp.txt
+#        for taskToRemove in "$@";do
+#                oldTaskNumber=$taskToRemove
+#                taskNumber=$( echo $taskToRemove | grep -Eo "[0-9]*" )
+#                if [[ $taskNumber == "" || $oldTaskNumber != $taskNumber ]]; then echo "$oldTaskNumber is not a valid task number"
+#        done
+#        count="0"
+#        IFS=$'\n'
+
+for task in $(cat ~/.todo/list.txt); do 
+        removeIt="false" 
+        for taskToRemove in "$@";do 
+                if [[ $(($count + 1)) == "$taskToRemove" ]]; then
+                removeIt="true"
+                break
+                fi
+        done
+        if ! $removeIt ;then echo "$task" >> ~/.todo/temp.txt;fi
+        count=$(( $count + 1 ))
+done
+rm -f ~/.todo/list.txt
+cp ~/.todo/temp.txt ~/.todo/list.txt
+rm -f ~/.todo/temp.txt
+
+getTasks () 
+{
+        if [ -f ~/.todo/list.txt ]; then
+                checkEmpty=$(cat ~/.todo/list.txt)
+                if [[ $checkEmpty == '' ]]; then
+                        echo " 0 tasks found "
+                else 
+                        count="1"
+                        IFS$'/n'
+                        for task in $(cat ~/.todo/list.txt); do
+                                tempTask=$count
+                                if [ $count -lt 10 ]; then tempTask="0$count"; fi 
+                                echo "$tempTask). $task" >> ~/.todo/getTemp.txt
+                                count=$(( $count + 1 ))
+                        done
+                        cat ~/.todo/getTemp.txt | column -t -s ";"
+                        rm -f ~/.todo/getTemp.txt
+                fi
+        else
+                echo "0 tasks found" 
+        fi
+} 
+
+clearAllTasks ()
+{ 
+        rm -f ~/.todo/list.txt || return 1
+        touch ~/.todo/list.txt || return 1
+        echo "All tasks cleared" 
+} 
+
+if [[ $# == "0" ]]; then 
+        usage 
+elif [[ $# == "1" ]]; then
+        if [[ $1 == "clear" ]]; then
+                clearAllTasks || exit 1
+        elif [[ $1 == "update" ]]; then
+                update || exit 1
+                exit 0
+        elif [[ $1 == "help" ]]; then 
+                usage
+                exit 0
+        elif [[ $flag == "clear" || $1 == "clear" ]]; then clearAllTasks || exit 1
+        elif [[ $flag == "get" || $1 == "list" || $1 == "get" ]]; then getTasks || exit 1
+        else { echo "Error: argument not valid"; exit 1; }; fi
+else 
+        if [[ $flag == "add" || $1 == "add" ]];  then addTask "${*:2}" && getTasks || exit 1
+        elif [[ $flag == "remove" || $1 == "remove" ]]; then removeTask ${*:2} && getTasks || exit 1
+        else { usage; exit 1; }; fi
+fi
+
