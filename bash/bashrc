@@ -133,3 +133,17 @@ tilde ()
 { 
         echo "~"
 }
+
+# translate a word
+translate () 
+{ 
+TRANSLATED=`lynx -dump "http://dictionary.reference.com/browse/${1}" | grep -i -m 1 -w "${2}:" | sed 's/^[ \t]*//;s/[ \t]*$//'`
+if [[ ${#TRANSLATED} != 0 ]] ;then
+        echo "\"${1}\" in ${TRANSLATED}"
+        else 
+                echo "Sorry, no translation. \"${1}\" to ${2}"
+fi
+} 
+
+
+
