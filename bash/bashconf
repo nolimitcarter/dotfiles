@@ -32,6 +32,14 @@ alias connections="nmcli c"
 alias devices="nmcli d"
 alias status="nmcli g"
 
+# vpn
+alias startvpn="sudo protonvpn c -f"
+alias randomvpn="sudo protonvpn c -r"
+alias choosevpn="sudo protonvpn connect, c"
+alias securevpn="sudo protonvpn c --sc"
+alias stopvpn="sudo protonvpn disconnect, d" 
+alias reconnectvpn="sudo protonvpn reconnect, r" 
+
 # apt aliases
 alias v="neofetch"
 alias top="htop"
