@@ -1,11 +1,42 @@
+"""""""""""""""""""""""""
 " nolimitcarter's vimrc "
 """""""""""""""""""""""""
 
+syntax enable
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set relativenumber
+set expandtab
+
+set showcmd
+set ttyfast
+set wildmenu
 set number 
 set smartindent
 set linebreak
 set icon
 set ruler
-set expandtab
 set smarttab
+set nocompatible
+set hlsearch 
+set shell=bash
 
+set cul 
+hi CursorLine term=none cterm=none ctermbg=9
+filetype on 
+filetype plugin on
+nnoremap B ^ 
+nnoremap E $
+nnoremap gV `[V`]
+
+" spelling
+if v:version >= 700
+        " Enable spell check for text files
+        autocmd BufNewFile,BufRead *.txt,.md setlocal spell spelllang=en
+endif
+
+imap ii <C-[>
+
+au syntax * hi SpellBad ctermfg=White ctermbg=Red cterm=none
