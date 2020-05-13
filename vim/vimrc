@@ -8,6 +8,7 @@ set softtabstop=4
 set expandtab
 
 set showcmd
+set ttyfast
 set wildmenu
 set number 
 set smartindent
@@ -17,16 +18,20 @@ set ruler
 set smarttab
 set nocompatible
 set hlsearch 
+set shell=bash
+
 set cul 
 hi CursorLine term=none cterm=none ctermbg=9
+filetype on 
 
 nnoremap B ^ 
 nnoremap E $
 nnoremap gV `[V`]
 
-if version >= 700 
-        set spl=en spell
-        set nospell
+" spelling
+if v:version >= 700
+        " Enable spell check for text files
+        autocmd BufNewFile,BufRead *.txt,.md setlocal spell spelllang=en
 endif
 
-
+imap ii <C-[>
