@@ -1,11 +1,32 @@
 " nolimitcarter's vimrc "
 """""""""""""""""""""""""
 
+syntax enable
+
+set tabstop=4
+set softtabstop=4
+set expandtab
+
+set showcmd
+set wildmenu
 set number 
 set smartindent
 set linebreak
 set icon
 set ruler
-set expandtab
 set smarttab
+set nocompatible
+set hlsearch 
+set cul 
+hi CursorLine term=none cterm=none ctermbg=9
+
+nnoremap B ^ 
+nnoremap E $
+nnoremap gV `[V`]
+
+if version >= 700 
+        set spl=en spell
+        set nospell
+endif
+
 
