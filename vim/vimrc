@@ -24,7 +24,7 @@ set hlsearch
 set shell=bash
 
 set cul 
-hi CursorLine term=none cterm=none ctermbg=9
+hi CursorLine term=none cterm=none ctermbg=11
 filetype on 
 filetype plugin on
 nnoremap B ^ 
