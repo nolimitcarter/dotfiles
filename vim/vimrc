@@ -22,6 +22,7 @@ set smarttab
 set nocompatible
 set hlsearch 
 set shell=bash
+set -o vi
 
 set cul 
 hi CursorLine term=none cterm=none ctermbg=none
