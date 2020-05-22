@@ -10,8 +10,12 @@ set shiftwidth=2
 set relativenumber
 set expandtab
 
+set background=dark
+set scrollfocus
 set showcmd
 set ttyfast
+set hlsearch
+set incsearch
 set wildmenu
 set number 
 set smartindent
