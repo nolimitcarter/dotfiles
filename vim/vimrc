@@ -94,12 +94,6 @@ endif
 "  autocmd vimleavepre *.go !gofmt -w %
 "endif 
 
-call plug#begin('~/.vim/plugged')
-
-Plug 'vim-utils/vim-man'
-Plug 'lyuts-utils/vim-rtags'
-
-call plug#end()
 
 " spelling
 if v:version >= 700
