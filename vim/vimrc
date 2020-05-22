@@ -16,9 +16,12 @@ syntax enable
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set relativenumber
+"set relativenumber
+"set number
+set nu
 set expandtab
-
+set nobackup
+"colorscheme gruvbox
 set background=dark
 set scrollfocus
 set showcmd
@@ -41,7 +44,6 @@ set history=100
 
 " smart formatting
 set wildmenu
-set number 
 set smartindent
 set linebreak
 set icon
@@ -91,6 +93,13 @@ endif
 "else
 "  autocmd vimleavepre *.go !gofmt -w %
 "endif 
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-utils/vim-man'
+Plug 'lyuts-utils/vim-rtags'
+
+call plug#end()
 
 " spelling
 if v:version >= 700
