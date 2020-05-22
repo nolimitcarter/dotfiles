@@ -14,8 +14,17 @@ set background=dark
 set scrollfocus
 set showcmd
 set ttyfast
+
+" hightlights search (use :noh to clear the highlights, n can turn back on)
 set hlsearch
 set incsearch
+
+" auto y for Y/N installs
+set shortmess=ao0tI 
+
+" universal copy and paste, prevents truncated yanks and deletes
+set viminfo='20,<1000,s1000
+
 set wildmenu
 set number 
 set smartindent
