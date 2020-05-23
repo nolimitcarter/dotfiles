@@ -2,7 +2,7 @@
 " nolimitcarter's vimrc "
 """""""""""""""""""""""""
 
-" Detection of major operating systems WIP
+" WIP detection of major operating systems 
 "[ -z "$OS" ] && export OS=`uname`
 "case "$OS" in
 "  Linux)          export PLATFORM=linux ;;
@@ -11,28 +11,39 @@
 "  *)              export PLATFORM=unknown ;;
 "esac
 
+" syntaxing / cursor line
 syntax enable
+set cul 
+hi CursorLine term=none cterm=none ctermbg=none
+filetype on
+filetype plugin on
+noremap B ^ 
+noremap E $
+noremap gv `[V`]
 
+" formatting 
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-"set relativenumber
-"set number
+set smarttab
 set nu
 set expandtab
 set nobackup
 "colorscheme gruvbox
 set background=dark
 set scrollfocus
+set showmode
 set showcmd
 set ttyfast
+set shell=bash
 
 " hightlights search (use :noh to clear the highlights, n can turn back on)
 set hlsearch
 set incsearch
+set showmatch " new
 
 " auto y for Y/N installs
-" set shortmess=ao0tI 
+"set shortmess=ao0tI 
 
 " universal copy and paste, prevents truncated yanks and deletes
 set viminfo='20,<1000,s1000
@@ -42,24 +53,15 @@ set viminfo='20,<1000,s1000
 set hidden
 set history=100
 
-" smart formatting
+" display / smart formatting
 set wildmenu
 set smartindent
 set linebreak
 set icon
 set ruler
-set smarttab
 set nocompatible
-set hlsearch 
-set shell=bash
-
-set cul 
-hi CursorLine term=none cterm=none ctermbg=none
-filetype on 
-filetype plugin on
-nnoremap B ^ 
-nnoremap E $
-nnoremap gV `[V`]
+set nowrap " new
+set showbreak=▹ " new 
 
 " remember where you were last time editing 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
