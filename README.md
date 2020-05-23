@@ -17,4 +17,4 @@ Editor: Vim, VsCode
 
 dotfiles and scripts collection
 
-Warning: This build is passing but will more than likely never be complete.
+Warning: This build is passing but will more than likely never be complete. A lot of the things commented out are WIPs or have been forgotten about lol. I will get to them sometime...
