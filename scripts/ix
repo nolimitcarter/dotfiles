@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# pastebin replacement 
+# you can call this from within vi 
+
 if [ -n "$1" ]; then 
 	exec curl -s "ix.io/$1"
 fi
