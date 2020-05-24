@@ -67,9 +67,9 @@ set nowrap " new
 set showbreak=▹ " new 
 
 " plugins
-call plug#begin('~/.vim/plugged')
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+call plug#begin('~/.vim/autoload/plug.vim')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " ---Airline---
@@ -92,11 +92,11 @@ imap ii <C-[>
 
 " install vim-plug if not already installed
 " (Yes I know about Vim 8 Plugins. They suck.)
-if empty(glob('~/.vim/autoload/plug.vim'))
-   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-   autocmd VimEnter * PlugInstall
-endif
+" if empty(glob('~/.vim/autoload/plug.vim'))
+"  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+"    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"   autocmd VimEnter * PlugInstall
+"endif
 
 " installs plugins WIP
 "if filereadable(expand("~/.vim/autoload/plug.vim"))
