@@ -66,6 +66,10 @@ set nocompatible
 set nowrap " new
 set showbreak=▹ " new 
 
+" autocomplete in insert mode on ctrl+N 
+set complete
+set completeopt
+
 
 " plugins
 call plug#begin('~/.vim/plugged')
