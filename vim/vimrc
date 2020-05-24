@@ -67,7 +67,7 @@ set nowrap " new
 set showbreak=▹ " new 
 
 " plugins
-call plug#begin('~/.vim/autoload/plug.vim')
+call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
@@ -76,6 +76,7 @@ call plug#end()
 set t_Co=256
 " let g:Powerline_symbols = "fancy"
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'minimalist' " listing good themes= zenburn, wombat, seagull, peaksea, minimalist, lucius
 let g:airline_skip_empty_sections = 1
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#left_sep = ' '
