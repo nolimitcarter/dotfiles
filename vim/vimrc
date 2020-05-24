@@ -29,6 +29,8 @@ set smarttab
 set nu
 set expandtab
 set nobackup
+
+" colors and shell styles
 "colorscheme gruvbox
 set background=dark
 set scrollfocus
@@ -49,7 +51,6 @@ set showmatch " new
 set viminfo='20,<1000,s1000
 
 " bash like auto-completion 
-set wildmode=longest, list, full " new
 set wildmenu
 " memory management
 " stops complaints about switching buffer with changes
