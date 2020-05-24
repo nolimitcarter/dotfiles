@@ -75,7 +75,7 @@ call plug#end()
 " plugin
 " ---Airline---
 set t_Co=256
-" let g:Powerline_symbols = "fancy"
+let g:Powerline_symbols = "fancy"
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'minimalist' " listing good themes= zenburn, wombat, seagull, peaksea, minimalist, lucius
 let g:airline_skip_empty_sections = 1
