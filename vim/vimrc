@@ -87,7 +87,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'faith/vim-go'
 "Plug 'flazz/vim-colorschemes'
 Plug 'ycm-core/YouCompleteMe'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'preservim/nerdtree'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
@@ -101,7 +101,6 @@ Plug 'mattn/emmet-vim'
 "Plug 'morhetz/gruvbox'
 call plug#end()
 
-
 " airline plugin
 " ---Airline---
 set t_Co=256
@@ -114,6 +113,31 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
+
+" WIP coc.nvim vim setup
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>"
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort 
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction 
+inoremap <silent><expr> <C-space> coc#refresh()
+
+" GoTo code navigation.
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gy <Plug>(coc-type-definition)
+nmap <leader>gi <Plug>(coc-implementation)
+nmap <leader>gr <Plug>(coc-references)
+nmap <leader>rr <Plug>(coc-rename)
+nmap <leader>g[ <Plug>(coc-diagnostic-prev)
+nmap <leader>g ] <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>gn <Plug>(coc-diagnostic-next)
+nnoremap <leader>cr :CocRestart
 
 " nerdtree plugin mapped to ctrl+o
 map <C-o> :NERDTreeToggle<CR>
