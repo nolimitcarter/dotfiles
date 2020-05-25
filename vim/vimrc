@@ -83,7 +83,7 @@ Plug 'faith/vim-go'
 Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
-" plugin
+" airline plugin
 " ---Airline---
 set t_Co=256
 let g:Powerline_symbols = "fancy"
