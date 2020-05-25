@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
 
-# dotfiles - Linx environment variables 
+# dotfiles - Linux environment variables 
 
 Computer specs for dotfiles, scripts
 
@@ -23,7 +23,7 @@ RAM: 16G
 Laptop:
 OS: Ubuntu 20.04 Linux 
 Desktop Env: Gnome
-Termminal: Bash
+Terminal: Bash
 Editor: Vim, VsCode
 
 PC: 
