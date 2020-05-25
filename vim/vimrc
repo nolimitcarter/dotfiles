@@ -13,13 +13,16 @@
 
 " syntaxing / cursor line
 syntax enable
+set encoding=utf-8
 set cul 
 hi CursorLine term=none cterm=none ctermbg=none
 filetype on
 filetype plugin on
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 noremap B ^ 
 noremap E $
 noremap gv `[V`]
+set cmdheight=1
 
 " formatting bye tabs 
 set tabstop=2
@@ -29,6 +32,7 @@ set smarttab
 set nu
 set expandtab
 set nobackup
+set noerrorbells
 
 " colors and shell styles
 "colorscheme gruvbox
@@ -76,6 +80,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'airblade/vim-gitgutter'
 Plug 'faith/vim-go'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 " plugin
