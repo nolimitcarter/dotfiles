@@ -35,6 +35,7 @@ set nobackup
 set noerrorbells
 
 " colors and shell styles
+" default colors are nice tho @ gruvbox
 "colorscheme gruvbox
 set background=dark
 set scrollfocus
