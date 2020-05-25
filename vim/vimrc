@@ -70,7 +70,7 @@ set showbreak=▹
 set complete
 set completeopt
 set wildmenu
-
+ 
 " universal copy and paste, prevents yanks and deletes
 set viminfo='20,<1000,s1000
 
@@ -86,6 +86,8 @@ Plug 'preservim/nerdtree'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'frazrepo/vim-rainbow'
+Plug 'jiangmiao/auto-pairs'
 " ctrl+Y, , for expand completion
 Plug 'mattn/emmet-vim'
 call plug#end()
