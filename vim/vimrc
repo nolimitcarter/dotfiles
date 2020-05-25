@@ -47,11 +47,6 @@ set showmatch " new
 " auto y for Y/N installs
 "set shortmess=ao0tI 
 
-" universal copy and paste, prevents truncated yanks and deletes
-set viminfo='20,<1000,s1000
-
-" bash like auto-completion 
-set wildmenu
 " memory management
 " stops complaints about switching buffer with changes
 set hidden
@@ -63,18 +58,24 @@ set linebreak
 set icon
 set ruler
 set nocompatible
-set nowrap " new
-set showbreak=▹ " new 
+set nowrap 
+set showbreak=▹ 
 
 " autocomplete in insert mode on ctrl+N 
 set complete
 set completeopt
+set wildmenu
 
+" universal copy and paste, prevents yanks and deletes
+set viminfo='20,<1000,s1000
 
 " plugins
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'airblade/vim-gitgutter'
+Plug 'faith/vim-go'
 call plug#end()
 
 " plugin
@@ -89,33 +90,16 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
+
 " remember where you were last time editing 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-" formatting WIP
+" formatting 
 set formatoptions-=a " disables autoformatting 
 map <f4> :set list!<CR>
 imap ii <C-[>  
 
-" install vim-plug if not already installed
-" (Yes I know about Vim 8 Plugins. They suck.)
-" if empty(glob('~/.vim/autoload/plug.vim'))
-"  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-"    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"   autocmd VimEnter * PlugInstall
-"endif
-
-" installs plugins WIP
-"if filereadable(expand("~/.vim/autoload/plug.vim"))
-"  call plug#begin('~/.vimplugins')
-"  Plug 'vim-pandoc/vim-pandoc'
-"  Plug 'https://gitlab.com/rwxrob/vim-pandoc-syntax-simple'
-"  Plug 'cespare/vim-toml'
-"  Plug 'faith/vim=go'
-"  Plug 'airblade/vim-gitgutter'
-"  Plug 'PProvost/vim-ps1'
-"  call plug#end()
-"  let g:go_fmt_fail_silently = 0
+" WIP GO plugin options
 "  let g:go_fmt_command = 'goimports'
 "  let g:go_fmt_autosave = 1
 "else
