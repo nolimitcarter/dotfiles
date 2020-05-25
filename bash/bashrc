@@ -17,11 +17,26 @@ $HOME/.cargo/bin:\
 /sbin:\
 /bin:\
 
+# be sure not to remove ./ or stuff gets weird
+export CDPATH=\
+./:\
+$REPOS/gitlab.com/$GITUSER:\
+$REPOS/github.com/$GITUSER:\
+$REPOS/gitlab.com/*:\
+$REPOS/github.com/*:\
+$REPOS/gitlab.com:\
+$REPOS/github.com:\
+$REPOS:\
+/media/$USER:\
+$HOME
+
+
 # editor 
 export EDITOR=vim
 export EDItoR="$VISUAL"
 
 set -o vi 
+set bell-style none
 
 # aliases 
 if [ -f $HOME/.bash_aliases ];
