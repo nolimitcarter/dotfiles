@@ -2,7 +2,7 @@
 
 # dotfiles - Linux environment variables 
 
-Computer specs for dotfiles, scripts
+Computer specs for dotfiles:
 
 ## Hardware 
 
