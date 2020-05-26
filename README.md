@@ -2,7 +2,9 @@
 
 # dotfiles - Linux environment variables 
 
-Computer specs for dotfiles, scripts
+Warning: This build is passing but will more than likely never be complete. A lot of the things commented out are WIPs or have been forgotten about lol. I will get to them sometime...
+
+Computer specs for dotfiles:
 
 ## Hardware 
 
@@ -31,6 +33,3 @@ OS: Ubuntu 20.04 Linux
 Desktop Env: Gnome
 Terminal: Bash 
 Editor: Vim
-
-
-Warning: This build is passing but will more than likely never be complete. A lot of the things commented out are WIPs or have been forgotten about lol. I will get to them sometime...
