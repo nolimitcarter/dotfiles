@@ -32,6 +32,7 @@ alias devices="nmcli d"
 alias status="nmcli g"
 alias grep="grep --color=auto"
 alias q:="exit"
+alias tryhackme="sudo openvpn nolimitcarter.ovpn"
 
 
 # vpn

@@ -139,6 +139,7 @@ nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev)
 nmap <silent> <leader>gn <Plug>(coc-diagnostic-next)
 nnoremap <leader>cr :CocRestart
 
+
 " nerdtree plugin mapped to ctrl+o
 map <C-o> :NERDTreeToggle<CR>
 
