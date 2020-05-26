@@ -87,7 +87,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'faith/vim-go'
 "Plug 'flazz/vim-colorschemes'
 Plug 'ycm-core/YouCompleteMe'
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
