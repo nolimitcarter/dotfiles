@@ -18,7 +18,6 @@ set cul
 hi CursorLine term=none cterm=none ctermbg=none
 filetype on
 filetype plugin on
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 noremap B ^ 
 noremap E $
 noremap gv `[V`]
@@ -73,7 +72,6 @@ set wildmenu
  
 " universal copy and paste, prevents yanks and deletes
 set viminfo='20,<1000,s1000
-set 
 set shortmess+=c
 " set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=darkgrey
@@ -84,21 +82,17 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'airblade/vim-gitgutter'
-Plug 'faith/vim-go'
 "Plug 'flazz/vim-colorschemes'
 Plug 'ycm-core/YouCompleteMe'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
-Plug 'nathanaelkane/vim-indent-guides'
+"Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
 Plug 'jiangmiao/auto-pairs'
 " ctrl+Y, , for expand completion
 Plug 'mattn/emmet-vim'
-
-" colors 
-"Plug 'morhetz/gruvbox'
 call plug#end()
 
 " airline plugin
@@ -112,33 +106,6 @@ let g:airline#extensions#tabline#enabled = 0 "0 for top gone
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-
-
-" WIP coc.nvim vim setup
-inoremap <silent><expr> <TAB>
-  \ pumvisible() ? "\<C-n>"
-  \ <SID>check_back_space() ? "\<TAB>" :
-  \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort 
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction 
-inoremap <silent><expr> <C-space> coc#refresh()
-
-" GoTo code navigation.
-nmap <leader>gd <Plug>(coc-definition)
-nmap <leader>gy <Plug>(coc-type-definition)
-nmap <leader>gi <Plug>(coc-implementation)
-nmap <leader>gr <Plug>(coc-references)
-nmap <leader>rr <Plug>(coc-rename)
-nmap <leader>g[ <Plug>(coc-diagnostic-prev)
-nmap <leader>g ] <Plug>(coc-diagnostic-next)
-nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev)
-nmap <silent> <leader>gn <Plug>(coc-diagnostic-next)
-nnoremap <leader>cr :CocRestart
-
 
 " nerdtree plugin mapped to ctrl+o
 map <C-o> :NERDTreeToggle<CR>
