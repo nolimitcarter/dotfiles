@@ -126,8 +126,11 @@ imap ii <C-[>
 "  autocmd vimleavepre *.go !gofmt -w %
 "endif 
 
-
-" spelling
+""""""""""""""""""""""""""""""
+" Fixes Mouse in Alacritty "
+""""""""""""""""""""""""""""""
+set mouse=a
+"" spelling
 if v:version >= 700
         " Enable spell check for text files
         autocmd BufNewFile,BufRead *.txt,.md setlocal spell spelllang=en
