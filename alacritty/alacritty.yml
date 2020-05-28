@@ -1,0 +1,67 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator
+
+
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override variables
+# set by alacritty it self.
+env:
+  # TERM env customization. Default is xterm-256color
+  # Note: the default TERM value `xterm-256color` does not
+  # specify all features alacritty supports. This does pose
+  # a few issues with programs relying on terminfo and the
+  # `tput` command
+  TERM: xterm-256color
+
+# Window dimensions in character columns and lines
+# (changes require restart)
+dimensions:
+  columns: 120
+  lines: 60
+
+# The FreeType rasterizer needs to know the device DPI for best results
+# (changes require restart)
+dpi:
+  x: 90.0
+  y: 90.0
+
+# Display tabs using this many cells (changes require restart)
+tabspaces: 4
+
+# When true, bold text is drawn using the bright variant of colors.
+draw_bold_text_with_bright_colors: true
+
+# Font configuration (changes require restart)
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: Source Code Pro
+    # Style can be specified to pick a specific face.
+    # style: Regular
+
+  # The bold font face
+  bold:
+    family: Source Code Pro
+    # Style can be specified to pick a specific face.
+    # style: Bold
+
+  # The italic font face
+  italic:
+    family: Source Code Pro
+    # Style can be specified to pick a specific face.
+    # style: Italic
+
+  # Point size of the font
+  size: 12.0
+  # Offset is the extra space around each character. offset.y can be thought of
+  # as modifying the linespacing, and offset.x as modifying the letter spacing.
+  offset:
+    x: 2.0
+    y: -11.0
+
+  # OS X only: use thin stroke font rendering. Thin strokes are suitable
+  # for retina displays, but for non-retina you probably want this set to
+  # false.
+  use_thin_strokes: false
+
+# Should display the render timer
+render_timer: false
