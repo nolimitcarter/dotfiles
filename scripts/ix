@@ -7,7 +7,7 @@ if [ -n "$1" ]; then
 	exec curl -s "ix.io/$1"
 fi
 
-url=$(curl -s -f 'f:1=<-' http://ix.io)
+url=$(curl -s -F 'f:1=<-' http://ix.io)
 wee "$url" 2>/dev/null
 echo "$url"
 which xclip >/dev/null || exit 0

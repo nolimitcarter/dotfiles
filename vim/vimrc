@@ -36,7 +36,6 @@ set noerrorbells
 " colors and shell styles
 " default colors are nice tho @ gruvbox
 set background=dark
-" colorscheme gruvbox
 set scrollfocus
 set showmode
 set showcmd
@@ -49,7 +48,7 @@ set incsearch
 set showmatch " new
 
 " auto y for Y/N installs
-"set shortmess=ao0tI 
+set shortmess=aoOtI 
 
 " memory management
 " stops complaints about switching buffer with changes
@@ -72,7 +71,6 @@ set wildmenu
  
 " universal copy and paste, prevents yanks and deletes
 set viminfo='20,<1000,s1000
-set shortmess+=c
 " set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=darkgrey
 
@@ -109,6 +107,9 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " nerdtree plugin mapped to ctrl+o
 map <C-o> :NERDTreeToggle<CR>
+
+" unhighlight with / enter
+map <silent> <leader><cr> :noh<cr>
 
 " remember where you were last time editing 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
