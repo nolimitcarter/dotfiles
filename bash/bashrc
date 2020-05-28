@@ -67,14 +67,12 @@ if [ "$TERM" != "dumb" ]; then
 	alias vdir='ls --color=auto --format=long'
 fi
 
-# bash completion 
-# if [ -f /etc/bash_completion ]; then
-# 	./etc/bash_completion 
-# fi
-
 # grep autocomplete/helper made with go 
 source ~/repos/github.com/nolimitcarter/cloned/gf/gf-completion.bash
 
+# bash tab completion because why not??
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
 
 ############################
 ######## functions #########
