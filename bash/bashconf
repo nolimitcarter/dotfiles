@@ -37,7 +37,7 @@ alias tryhackme="sudo openvpn nolimitcarter.ovpn"
 # cowsay aliases because why not?
 alias cowtime="now | cowsay"
 alias cowip="myIP | cowsay"
-alias givepi="givePi | cowsay"
+alias cowpi="givePi | cowsay"
 alias welcome="welcome | cowsay"
 
 # vpn
