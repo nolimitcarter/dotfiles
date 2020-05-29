@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 
 # Performs HTTP request on website
-URL = "https://cartert.dev"
-page = requests.get(URL)
+URL = ""
+page = requests.get(URL, headers={"User-agent":"Mozilla/5.0"})
 
 soup = BeautifulSoup(page.content, 'html.parser')
     
@@ -14,4 +14,3 @@ results = soup.find(id='')
 print(results.prettify())
 
 # you are also able to fine elements by class name: 
-# ex: job_elems = results.find.all('section', class_='card-content')
