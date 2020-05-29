@@ -1,5 +1,5 @@
-## Bin path env variable for shell and python scripts
+## Bin path env variable for scripts
 
-
-
+* python
+* shell 
 
