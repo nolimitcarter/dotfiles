@@ -9,7 +9,7 @@ Computer specs for dotfiles:
 ## Hardware 
 
 Laptop:
-Razer Blade Stealth 13 (Late 2019)
+Razer Blade Stealth 13
 CPU: Intel i7-1065G7
 GPU: NVIDIA GeForce GTX 1650 (mobile) + Intrus Plus Graphics G7
 RAM: 16G
@@ -23,13 +23,9 @@ RAM: 16G
 ## Software
 
 Laptop:
-OS: Ubuntu 20.04 Linux 
-Desktop Env: Gnome
 Terminal: Bash
 Editor: Vim, VsCode
 
 PC: 
-OS: Ubuntu 20.04 Linux 
-Desktop Env: Gnome
 Terminal: Bash 
 Editor: Vim
