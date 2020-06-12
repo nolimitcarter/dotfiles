@@ -2,7 +2,7 @@
 
 # dotfiles - Linux environment variables 
 
-![alt text](https://)
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/)
 
 Warning: This build is passing but will more than likely never be complete. Global configuration files that work on Linux, Mac, and Windows. The preferred OS is of course Linux and I have it on Ubuntu. The following files contain vim with autocompletion A lot of the things commented out are WIPs or have been forgotten about. I will get to them sometime...
 
