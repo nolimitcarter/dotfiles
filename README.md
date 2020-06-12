@@ -2,13 +2,14 @@
 
 # dotfiles - Linux environment variables 
 
+Warning: This build is passing but will more than likely never be complete. Global configuration files that work on Linux, Mac, and Windows. The preferred OS is of course Linux and I have it on Ubuntu. The following files contain vim with autocompletion A lot of the things commented out are WIPs or have been forgotten about. I will get to them sometime...
+
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from%202020-06-11%2023-23-21.png)
 
-vimrc and bashrc built with autocompletion 
+Alacritty terminal used with Bash, tmux, Vim, lynx and the many different additions added to each configuration file. Bash and Vim have many different features including autocomplete for text, go to file, nerdtree which allows you to look at all directories at once and swtich between them quickly. 
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from%202020-06-11%2023-13-46.png)
 
-Warning: This build is passing but will more than likely never be complete. Global configuration files that work on Linux, Mac, and Windows. The preferred OS is of course Linux and I have it on Ubuntu. The following files contain vim with autocompletion A lot of the things commented out are WIPs or have been forgotten about. I will get to them sometime...
 
 Computer specs for dotfiles:
 
