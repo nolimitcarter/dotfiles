@@ -10,29 +10,3 @@ Alacritty terminal used with Bash, tmux, Vim, lynx and the many different additi
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from%202020-06-11%2023-13-46.png)
 
-
-## Computer specs for dotfiles:
-
-## Hardware 
-
-Laptop:
-Razer Blade Stealth 13
-CPU: Intel i7-1065G7
-GPU: NVIDIA GeForce GTX 1650 (mobile) + Intrus Plus Graphics G7
-RAM: 16G
-
-PC:
-Dell Inspiron 5676 
-CPU: AMD Ryzen 7 2700 
-GPU: AMD ATI Radeon RX 580X
-RAM: 16G
-
-## Software
-
-Laptop:
-Terminal: Bash
-Editor: Vim, VsCode
-
-PC: 
-Terminal: Bash 
-Editor: Vim
