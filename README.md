@@ -2,7 +2,9 @@
 
 # dotfiles - Linux environment variables 
 
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from%202020-06-11%2022-58-56.png)
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from)
+
+vimrc and bashrc built with autocompletion 
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from%202020-06-11%2023-13-46.png)
 
