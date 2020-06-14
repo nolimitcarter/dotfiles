@@ -2,6 +2,13 @@
 ### nolimitcarter's bashrc ### 
 ##############################
 
+[ -z "$OS" ] && OS='uname'
+case "$OS" in
+  *indows* )        PLATFORM=windows ;;
+  Linux )           PLATFORM=linux ;;
+  FreeBSD|Darwin )  PLATFORM=mac ;;
+esac
+export PLATFORM OS
 
 ## sets path variables
 export PATH=\
