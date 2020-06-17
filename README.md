@@ -2,7 +2,7 @@
 
 # dotfiles - Linux environment variables 
 
-nolimitcarter's global configuration files that work on Linux, Mac, and Windows. The preferred OS is of course Linux and I use/work on them while using Ubuntu.
+nolimitcarter's global configuration files that work on Linux, Mac, and Windows. 
 
 Warning: This build is passing but will more than likely never be complete. A lot of the things commented out are WIPs or have been forgotten about. I will get to them sometime... 
 
