@@ -12,10 +12,3 @@ Alacritty terminal used with Bash, tmux, Vim, lynx and the many different additi
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from%202020-06-11%2023-13-46.png)
 
-Coded and configured by nolimitcarter(cartert.dev) 
-
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means as long as the license is refered to.
-
