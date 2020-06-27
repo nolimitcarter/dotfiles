@@ -87,6 +87,7 @@ source ~/repos/github.com/nolimitcarter/cloned/gf/gf-completion.bash
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
+
 ############################
 ######## functions #########
 ############################
