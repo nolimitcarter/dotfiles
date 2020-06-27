@@ -8,13 +8,13 @@
 #  |_.__/ \__,_|___/_| |_|_|  \___|
 #
 
-[ -z "$OS" ] && OS='uname'
-case "$OS" in
-  *indows* )        PLATFORM=windows ;;
-  Linux )           PLATFORM=linux ;;
-  FreeBSD|Darwin )  PLATFORM=mac ;;
-esac
-export PLATFORM OS
+#[ -z "$OS" ] && OS='uname'
+#case "$OS" in
+#  *indows* )        PLATFORM=windows ;;
+#  Linux )           PLATFORM=linux ;;
+#  FreeBSD|Darwin )  PLATFORM=mac ;;
+#esac
+#export PLATFORM OS
 
 ## sets path variables
 export PATH=\
@@ -73,131 +73,131 @@ fi
 #	fi
 #fi
 
-if [ "$TERM" != "dumb" ]; then
-	eval "`dircolors -b`"
-	alias ls='ls --color=auto'
-	alias dir='ls --color=auto --format=vertical'
-	alias vdir='ls --color=auto --format=long'
-fi
+#if [ "$TERM" != "dumb" ]; then
+#	eval "`dircolors -b`"
+#	alias ls='ls --color=auto'
+#	alias dir='ls --color=auto --format=vertical'
+#	alias vdir='ls --color=auto --format=long'
+#fi
 
 # grep autocomplete/helper made with go 
 source ~/repos/github.com/nolimitcarter/cloned/gf/gf-completion.bash
 
 # bash tab completion because why not??
-bind "set completion-ignore-case on"
-bind "set show-all-if-ambiguous on"
+#bind "set completion-ignore-case on"
+#bind "set show-all-if-ambiguous on"
 
 ############################
 ######## functions #########
 ############################
 
 # netinfo - shows system network info
-netinfo ()
-{
-	echo "--------------- Network Information ---------------"
-	/sbin/ifconfig | awk /'inet addr/ {print $2}'
-	/sbin/ifconfig | awk /'Bcast/ {print $3}'
-	/sbin/ifconfig | awk /'inet addr/ {print $4}'
-	/sbin/ifconfig | awk /'HWaddr/ {print $4,$5}'
-	myip=`lynx -dump -hiddenlinks=ignore -nolist http://checkip.dyndns.org:8245/ | sed '/^$/d; s/^[ ]*//g; s/[ ]*$//g' `
-	echo "${myip}"
-	echo "---------------------------------------------------"
-}
+#netinfo ()
+#{
+#	echo "--------------- Network Information ---------------"
+#	/sbin/ifconfig | awk /'inet addr/ {print $2}'
+#	/sbin/ifconfig | awk /'Bcast/ {print $3}'
+#	/sbin/ifconfig | awk /'inet addr/ {print $4}'
+#	/sbin/ifconfig | awk /'HWaddr/ {print $4,$5}'
+#	myip=`lynx -dump -hiddenlinks=ignore -nolist http://checkip.dyndns.org:8245/ | sed '/^$/d; s/^[ ]*//g; s/[ ]*$//g' `
+#	echo "${myip}"
+#	echo "---------------------------------------------------"
+#}
 
 # simple clock function 
-clock () 
-{ 
-	while true;do clear;echo "===========";date +"%r";echo "===========";sleep 1;done 
-}
-
-
+#clock () 
+#{ 
+#	while true;do clear;echo "===========";date +"%r";echo "===========";sleep 1;done 
+#}
+#
+#
 # define a word using define dog and lynx
-define () 
-{ 
-	lynx- dump "http://www.google.com/search?hl=en&q=define%3A+${1}&btnG=Google+Search" | grep -m 3 -w "*"  | sed 's/;/ -/g' | cut -d- -f1 > /tmp/templookup.txt
-	if [[ -s /tmp/templookup.txt ]] ;then
-		until ! read response
-			do 
-			echo "${response}"
-			done < /tmp/templooup.txt
-		else 
-			echo "Sorry $USER, I can't find the term \"${1} \""
-	fi 
-\rm -f /tmp/templookup.txt
-}
-
-
+#define () 
+#{ 
+#	lynx- dump "http://www.google.com/search?hl=en&q=define%3A+${1}&btnG=Google+Search" | grep -m 3 -w "*"  | sed 's/;/ -/g' | cut -d- -f1 > /tmp/templookup.txt
+#	if [[ -s /tmp/templookup.txt ]] ;then
+#		until ! read response
+#			do 
+#			echo "${response}"
+#			done < /tmp/templooup.txt
+#		else 
+#			echo "Sorry $USER, I can't find the term \"${1} \""
+#	fi 
+#\rm -f /tmp/templookup.txt
+#}
+#
+#
 # lowercase all files in the current directory 
-lcfiles () 
-{ 
-        print -n 'Really lowercase all files? (y/n) '
-        if read -q ; then 
-                for i in * ; do 
-                        mv $i $i:l
-        done 
-        fi
-}
-
+#lcfiles () 
+#{ 
+#       print -n 'Really lowercase all files? (y/n) '
+#        if read -q ; then 
+#                for i in * ; do 
+#                        mv $i $i:l
+#        done 
+#        fi
+#}
+#
 # copy and go to dir
-cpg () 
-{ 
-        if [ -d "$2" ];then 
-                cp $1 $2 && cd $2
-        else
-                cp $1 $2 
-        fi 
-} 
-
+#cpg () 
+#{ 
+#        if [ -d "$2" ];then 
+#                cp $1 $2 && cd $2
+#        else
+#                cp $1 $2 
+#        fi 
+#} 
+#
 # move and go to dir
-mvg ()
-{ 
-        if [ -d "$2" ];then 
-                mv $1 $2 && cd $2
-        else 
-                mv $1 $2
-        fi
-} 
-
+#mvg ()
+#{ 
+#        if [ -d "$2" ];then 
+#                mv $1 $2 && cd $2
+#        else 
+#                mv $1 $2
+#        fi
+#} 
+#
 # show tilde
-tilde () 
-{ 
-        echo "~"
-}
+#tilde () 
+#{ 
+#        echo "~"
+#}
 
 # translate a word
-translate () 
-{ 
-TRANSLATED=`lynx -dump "http://dictionary.reference.com/browse/${1}" | grep -i -m 1 -w "${2}:" | sed 's/^[ \t]*//;s/[ \t]*$//'`
-if [[ ${#TRANSLATED} != 0 ]] ;then
-        echo "\"${1}\" in ${TRANSLATED}"
-        else 
-                echo "Sorry, no translation. \"${1}\" to ${2}"
-fi
-} 
-
+#translate () 
+#{ 
+#TRANSLATED=`lynx -dump "http://dictionary.reference.com/browse/${1}" | grep -i -m 1 -w "${2}:" | sed 's/^[ \t]*//;s/[ \t]*$//'`
+#if [[ ${#TRANSLATED} != 0 ]] ;then
+#        echo "\"${1}\" in ${TRANSLATED}"
+#        else 
+#                echo "Sorry, no translation. \"${1}\" to ${2}"
+#fi
+#} 
+#
 # extracter 
-extract () 
-{ 
-if [ -f $1 ] ;then 
-  case $1 in 
-    *.tar.bz2)   tar xjf $1        ;;
-    *.tar.gz)    tar xzf $1     ;;
-    *.bz2)       bunzip2 $1       ;;
-    *.rar)       rar x $1     ;;
-    *.gz)        gunzip $1     ;;
-    *.tar)       tar xf $1        ;;
-    *.tbz2)      tar xjf $1      ;;
-    *.tgz)       tar xzf $1       ;;
-    *.zip)       unzip $1     ;;
-    *.Z)         uncompress $1  ;;
-    *.7z)        7z x $1    ;;
-    *)           echo "'$1' cannot be extracted via extract()" ;;
-  esac
-    else
-      echo "'$1' is not a valid file"
- fi
-}
-
+#extract () 
+#{ 
+#if [ -f $1 ] ;then 
+#  case $1 in 
+#    *.tar.bz2)   tar xjf $1        ;;
+#    *.tar.gz)    tar xzf $1     ;;
+#    *.bz2)       bunzip2 $1       ;;
+#    *.rar)       rar x $1     ;;
+#    *.gz)        gunzip $1     ;;
+#    *.tar)       tar xf $1        ;;
+#    *.tbz2)      tar xjf $1      ;;
+#    *.tgz)       tar xzf $1       ;;
+#    *.zip)       unzip $1     ;;
+#    *.Z)         uncompress $1  ;;
+#    *.7z)        7z x $1    ;;
+#    *)           echo "'$1' cannot be extracted via extract()" ;;
+#  esac
+#    else
+#      echo "'$1' is not a valid file"
+# fi
+#}
+#
 
 
 # >>> conda initialize >>>
