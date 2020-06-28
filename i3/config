@@ -1,5 +1,7 @@
 ### GENERAL SETTINGS ###
 
+exec --no-startup-id nitrogen --restore
+
 # Mod1 = Alt, Mod4 = Super
 set $mod Mod1
 
