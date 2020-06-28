@@ -22,7 +22,7 @@ Alacritty terminal used with Bash, tmux, Vim, lynx and the many different additi
 
 I mainly use Ubuntu Linux but am working to get this config setup on OS X.
 
-## Some of the continents include: 
+## Some of the contents include: 
 
 * alacritty
 * tmux
