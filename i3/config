@@ -13,6 +13,9 @@ bindsym $mod+Return exec termite
 # Start rofi (a program launcher)
 bindsym $mod+d exec rofi -show
 
+# Start chromium
+bindsym $mod+c exec chromium
+
 # Configure border style
 new_window pixel 3
 new_float pixel 3
