@@ -1,18 +1,80 @@
-#! /bin/sh
+#!/bin/bash
+#### AUTOSTART ####
 
+# Daemons & stuff
 sxhkd &
+picom --experimental-backends &
+dunst &
+feh --bg-scale /usr/share/wallpapers/custom/samuel-inkilainen-arctic-spirit-with-signature.jpg &
+setxkbmap de &
+pidof bspswallow || /usr/bin/scripts/bspwm-swallow.sh &
+betterlockscreen -u /usr/share/wallpapers/custom/samuel-inkilainen-arctic-spirit-with-signature.jpg &
+syncthing -no-browser &
+killall lemonblocks
+start-lemonbar.sh &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+# Programms
+firefox --class="init_firefox" &
+# discord &
+# anki &
+# keeweb &
 
-bspc config border_width         2
-bspc config window_gap          12
+# Scratchpads
+killall cmus && killall neomutt && killall calcurse
+alacritty --class "cmus" -e "cmus" &
+alacritty --class "neomutt" --dimensions 226 60 --position 50 60  -e "neomutt" &
+alacritty --class "calcurse" -e "calcurse" &
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+# ~/.config/polybar/polybar.sh
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+#### MONITORS ####
+bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+
+#### BSPWM configuration ####
+#bspc config border_radius                8
+bspc config border_width                  3
+bspc config window_gap                    10
+bspc config top_padding                   30
+bspc config bottom_padding                0
+bspc config left_padding                  0
+bspc config right_padding                 0
+bspc config single_monocle                false
+bspc config click_to_focus                false
+bspc config split_ratio                   0.50
+bspc config borderless_monocle            true
+bspc config gapless_monocle               true
+bspc config focus_by_distance             true
+bspc config focus_follows_pointer         true
+bspc config history_aware_focus           true
+bspc config remove_disabled_monitors      true
+bspc config merge_overlapping_monitors    true
+bspc config pointer_modifier mod1
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
+
+#### BSPWM coloring ####
+bspc config normal_border_color		      "#00ff99"
+bspc config active_border_color	              "#ff0066"
+bspc config focused_border_color	      "#ff0066"
+bspc config presel_feedback_color	      "#00ff94"
+bspc config urgent_border_color 	      "#ff1b1c"
+
+#polybar hidden when fullscreen for vlc, youtube, mpv ...
+#find out the name of your monitor with xrandr
+# xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DisplayPort-0)
+# xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DisplayPort-1)
+# xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI-A-0)
+
+bspc rule -a init_firefox desktop='^2'
+bspc rule -a init_thunderbird desktop='^7'
+bspc rule -a discord desktop='^8'
+bspc rule -a Anki desktop='^6'
+bspc rule -a KeeWeb:keeweb desktop='^10'
+bspc rule -a *:SPLASH state=floating 
+# Scratchpad inital start
+bspc rule -a Alacritty:cmus desktop='^10' state='floating' hidden='true' sticky='true'
+bspc rule -a Alacritty:neomutt desktop='^10' state='floating' hidden='true' sticky='true'
+bspc rule -a Alacritty:calcurse desktop='^10' state='floating' hidden='true' sticky='true'
+
+bspc desktop -f 1
