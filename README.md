@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
 
 <p align="center"> 
-  <a name="top" href="https://github.com/nolimitcarter/dotfiles"
+  <a name="top" href="https://github.com/nolimitcarter/dotfiles">
     ![](dotfiles.png?raw=true)
   </a>
 </p>
