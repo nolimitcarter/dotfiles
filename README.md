@@ -2,34 +2,13 @@
 
 # dotfiles - Linux environment variables 
 
-Warning: This build is passing but will more than likely never be complete. A lot of the things commented out are WIPs or have been forgotten about lol. I will get to them sometime...
+nolimitcarter's global configuration files that work on Linux, Mac, and Windows. 
 
-Computer specs for dotfiles:
+**Warning:** This build is passing but will more than likely never be complete. It still has a lot of problems with Windows and OS X because the development was done on Linux and some of the aliases are based on bash. A lot of the things commented out are WIPs or have been forgotten about. I will get to them sometime... 
 
-## Hardware 
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from%202020-06-11%2023-23-21.png)
 
-Laptop:
-Razer Blade Stealth 13 (Late 2019)
-CPU: Intel i7-1065G7
-GPU: NVIDIA GeForce GTX 1650 (mobile) + Intrus Plus Graphics G7
-RAM: 16G
+Alacritty terminal used with Bash, tmux, Vim, lynx and the many different additions added to each configuration file. A lot of people will call Vim an old-timer text editor and I completetly disagree; If you know how to use the editor and are quick on a keyboard, it actually has a termendous effect on productivity when added together with bash and tmux and the possibilities are almost endless. Bash and Vim have many different features including autocomplete for text, go to file which is one of my remaps, and nerdtree which allows you to look at all directories at once and swtich between them quickly.  
 
-PC:
-Dell Inspiron 5676 
-CPU: AMD Ryzen 7 2700 
-GPU: AMD ATI Radeon RX 580X
-RAM: 16G
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from%202020-06-11%2023-13-46.png)
 
-## Software
-
-Laptop:
-OS: Ubuntu 20.04 Linux 
-Desktop Env: Gnome
-Terminal: Bash
-Editor: Vim, VsCode
-
-PC: 
-OS: Ubuntu 20.04 Linux 
-Desktop Env: Gnome
-Terminal: Bash 
-Editor: Vim

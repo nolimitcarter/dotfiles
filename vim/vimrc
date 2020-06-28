@@ -1,15 +1,14 @@
-"""""""""""""""""""""""""
-" nolimitcarter's vimrc "
-"""""""""""""""""""""""""
+"""""""""""""""""""""""""""""
+""  nolimitcarter's vimrc  ""
+"""""""""""""""""""""""""""""
 
-" WIP detection of major operating systems 
-"[ -z "$OS" ] && export OS=`uname`
-"case "$OS" in
-"  Linux)          export PLATFORM=linux ;;
-"  *indows*)       export PLATFORM=windows ;;
-"  FreeBSD|Darwin) export PLATFORM=mac ;;
-"  *)              export PLATFORM=unknown ;;
-"esac
+""        _
+"" __   _(_)_ __ ___  _ __ ___
+"" \ \ / / | '_ ` _ \| '__/ __|
+""  \ V /| | | | | | | | | (__
+""   \_/ |_|_| |_| |_|_|  \___|
+""
+
 
 " syntaxing / cursor line
 syntax enable

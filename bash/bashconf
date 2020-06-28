@@ -47,6 +47,7 @@ alias choosevpn="sudo protonvpn connect, c"
 alias securevpn="sudo protonvpn c --sc"
 alias stopvpn="sudo protonvpn d" 
 alias reconnectvpn="sudo protonvpn reconnect, r" 
+alias nmap="grc nmap" 
 
 # apt aliases
 alias v="neofetch"
@@ -66,6 +67,9 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # path variables
 export PATH=$HOME/repos/github.com/nolimitcarter/dotfiles/scripts:$PATH
 export PATH=$HOME/home:$PATH
+PATH=$PATH:/usr/games
+export PATH=$HOME/repos/github.com/nolimitcarter/tools/recontools:$PATH
+
 
 
 

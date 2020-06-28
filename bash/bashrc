@@ -1,7 +1,20 @@
-##############################
-### nolimitcarter's bashrc ### 
-##############################
+################################
+###  nolimitcarter's bashrc  ### 
+################################
+#   _               _
+#  | |__   __ _ ___| |__  _ __ ___
+#  | '_ \ / _` / __| '_ \| '__/ __|
+#  | |_) | (_| \__ \ | | | | | (__
+#  |_.__/ \__,_|___/_| |_|_|  \___|
+#
 
+[ -z "$OS" ] && OS='uname'
+case "$OS" in
+  *indows* )        PLATFORM=windows ;;
+  Linux )           PLATFORM=linux ;;
+  FreeBSD|Darwin )  PLATFORM=mac ;;
+esac
+export PLATFORM OS
 
 ## sets path variables
 export PATH=\
@@ -73,6 +86,7 @@ source ~/repos/github.com/nolimitcarter/cloned/gf/gf-completion.bash
 # bash tab completion because why not??
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
+
 
 ############################
 ######## functions #########
@@ -185,4 +199,20 @@ if [ -f $1 ] ;then
  fi
 }
 
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/carter/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/carter/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/carter/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/carter/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
