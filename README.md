@@ -2,7 +2,7 @@
 
 <p align="center"> 
   <a name="top" href="https://github.com/nolimitcarter/dotfiles">
-    ![](dotfiles.png?raw=true)
+    <img width="50%" src="dotfiles.png">
   </a>
 </p>
 
