@@ -6,9 +6,7 @@
   </a>
 </p>
 
-# dotfiles - Linux environment variables 
-
-nolimitcarter's global configuration files that work on Linux, Mac, and Windows. 
+## nolimitcarter's global configuration files that work on Linux, Mac, and Windows. 
 
 **Warning:** This build is passing but will more than likely never be complete. It still has a lot of problems with Windows and OS X because the development was done on Linux and some of the aliases are based on bash. A lot of the things commented out are WIPs or have been forgotten about. I will get to them sometime... 
 
