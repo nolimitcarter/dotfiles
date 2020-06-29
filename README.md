@@ -35,5 +35,5 @@ I mainly use Ubuntu Linux but am working to get this config setup on OS X.
 
 ## License
 
-[GPL-2.0](LICENSE.md)
+Licensed under the GPL - see the [LICENSE](LICENSE.md) for details.
 
