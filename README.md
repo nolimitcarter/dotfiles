@@ -6,7 +6,7 @@
   </a>
 </p>
 
-## nolimitcarter's .config files (dotfiles) for Linux, OS X, and Windows. 
+## <p align="center">nolimitcarter's .config files (dotfiles) for Linux, OS X, and Windows.</p>
 
 **Warning:** This build is passing but will more than likely never be complete. It still has a lot of problems with Windows and OS X because the development was done on Linux and some of the aliases are based on bash. A lot of the things commented out are WIPs or have been forgotten about. I will get to them sometime... 
 
@@ -35,29 +35,13 @@ I mainly use Ubuntu Linux but am working to get this config setup on OS X.
 ## <p align="center">Environment Details</p>
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
-| Shell                | ZSH with [Oh-My-ZSH](https://github.com/ohmyzsh/ohmyzsh) and my [custom theme](/.oh-my-zsh/themes)   |
-| DM & Lockscreen      | SLiM with my [custom theme](./Others/Seasons)                                                        |
-| Authentication Agent | polkit-gnome-authentication-agent-1                                                                  |
-| Power Manager        | xfce4-power-manager                                                                                  |
-| Sessions Auto Locker | xss-lock                                                                                             |
-| Brightness Handler   | brightnessctl                                                                                        |
-| Sound Mixer          | Pulseaudio                                                                                           |
-| Sound Control        | Pavucontrol                                                                                          |
-| CLI Sound Control    | [pamixer](https://github.com/cdemoulins/pamixer)                                                     |
-| Network Manager      | NetworkManager & [networkmanager_dmenu](https://github.com/firecat53/networkmanager-dmenu)           |
-| Clipboard Manager    | Clipit                                                                                               |
-| Screenshot App       | scrot                                                                                                |
-| Browser              | google-chrome-stable                                                                                 |
-| Text Editor          | Geany                                                                                                |
-| CLI Text Editor      | nano & vim                                                                                           |
-| Image Viewer         | Viewnior                                                                                             |
-| File Manager         | Thunar                                                                                               |
-| CLI File Manager     | ranger                                                                                               |
-| Music Player         | Audacious & Spotify with [Spicetify](https://github.com/khanhas/Spicetify)                           |
-| CLI Music Player     | MPD with MPC & NCMPCPP                                                                               |
-| Video Player         | [Bomi Player](https://bomi-player.github.io/) & MPV                                                  |
-| Graphic Editor       | GIMP                                                                                                 |
-| CLI System Monitor   | htop                                                                                                 |
+| Shell                | Bash Shell with my bashrc                                                                            |
+| Text Editor          | Vscode                                                                                               |
+| CLI Text Editor      | Vim                                                                                                  |
+| Window Manager       | i3 & bspwm                                                                                           |
+| Email Client         | Mutt                                                                                                 |
+| Terminal Emulator    | Alacritty                                                                                            |
+| CLI Web browser      | Lynx                                                                                                 |
 
 ## License
 
