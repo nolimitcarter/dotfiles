@@ -28,11 +28,12 @@ I mainly use Ubuntu Linux but am working to get this config setup on OS X.
 |----------------------|------------------------------------------------------------------------------------------------------|
 | Distro               | Ubuntu 20.04                                                                                         |
 | Shell                | Bash                                                                                                 |
-| IDE                  | Vscode                                                                                               |
+| Terminal             | Alacritty                                                                                            |
+| Multiplexer          | Tmux                                                                                                 |
 | Text Editor          | Vim                                                                                                  |
-| Window Managers      | i3 & bspwm                                                                                           |
+| IDE                  | VScode                                                                                               |
 | Email Client         | Mutt                                                                                                 |
-| Terminal Emulator    | Alacritty                                                                                            |
+| Window Managers      | i3 & bspwm                                                                                           |
 | CLI Web Browser      | Lynx                                                                                                 |
 
 ## License
