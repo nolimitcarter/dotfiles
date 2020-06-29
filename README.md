@@ -27,13 +27,13 @@ I mainly use Ubuntu Linux but am working to get this config setup on OS X.
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
 | Distro               | Ubuntu 20.04                                                                                         |
-| Shell                | Bash Shell with my bashrc                                                                            |
-| Text Editor          | Vscode                                                                                               |
-| CLI Text Editor      | Vim                                                                                                  |
-| Window Manager       | i3 & bspwm                                                                                           |
+| Shell                | Bash                                                                                                 |
+| IDE                  | Vscode                                                                                               |
+| Text Editor          | Vim                                                                                                  |
+| Window Managers      | i3 & bspwm                                                                                           |
 | Email Client         | Mutt                                                                                                 |
 | Terminal Emulator    | Alacritty                                                                                            |
-| CLI Web browser      | Lynx                                                                                                 |
+| CLI Web Browser      | Lynx                                                                                                 |
 
 ## License
 
