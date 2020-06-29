@@ -368,7 +368,9 @@ exec --no-startup-id nmcli connection up david_arch
 exec --no-startup-id lutris
 
 ## Wallpaper 
-exec_always --no-startup-id feh --bg-scale ~/repos/github.com/nolimitcarter/dotfiles/walls/mech-key.png
+exec_always --no-startup-id feh --bg-scale ~/repos/github.com/nolimitcarter/dotfiles/walls/mech-key.jpg
+
+## Polybar
 
 ### GAPS ###
 
