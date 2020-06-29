@@ -27,12 +27,12 @@ I mainly use Ubuntu Linux but am working to get this config setup on OS X.
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
 | Distro               | Ubuntu 20.04                                                                                         |
-| Shell                | Bash                                                                                                 |
 | Terminal             | Alacritty                                                                                            |
+| Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
 | Text Editor          | Vim                                                                                                  |
 | IDE                  | VScode                                                                                               |
-| Email Client         | Mutt                                                                                                 |
+| CLI Email Client     | Mutt                                                                                                 |
 | Window Managers      | i3 & bspwm                                                                                           |
 | CLI Web Browser      | Lynx                                                                                                 |
 
