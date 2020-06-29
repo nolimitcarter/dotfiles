@@ -18,6 +18,9 @@ bindsym $mod+d exec rofi -show
 # Start chromium
 bindsym $mod+c exec chromium
 
+# Start firefox
+bindsym $mod+f exec firefox
+
 # Configure border style
 new_window pixel 3
 new_float pixel 3
@@ -29,8 +32,6 @@ new_float pixel 3
 for_window [class="^.*"] border pixel 3
 for_window [class="Firefox"] border pixel 3
 for_window [class="Feh"] border pixel 3
-for_window [title="^Minecraft .*"] border pixel 3
-for_window [title="^Virtualbox .*"] border pixel 3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -360,20 +361,21 @@ exec --no-startup-id lxpolkit
 #exec --no-startup-id xsetwacom set "Wacom Intuos PT S 2 Pen stylus" MapToOutput HEAD-0
 #exec --no-startup-id xsetwacom set "Wacom Intuos PT S 2 Pen stylus" area 0 0 7600 4750
 #exec --no-startup-id sh .config/polybar/launch.sh
-#exec --no-startup-id feh /home/dasprii/Pictures/Wallpapers/inside-a-magical-cave.jpg --bg-scale
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id gwe
 exec --no-startup-id thunar --daemon
 exec --no-startup-id nmcli connection up david_arch
 exec --no-startup-id lutris
 
+## Wallpaper 
+exec_always --no-startup-id feh --bg-scale ~/repos/github.com/nolimitcarter/dotfiles/walls/mech-key.png
+
 ### GAPS ###
 
 # Set inner/outer gaps
-gaps inner 14
-gaps outer -2
+gaps inner 10
+gaps outer 5
 
-# Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
 # gaps inner all set 10
 # gaps outer all plus 5
