@@ -16,8 +16,6 @@ Alacritty terminal used with Bash, tmux, Vim, lynx and the many different additi
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from%202020-06-11%2023-13-46.png)
 
-## Software/Environment
-
 ## Distro
 
 I mainly use Ubuntu Linux but am working to get this config setup on OS X.
