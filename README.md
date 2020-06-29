@@ -22,19 +22,11 @@ Alacritty terminal used with Bash, tmux, Vim, lynx and the many different additi
 
 I mainly use Ubuntu Linux but am working to get this config setup on OS X.
 
-## Some of the contents include: 
+## Environment Details
 
-* alacritty
-* tmux
-* i3 and bspwm
-* vim
-* bash
-* mutt
-* lynx
-
-## <p align="center">Environment Details</p>
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
+| Distro               | Ubuntu 20.04                                                                                         |
 | Shell                | Bash Shell with my bashrc                                                                            |
 | Text Editor          | Vscode                                                                                               |
 | CLI Text Editor      | Vim                                                                                                  |
