@@ -32,6 +32,33 @@ I mainly use Ubuntu Linux but am working to get this config setup on OS X.
 * mutt
 * lynx
 
+## <p align="center">Environment Details</p>
+| Items/Components     | Values/Dependencies                                                                                  |
+|----------------------|------------------------------------------------------------------------------------------------------|
+| Shell                | ZSH with [Oh-My-ZSH](https://github.com/ohmyzsh/ohmyzsh) and my [custom theme](/.oh-my-zsh/themes)   |
+| DM & Lockscreen      | SLiM with my [custom theme](./Others/Seasons)                                                        |
+| Authentication Agent | polkit-gnome-authentication-agent-1                                                                  |
+| Power Manager        | xfce4-power-manager                                                                                  |
+| Sessions Auto Locker | xss-lock                                                                                             |
+| Brightness Handler   | brightnessctl                                                                                        |
+| Sound Mixer          | Pulseaudio                                                                                           |
+| Sound Control        | Pavucontrol                                                                                          |
+| CLI Sound Control    | [pamixer](https://github.com/cdemoulins/pamixer)                                                     |
+| Network Manager      | NetworkManager & [networkmanager_dmenu](https://github.com/firecat53/networkmanager-dmenu)           |
+| Clipboard Manager    | Clipit                                                                                               |
+| Screenshot App       | scrot                                                                                                |
+| Browser              | google-chrome-stable                                                                                 |
+| Text Editor          | Geany                                                                                                |
+| CLI Text Editor      | nano & vim                                                                                           |
+| Image Viewer         | Viewnior                                                                                             |
+| File Manager         | Thunar                                                                                               |
+| CLI File Manager     | ranger                                                                                               |
+| Music Player         | Audacious & Spotify with [Spicetify](https://github.com/khanhas/Spicetify)                           |
+| CLI Music Player     | MPD with MPC & NCMPCPP                                                                               |
+| Video Player         | [Bomi Player](https://bomi-player.github.io/) & MPV                                                  |
+| Graphic Editor       | GIMP                                                                                                 |
+| CLI System Monitor   | htop                                                                                                 |
+
 ## License
 
 [GPL-2.0](LICENSE.md)
