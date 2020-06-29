@@ -18,6 +18,9 @@ bindsym $mod+d exec rofi -show
 # Start chromium
 bindsym $mod+c exec chromium
 
+# Start firefox
+bindsym $mod+f exec firefox
+
 # Configure border style
 new_window pixel 3
 new_float pixel 3
@@ -29,8 +32,6 @@ new_float pixel 3
 for_window [class="^.*"] border pixel 3
 for_window [class="Firefox"] border pixel 3
 for_window [class="Feh"] border pixel 3
-for_window [title="^Minecraft .*"] border pixel 3
-for_window [title="^Virtualbox .*"] border pixel 3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
