@@ -35,6 +35,7 @@ I mainly use Ubuntu Linux but am working to get this config setup on OS X.
 | CLI Email Client     | Mutt                                                                                                 |
 | Window Managers      | i3 & bspwm                                                                                           |
 | CLI Web Browser      | Lynx                                                                                                 |
+| Apps Launcher        | Dmenu                                                                                                |
 
 ## License
 
