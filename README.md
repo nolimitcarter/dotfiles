@@ -24,14 +24,14 @@ I mainly use Ubuntu Linux but am working to get this config setup on OS X.
 
 ## Environment Details
 
-| Items/Components     | Values/Dependencies                                           | 
-|----------------------|---------------------------------------------------------------|
-| Distro               | Ubuntu 20.04                                                  |
-| Terminal             | Alacritty                                                     |
-| Shell                | Bash                                                          |
-| Multiplexer          | Tmux                                                          |
-| Text Editor          | Vim                                                           |
-| IDE                  | VScode                                                        |
+| Items/Components     | Values/Dependencies                                           | | GNOME Extensions |
+|----------------------|---------------------------------------------------------------| |------------------|
+| Distro               | Ubuntu 20.04                                                  | | Dash to Dock     |
+| Terminal             | Alacritty                                                     | | Hide Activities  |
+| Shell                | Bash                                                          | | Remove Arrows    |
+| Multiplexer          | Tmux                                                          | | Unite            |
+| Text Editor          | Vim                                                           | | Gtile            |
+| IDE                  | VScode                                                        | | Unite            |
 | CLI Email Client     | Mutt                                                          |
 | Window Managers      | i3 & bspwm                                                    |
 | CLI Web Browser      | Lynx                                                          |
