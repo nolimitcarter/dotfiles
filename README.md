@@ -20,22 +20,27 @@ Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many diff
 
 ## Distro
 
-I mainly use Ubuntu Linux but am working to get this config setup on OS X.
+I mainly use Ubuntu GNOME but am working to get this config setup on OS X. <br>
+I use the following GNOME extensions: 
+* Dash to Dock
+* Unite
+* Gtile
+* Remove dropdown arrows
+* Hide activities menu
 
 ## Environment Details
-
-| Items/Components     | Values/Dependencies                                           | | GNOME Extensions |
-|----------------------|---------------------------------------------------------------| |------------------|
-| Distro               | Ubuntu 20.04                                                  | | Dash to Dock     |
-| Terminal             | Alacritty                                                     | | Hide Activities  |
-| Shell                | Bash                                                          | | Remove Arrows    |
-| Multiplexer          | Tmux                                                          | | Unite            |
-| Text Editor          | Vim                                                           | | Gtile            |
-| IDE                  | VScode                                                        | | Unite            |
-| CLI Email Client     | Mutt                                                          |
-| Window Managers      | i3 & bspwm                                                    |
-| CLI Web Browser      | Lynx                                                          |
-| Apps Launcher        | Dmenu                                                         |
+| Items/Components     | Values/Dependencies                                                                                  |
+|----------------------|------------------------------------------------------------------------------------------------------|
+| Distro               | Ubuntu 20.04                                                                                         |
+| Terminal             | Alacritty                                                                                            |
+| Shell                | Bash                                                                                                 |
+| Multiplexer          | Tmux                                                                                                 |
+| Text Editor          | Vim                                                                                                  |
+| IDE                  | VScode                                                                                               |
+| CLI Email Client     | Mutt                                                                                                 |
+| Window Managers      | i3 & bspwm                                                                                           |
+| CLI Web Browser      | Lynx                                                                                                 |
+| Apps Launcher        | Dmenu                                                                                                |
 
 ## License
 
