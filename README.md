@@ -20,13 +20,7 @@ Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many diff
 
 ## Distro
 
-I mainly use Ubuntu GNOME but am working to get this config setup on OS X. <br>
-I use the following GNOME extensions: 
-* Dash to Dock
-* Unite
-* Gtile
-* Remove dropdown arrows
-* Hide activities menu
+I mainly use Ubuntu GNOME but am working to get this config setup on OS X. 
 
 ## Environment Details
 | Items/Components     | Values/Dependencies                                                                                  |
