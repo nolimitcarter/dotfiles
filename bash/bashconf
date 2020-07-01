@@ -34,6 +34,7 @@ alias grep="grep --color=auto"
 alias q:="exit"
 alias tryhackme="sudo openvpn nolimitcarter.ovpn"
 alias c="cmatrix"
+alias clock="tty-clock -c -C 7 -r -f '%A, %B %d'"
 
 # cowsay aliases because why not?
 alias cowtime="now | cowsay"
