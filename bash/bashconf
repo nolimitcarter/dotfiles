@@ -33,6 +33,7 @@ alias status="nmcli g"
 alias grep="grep --color=auto"
 alias q:="exit"
 alias tryhackme="sudo openvpn nolimitcarter.ovpn"
+alias c="cmatrix"
 
 # cowsay aliases because why not?
 alias cowtime="now | cowsay"
