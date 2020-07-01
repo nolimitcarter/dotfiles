@@ -2,7 +2,7 @@
 
 <p align="center"> 
   <a name="top" href="https://github.com/nolimitcarter/dotfiles">
-    <img width="50%" src="dotfiles.png">
+    <img width="50%" src="pics/dotfiles.png">
   </a>
 </p>
 
