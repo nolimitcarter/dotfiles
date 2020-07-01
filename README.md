@@ -14,7 +14,7 @@
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/bashrc.png)
 
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/Screenshot%20from%202020-06-11%2023-13-46.png)
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/Screenshot%20from%202020-06-11%2023-13-46.png)
 
 ## Info
 
