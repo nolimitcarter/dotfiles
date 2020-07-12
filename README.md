@@ -27,7 +27,7 @@ I mainly use Ubuntu GNOME but am working to get this config setup on OS X.
 ## Environment Details
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
-| Distro               | Ubuntu 20.04                                                                                         |
+| Distro               | Ubuntu 20.04 & Arch                                                                                  |
 | Terminal             | Alacritty                                                                                            |
 | Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
