@@ -54,7 +54,7 @@ window:
 scrolling:
   history: 0
   multiplier: 3
-  auto_scroll: true
+  #auto_scroll: true
 
 # Font configuration
 #font:
