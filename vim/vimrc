@@ -90,8 +90,13 @@ Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 " ctrl+Y, , for expand completion
 Plug 'mattn/emmet-vim'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 call plug#end()
 
+let g:go_fmt_fail_silently = 0 " let me out even with errors
+let g:go_fmt_command = 'goimports' " autoupdate import
+let g:go_fmt_autosave = 1
+"let g:go_gopls_enabled = 0
 " airline plugin
 " ---Airline---
 set t_Co=256
