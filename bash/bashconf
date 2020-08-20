@@ -35,10 +35,11 @@ alias q:="exit"
 alias tryhackme="sudo openvpn nolimitcarter.ovpn"
 alias c="cmatrix"
 alias clock="tty-clock -c -C 7 -r -f '%A, %B %d'"
+alias x="exec bash"
 
 # cowsay aliases because why not?
-alias cowtime="now | cowsay"
-alias cowip="myIP | cowsay"
+alias time="now | cowsay"
+alias ip="myIP | cowsay"
 alias cowpi="givePi | cowsay"
 alias welcome="welcome | cowsay"
 
