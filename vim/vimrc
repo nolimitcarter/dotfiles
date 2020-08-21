@@ -19,7 +19,7 @@ noremap E $
 noremap gv `[V`]
 set cmdheight=1
 
-" formatting bye tabs 
+" formatting by tabs 
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
