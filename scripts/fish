@@ -16,6 +16,12 @@
 #
 # http://robobunny.com/projects/asciiquarium
 #
+# BUT FIRST:
+# Keep in mind that you probably have to install libcurses-perl
+# and Term::Animation from CPAN for this to work:
+#     
+#     sudo apt install libcurses-perl
+#     sudo cpan install Term::Animation
 #############################################################################
 # Author:
 #   Kirk Baucom <kbaucom@schizoid.com>
