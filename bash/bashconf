@@ -73,6 +73,7 @@ export PATH=$HOME/repos/github.com/nolimitcarter/dotfiles/scripts:$PATH
 export PATH=$HOME/home:$PATH
 PATH=$PATH:/usr/games
 export PATH=$HOME/repos/github.com/nolimitcarter/tools/recontools:$PATH
+export PATH=$PATH:/usr/local/go/bin
 
 
 
