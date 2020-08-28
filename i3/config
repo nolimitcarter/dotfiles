@@ -1,8 +1,24 @@
 # bzy4ntine i3 config
 
 set $mod Mod4
-
+set $inner_gaps 15
+set $outer_gaps 15
+set $term --no-startup-id $TERMINAL
 font pango:monoid 8
+
+# Gaps
+for_window [class="^.*"] border pixel 2
+gaps inner $inner_gaps
+gaps outer $outer_gaps
+
+bar {
+	font pango:mono 10
+	status_command i3blocks
+	position top
+	mode dock
+	modifier None
+}
+
 
 # xss-lock
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -65,6 +81,9 @@ bindsym $mod+Shift+n exec $myTerm -e 'hunter -h'
 bindsym $mod+Shift+h exec $myTerm -e 'ytop'
 bindsym $mod+b exec $myTerm -e 'bashtop'
 
+bindsym $mod+s			gaps inner current plus 5
+bindsym $mod+Shift+s		gaps inner current minus 5
+
 # set myBrowser
 set $myBrowser qutebrowser
 
@@ -97,21 +116,47 @@ bindsym $mod+Shift+q kill
 
 # start dmenu
 bindsym $mod+d exec "dmenu_run -nf '#606060' -nb '#262626' -sb '#262626' -sf '#FFFFFF' -fn 'monoid-10' -p 'dmenu%'"
+bindsym $mod+d			exec --no-startup-id dmenu_run
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+bindsym $mod+f			fullscreen toggle
+bindsym $mod+Shift+f		mode "$freeze" ;; exec --no-startup-id notify-send "Distraction-free mode activated." "Press Super+Shift+f to return."
+
+bindsym $mod+g			workspace prev
+bindsym $mod+Shift+g		exec --no-startup-id gimp; workspace $ws5
+
+bindsym $mod+h			focus left
+bindsym $mod+Shift+h		move left 30
+bindsym $mod+Ctrl+h		move workspace to output left
+
+bindsym $mod+j			focus down
+bindsym $mod+Shift+j		move down 30
+bindsym $mod+Ctrl+j		move workspace to output down
+
+bindsym $mod+k			focus up
+bindsym $mod+Shift+k		move up 30
+bindsym $mod+Ctrl+k		move workspace to output up
+
+bindsym $mod+l			focus right
+bindsym $mod+Shift+l		move right 30
+bindsym $mod+Ctrl+l		move workspace to output right
+
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+
+bindsym $mod+z			gaps outer current plus 5
+bindsym $mod+Shift+z		gaps outer current minus 5
 
 # move focused window
 bindsym $mod+Shift+j move left
