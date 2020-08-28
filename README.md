@@ -23,9 +23,9 @@ Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many diff
 Most folders are OS specific besides the main repo itself. It is an Ubuntu config.
 ## Distro
 
-I mainly use Ubuntu GNOME but am working to get this config setup on OS X. 
+Currently running on Manjaro, Ubuntu, Arch, Arco, and OS X
 
-## Environment Details
+## In Photo Environment Details
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
 | Distro               | Ubuntu 20.04 & Arch                                                                                  |
