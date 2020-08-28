@@ -4,6 +4,7 @@
 
 
 alias ls="ls -x --color=auto"
+alias vi="vim"
 alias ll="ls -al"
 alias lss="ls -shAxSr" # list by size
 alias lsd="ls -lAtrh" # list by date/time

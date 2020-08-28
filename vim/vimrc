@@ -18,6 +18,7 @@ noremap B ^
 noremap E $
 noremap gv `[V`]
 set cmdheight=1
+set backspace=indent,eol,start
 
 " formatting by tabs 
 set tabstop=2
@@ -28,6 +29,11 @@ set nu
 set expandtab
 set nobackup
 set noerrorbells
+
+" colorschemes
+let g:gruvbox_(option) = '(value)'
+colorscheme gruvbox
+g:gruvbox_contrast_dark
 
 " colors and shell styles
 " default colors are nice tho @ gruvbox
@@ -74,10 +80,10 @@ set viminfo='20,<1000,s1000
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
+Plug 'flazz/vim-colorschemes'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'airblade/vim-gitgutter'
-"Plug 'flazz/vim-colorschemes'
+Plug 'flazz/vim-colorschemes'
 Plug 'ycm-core/YouCompleteMe'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
