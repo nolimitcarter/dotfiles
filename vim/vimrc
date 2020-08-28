@@ -31,9 +31,15 @@ set nobackup
 set noerrorbells
 
 " colorschemes
-let g:gruvbox_(option) = '(value)'
-colorscheme gruvbox
-g:gruvbox_contrast_dark
+"let g:gruvbox_(option) = '(value)'
+"colorscheme gruvbox
+" g:gruvbox_contrast_dark
+packadd! dracula
+syntax enable
+colorscheme dracula
+" some extra enter that was added after installing dracula
+let g:loaded_netrwPlugin = 1 " Disables netrw.
+
 
 " colors and shell styles
 " default colors are nice tho @ gruvbox
