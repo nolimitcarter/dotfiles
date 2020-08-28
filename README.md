@@ -8,7 +8,7 @@
 
 ## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>
 
-**Warning:** This build is passing but will more than likely never be complete. It still has a lot of problems with OS X because the development was done on Linux and some of the aliases are based on bash. A lot of the things commented out are WIPs or have been forgotten about. I will get to them sometime... 
+**Warning:** This build is passing but will more than likely never be complete. Here are all of my distro configs. 
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/cava.png)
 
