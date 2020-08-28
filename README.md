@@ -28,7 +28,7 @@ Currently running on Manjaro, Ubuntu, Arch, Arco, and OS X
 ## In Photo Environment Details
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
-| Distro               | Ubuntu 20.04 & Arch                                                                                  |
+| Distro               | 20.04 Gnome                                                                                          |
 | Terminal             | Alacritty                                                                                            |
 | Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
