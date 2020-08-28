@@ -1,0 +1,18 @@
+[notify]
+notify = true
+
+[theme]
+primary = "light white"
+secondary = "blue"
+title = "red"
+playing = "blue"
+playing_bg = "light white"
+highlight = "black"
+highlight_bg = "light blue"
+error = "light white"
+error_bg = "red"
+statusbar_progress = "blue"
+statusbar = "black"
+statusbar_bg = "light blue"
+cmdline = "black"
+cmdline_bg = "light white"
