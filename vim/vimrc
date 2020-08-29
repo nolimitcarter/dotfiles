@@ -34,11 +34,11 @@ set noerrorbells
 "let g:gruvbox_(option) = '(value)'
 "colorscheme gruvbox
 " g:gruvbox_contrast_dark
-packadd! dracula
-syntax enable
-colorscheme dracula
+"packadd! dracula
+"syntax enable
+"colorscheme dracula
 " some extra enter that was added after installing dracula
-let g:loaded_netrwPlugin = 1 " Disables netrw.
+"let g:loaded_netrwPlugin = 1 " Disables netrw.
 
 
 " colors and shell styles
