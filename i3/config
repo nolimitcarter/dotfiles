@@ -1,6 +1,6 @@
 # bzy4ntine i3 config
 
-set $mod Mod1
+set $mod Mod4
 set $inner_gaps 15
 set $outer_gaps 15
 set $term --no-startup-id $TERMINAL
