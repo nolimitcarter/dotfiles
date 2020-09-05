@@ -1,0 +1,78 @@
+##########################
+# nolimitcarters aliases #
+##########################
+
+
+alias ls="ls -x --color=auto"
+alias vi="vim"
+alias ll="ls -al"
+alias lss="ls -shAxSr" # list by size
+alias lsd="ls -lAtrh" # list by date/time
+alias cbd="cd .."
+alias sl="ls"
+alias la="ls -a"
+alias rmv="rm -rf"
+alias add="git add -A"
+alias commit="git commit -m"
+alias push="git push" 
+alias pull="git pull"
+alias charlie="add && commit && push"
+alias running="ps -ax"
+alias lls="ls -l -h -g -F --color=auto" 
+alias base64="base64 --decode"
+alias size="bash size.sh"
+alias nmapscan="nmap -sV -vv --script vuln"
+alias hub="cd repos/github.com/nolimitcarter"
+alias lab="cd repos/gitlab.com/nolimitcarter"
+alias github="cd github.com/nolimitcarter"
+alias gitlab="cd gitlab.com/nolimitcarter"
+alias nmapme="sudo nmap -sT -O localhost" 
+alias myip="ip -br a"
+alias connections="nmcli c"
+alias devices="nmcli d"
+alias status="nmcli g"
+alias grep="grep --color=auto"
+alias q:="exit"
+alias tryhackme="sudo openvpn nolimitcarter.ovpn"
+alias c="cmatrix"
+alias clock="tty-clock -c -C 7 -r -f '%A, %B %d'"
+alias x="exec bash"
+alias chmox="chmod +X"
+alias spot="ncspot"
+
+# cowsay aliases because why not?
+alias time="now | cowsay"
+alias ip="myIP | cowsay"
+alias cowpi="givePi | cowsay"
+alias welcome="welcome | cowsay"
+
+# vpn
+alias startvpn="sudo protonvpn c -f"
+alias randomvpn="sudo protonvpn c -r"
+alias choosevpn="sudo protonvpn connect, c"
+alias securevpn="sudo protonvpn c --sc"
+alias stopvpn="sudo protonvpn d" 
+alias reconnectvpn="sudo protonvpn reconnect, r" 
+alias nmap="grc nmap" 
+
+# apt aliases
+alias v="neofetch"
+alias top="htop"
+
+# on startup / welcome screen
+
+# manpage colors 
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;44;33m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
+
+# path variables
+export PATH=$HOME/repos/github.com/nolimitcarter/dotfiles/scripts:$PATH
+export PATH=$HOME/home:$PATH
+PATH=$PATH:/usr/games
+export PATH=$HOME/repos/github.com/nolimitcarter/tools/recontools:$PATH
+export PATH=$PATH:/usr/local/go/bin
