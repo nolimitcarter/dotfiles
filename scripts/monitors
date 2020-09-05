@@ -2,5 +2,10 @@
 
 xrandr --output DisplayPort-2 --above HDMI-A-0
 xrandr --output DisplayPort-1 --left-of HDMI-A-0
+<<<<<<< HEAD
 xrandr --output DisplayPort-1 --rotate right
 xrandr --output DisplayPort-1 --left of DisplayPort-2
+=======
+xrandr --output DisplayPort-1 --left-of DisplayPort-2
+xrandr --output DisplayPort-1 --roate right
+>>>>>>> b3f91d4b4fade9ce5f0f5428432a5f47f49294b5
