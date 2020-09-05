@@ -3,3 +3,5 @@ export PANEL_FIFO="/tmp/panel-fifo"
 export PATH="$PATH:~/.config/bspwm"
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+[[ $(fgconsole 2</dev/null) == 1 ]] && executre startx --vt1
