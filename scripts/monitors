@@ -1,6 +1,6 @@
 #!/bin/bash
 
-my_pc_monitors=$(xrandr --query | grep 'XWAYLAND0,XWAYLAND1,XWAYLAND2')
-if [[ $my_pc_monitors = *connected ]]; then
-  xrandr --output XWAYLAND2 --primary --mode 1920x1080 --rotate normal --output XWAYLAND1 --mode 1080x1920 --rotate 90% --left-of XWAYLAND0 --output XWAYLAND0 --mode 1920x1080 --rotate normal --top-of XWAYLAND1
-fi
+xrandr --output DisplayPort-2 --above HDMI-A-0
+xrandr --output DisplayPort-1 --left-of HDMI-A-0
+xrandr --output DisplayPort-1 --rotate right
+xrandr --output DisplayPort-1 --left of DisplayPort-2
