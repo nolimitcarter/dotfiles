@@ -11,13 +11,18 @@ gaps outer $outer_gaps
 
 #font pango:monospace 8
 font xft:Monoid 9
-gaps inner 9 
-gaps outer 0
+gaps inner 15 
+gaps outer 5
 smart_borders on
 new_float normal
 hide_edge_borders none
 bindsym $mod+u border none
 bindsym $mod+o border normal 
+
+for_window [class=".*"] split toggle
+for_window [class="^.*"] default_border pixel 0
+for_window [class="^.*"] default_floating_border pixel 0
+for_window [class=".*"] border pixel 0
 
 # startup
 exec --no-startup-id /usr/bin/picom --backend glx --paint-on-overlay --vsync opengl-swc
