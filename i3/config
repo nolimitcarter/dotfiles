@@ -21,7 +21,7 @@ bindsym $mod+o border normal
 
 # startup
 exec --no-startup-id /usr/bin/picom --backend glx --paint-on-overlay --vsync opengl-swc
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 bindsym $mod+p exec --no-startup-id polybar-msg cmd toggle
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
