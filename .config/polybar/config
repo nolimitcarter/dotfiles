@@ -217,7 +217,7 @@ font-2 = "Font Awesome 5 Free Solid:size=10;0"
 font-3 = "Font Awesome 5 Brands:size=10;0"
 
 modules-left = ewmh xwindow
-modules-center = release kernel
+modules-center = backlight-acpi;release kernel
 modules-right =  memory1 cpu1 date
 
 tray-detached = false

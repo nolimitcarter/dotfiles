@@ -1,5 +1,5 @@
-[notify]
-notify = "true"
+#[notify]
+#notify = "true"
 
 [theme]
 primary = "light white"
