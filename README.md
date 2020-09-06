@@ -27,10 +27,10 @@ Most folders are OS specific besides the main repo itself. It is an Ubuntu confi
 
 Currently running on Manjaro, Ubuntu, Arch, Arco, and OS X
 
-## In Photo Environment Details
+## Main environment details
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
-| Distro               | 20.04 Gnome                                                                                          |
+| Distro               | Gnome/ Manjaro                                                                                       |
 | Terminal             | Alacritty                                                                                            |
 | Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
@@ -40,6 +40,7 @@ Currently running on Manjaro, Ubuntu, Arch, Arco, and OS X
 | Window Managers      | i3 & bspwm                                                                                           |
 | CLI Web Browser      | Lynx                                                                                                 |
 | Apps Launcher        | Dmenu                                                                                                |
+| Wallpaper Launcher   | Nitrogen                                                                                             |
 
 ## License
 
