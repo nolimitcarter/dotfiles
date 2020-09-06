@@ -11,7 +11,7 @@ gaps outer $outer_gaps
 
 #font pango:monospace 8
 font xft:Monoid 9
-gaps inner 15 
+gaps inner 10 
 gaps outer 5
 smart_borders on
 new_float normal
@@ -52,6 +52,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+bindsym $mod+Shift+x exec i3lock-fancy
 
 # terminal shortcuts 
 
