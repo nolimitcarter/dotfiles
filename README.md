@@ -11,7 +11,6 @@
 **Warning:** This build is passing but will more than likely never be complete. Here are all of my distro configs. 
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/i3ss.jpg)
-Manjaro with i3wm and polybar
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/cava.png)
 
@@ -20,6 +19,7 @@ Manjaro with i3wm and polybar
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/Screenshot%20from%202020-06-11%2023-13-46.png)
 
 ## Info
+Screenshots: Top: Manjaro with i3wm and polybar. Other 3: Ubuntu with gtile
 
 Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many different additions added to each configuration file. Bash, Tmux, and Alacritty combined make the possibilities limitless with productivity and speed. The Bash and Vim configs above have many different features including autocomplete for text, go to file which is one of my remaps, and nerdtree which allows you to look at all directories at once and swtich between them quickly.  
 
