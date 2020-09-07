@@ -10,6 +10,8 @@
 
 **Warning:** This build is passing but will more than likely never be complete. Here are all of my distro configs. 
 
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/i3ss.jpg)
+
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/cava.png)
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/bashrc.png)
@@ -21,14 +23,17 @@
 Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many different additions added to each configuration file. Bash, Tmux, and Alacritty combined make the possibilities limitless with productivity and speed. The Bash and Vim configs above have many different features including autocomplete for text, go to file which is one of my remaps, and nerdtree which allows you to look at all directories at once and swtich between them quickly.  
 
 Most folders are OS specific besides the main repo itself. It is an Ubuntu config.
+
+Also, my polybar config is heavily inspired by DistroTube since most of his colors are ones I acitively use. 
+
 ## Distro
 
 Currently running on Manjaro, Ubuntu, Arch, Arco, and OS X
 
-## In Photo Environment Details
+## Main environment details
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
-| Distro               | 20.04 Gnome                                                                                          |
+| Distro               | Gnome/ Manjaro                                                                                       |
 | Terminal             | Alacritty                                                                                            |
 | Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
@@ -38,6 +43,7 @@ Currently running on Manjaro, Ubuntu, Arch, Arco, and OS X
 | Window Managers      | i3 & bspwm                                                                                           |
 | CLI Web Browser      | Lynx                                                                                                 |
 | Apps Launcher        | Dmenu                                                                                                |
+| Wallpaper Launcher   | Nitrogen                                                                                             |
 
 ## License
 
