@@ -15,6 +15,8 @@
 
 ## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>
 
+Hello! Thanks for visiting! This is my personal configuration for i3 window manager and some other applications too. More details below ⬇
+
 **Warning:** This build is passing but will more than likely never be complete. Here are all of my distro configs. 
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image0.jpg)
