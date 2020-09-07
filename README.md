@@ -6,6 +6,13 @@
   </a>
 </p>
 
+<p align="center">
+<a href="#setup"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/b5DYRxb/setup.png"></a>
+<a href="https://github.com/owl4ce/dotfiles/wiki/Keybinds"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/VVc5S9d/keybinds.png"></a>
+<a href="https://github.com/owl4ce/dotfiles/wiki/Gallery"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/C1sdMw9/gallery.png"></a>
+<a href="#notes"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/g75Z25g/notes.png"></a>
+</p>
+
 ## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>
 
 **Warning:** This build is passing but will more than likely never be complete. Here are all of my distro configs. 
