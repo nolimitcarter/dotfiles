@@ -10,13 +10,14 @@
 
 **Warning:** This build is passing but will more than likely never be complete. Here are all of my distro configs. 
 
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image0.jpg)
+
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/i3ss.jpg)
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/cava.png)
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/bashrc.png)
 
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/Screenshot%20from%202020-06-11%2023-13-46.png)
 
 ## Info
 Screenshots: Top: Manjaro with i3wm and polybar. Other 3: Ubuntu with gtile
