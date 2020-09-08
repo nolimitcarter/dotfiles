@@ -9,6 +9,17 @@ set $outer_gaps 15
 gaps inner $inner_gaps
 gaps outer $outer_gaps
 
+##### rounded i3-gaps ##############
+for_window [class=".*"] border pixel 2 #*
+gaps inner 10
+gaps outer 1
+#gaps horizontal 2
+
+################# i3-radius #######################
+smart_borders on
+smart_borders no_gaps
+border_radius 2
+
 #font pango:monospace 8
 font xft:Monoid 9
 gaps inner 10 
