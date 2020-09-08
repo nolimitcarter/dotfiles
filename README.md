@@ -19,7 +19,7 @@ Hello! Thanks for visiting! This is my personal configuration for i3 window mana
 
 **Warning:** This build is passing but will more than likely never be complete. Here are all of my distro configs. 
 
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image0.jpg)
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image4.jpg)
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/i3ss.jpg)
 
