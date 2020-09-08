@@ -57,6 +57,7 @@ alias nmap="grc nmap"
 
 # apt aliases
 alias v="neofetch"
+alias vv="neofetch --ascii_distro archlinux"
 alias top="htop"
 
 # on startup / welcome screen
