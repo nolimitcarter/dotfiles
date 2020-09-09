@@ -65,7 +65,7 @@ scrolling:
   #  family: "UbuntuMono Nerd Font Mono"
   #italic:
   family: "mononoki Nerd Font"
-  #size: 11.0
+  size: 10
   #offset:
   #  x: 0
   #  y: 0
