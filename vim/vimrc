@@ -9,7 +9,6 @@
 
 " syntaxing / cursor line
 syntax enable
-syntax on
 set encoding=utf-8
 set cul 
 hi CursorLine term=none cterm=none ctermbg=none
@@ -38,7 +37,7 @@ set noerrorbells
 packadd! dracula
 "syntax enable
 colorscheme dracula
-some extra enter that was added after installing dracula
+"some extra enter that was added after installing dracula
 let g:loaded_netrwPlugin = 1 " Disables netrw.
 
 
