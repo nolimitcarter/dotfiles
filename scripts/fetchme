@@ -23,8 +23,8 @@ RST="\e[0m"
 # build the color bars
 BAR="━━━━━"
 ((LEN = ${#BAR} * 6))
-OUTT="$RED$BAR$GRN$BAR$YLW$BAR$BLU$BAR$PUR$BAR$CYN$BAR$RST"
-OUTB="$BRED$BAR$BGRN$BAR$BYLW$BAR$BBLU$BAR$BPUR$BAR$BCYN$BAR$RST"
+OUTT="$PUR$BAR$PUR$BAR$CYN$BAR$CYN$BAR$PUR$BAR$PUR$BAR$RST"
+OUTB="$BPUR$BAR$BPUR$BAR$BCYN$BAR$BCYN$BAR$BPUR$BAR$BPUR$BAR$RST"
 
 # array for info entries
 ENTS=()
@@ -67,5 +67,4 @@ for ENT in "${ENTS[@]}"; do
     printf "%s%b" "$PADC" "$ENT\n"
 done
 printf "%s%b" "$PADC" "$OUTB\n"
-
 
