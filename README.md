@@ -15,7 +15,7 @@
 
 Hello! Thanks for visiting! This is my personal configuration for i3 window manager and some other applications too. More details below. 
  
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image4.jpg)
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image2.jpg)
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/i3ss.jpg)
 
