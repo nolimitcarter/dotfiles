@@ -1,0 +1,71 @@
+#!/bin/bash
+#
+# Minimalist sysinfo script
+#################################
+
+# color escapes
+BLK="\e[30m"
+RED="\e[31m"
+GRN="\e[32m"
+YLW="\e[33m"
+BLU="\e[34m"
+PUR="\e[35m"
+CYN="\e[36m"
+BRED="\e[31m"
+BGRN="\e[32m"
+BYLW="\e[33m"
+BBLU="\e[34m"
+BPUR="\e[35m"
+BCYN="\e[36m"
+WHT="\e[37m"
+RST="\e[0m"
+
+# build the color bars
+BAR="━━━━━"
+((LEN = ${#BAR} * 6))
+OUTT="$RED$BAR$GRN$BAR$YLW$BAR$BLU$BAR$PUR$BAR$CYN$BAR$RST"
+OUTB="$BRED$BAR$BGRN$BAR$BYLW$BAR$BBLU$BAR$BPUR$BAR$BCYN$BAR$RST"
+
+# array for info entries
+ENTS=()
+
+# function for creating entries
+mkent() {
+    if [[ "$#" != 2 ]]; then
+        printf "!! invalid number of arguments to make_entry().\n"
+        exit
+    fi
+
+    local ENT="$2"
+    while ((${#ENT} < LEN - ${#1})); do
+        ENT=" $ENT"
+    done
+
+    ENT="$CNAME""$1""$CTEXT""$ENT""$RST"
+    ENTS+=("$ENT")
+}
+
+
+# entry settings
+CNAME="$BLU" # color of entry name
+CTEXT="$WHT" # color of entry text
+
+#
+# add entries here!
+# format: mkent NAME TEXT
+#
+mkent "OS" "$(cat /etc/os-release | grep NAME -m 1 | sed 's/NAME=//g' | sed 's/\"//g')"
+mkent "User" "$(printenv USER)"
+mkent "Shell" "$(basename $(printenv SHELL))"
+mkent "Date" "$(date '+%d %B %Y')"
+
+# print everything
+
+# sysinfo
+printf "%s%b" "$PADC" "$OUTT\n"
+for ENT in "${ENTS[@]}"; do
+    printf "%s%b" "$PADC" "$ENT\n"
+done
+printf "%s%b" "$PADC" "$OUTB\n"
+
+
