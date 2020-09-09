@@ -1013,6 +1013,7 @@ label = "%date% %time% "
 
 #################################################################
 
+
 [module/ewmh]
 type = internal/xworkspaces
 
