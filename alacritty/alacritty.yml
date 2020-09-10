@@ -57,15 +57,18 @@ scrolling:
   #auto_scroll: true
 
 # Font configuration
-#font:
-#  # Normal (roman) font face
-  #normal:
-  #family: "UbuntuMono Nerd Font Mono"
-  #  bold:
-  #  family: "UbuntuMono Nerd Font Mono"
-  #italic:
-  family: "mononoki Nerd Font"
-  size: 10
+font:
+   # # Normal (roman) font face
+   #normal:
+     #   family: Hack
+     #style: Regular
+     #bold:
+     #family: Hack
+     #style: Regular
+     #italic:
+     #family: Hack
+     #style: Regular
+     size: 9
   #offset:
   #  x: 0
   #  y: 0
