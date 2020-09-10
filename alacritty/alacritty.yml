@@ -58,17 +58,17 @@ scrolling:
 
 # Font configuration
 font:
-   # # Normal (roman) font face
-   #normal:
-     #   family: Hack
-     #style: Regular
-     #bold:
-     #family: Hack
-     #style: Regular
-     #italic:
-     #family: Hack
-     #style: Regular
-     size: 9
+   normal:
+     family: Hack
+     style: Regular
+   bold:
+     family: Hack
+     style: Regular
+   italic:
+     family: Hack
+     style: Regular
+     
+   size: 9
   #offset:
   #  x: 0
   #  y: 0
