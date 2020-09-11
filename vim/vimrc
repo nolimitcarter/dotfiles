@@ -121,7 +121,7 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-let $VIMRUNTIME='C:/usr/share/vim/vim82/syntax/syntax.vim'
+let $VIMRUNTIME='C:/usr/share/vim/vim82'
 
 " go to file for fzf
 nnoremap <C-p> :GFiles<CR>

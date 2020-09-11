@@ -13,6 +13,8 @@ case "$OS" in
 esac
 export PLATFORM OS
 
+let $VIMRUNTIME='/usr/share/vim/vim82/syntax/syntax.vim'
+
 ## sets path variables
 export PATH=\
 $HOME/bin:\
