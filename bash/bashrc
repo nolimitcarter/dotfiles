@@ -40,6 +40,8 @@ $REPOS:\
 /media/$USER:\
 $HOME
 
+# some wack sh#t for Manjaro to work
+export VIMRUNTIME="/usr/share/vim/vim82"
 
 # editor 
 export EDITOR=vim
