@@ -1,22 +1,25 @@
 #!/bin/bash
 #
 # Minimalist sysinfo script
+#
+# nolimitcarter
+# github.com/nolimitcarter
 #################################
 
 # color escapes
-BLK="\e[30m"
-RED="\e[31m"
-GRN="\e[32m"
-YLW="\e[33m"
-BLU="\e[34m"
-PUR="\e[35m"
-CYN="\e[36m"
-BRED="\e[31m"
-BGRN="\e[32m"
-BYLW="\e[33m"
-BBLU="\e[34m"
-BPUR="\e[35m"
-BCYN="\e[36m"
+BLK="\033[38;2;0;0;0m"
+RED="\033[38;2;255;0;0m"
+GRN="\033[38;2;0;128;0m"
+YLW="\033[38;2;255;255;0m"
+BLU="\033[38;2;255;135;255m"   #0;175;255m"
+PUR="\033[38;2;192;192;192m"
+CYN="\033[38;2;0;255;255m"
+BRED="\033[38;2;255;0;0m"
+BGRN="\033[38;2;0;128;128m"
+BYLW="\033[38;2;255;255;0m"
+BBLU="\033[38;2;0;175;255m"
+BPUR="\033[38;2;192;192;192m"
+BCYN="\033[38;2;0;255;255m"
 WHT="\e[37m"
 RST="\e[0m"
 
@@ -54,10 +57,20 @@ CTEXT="$WHT" # color of entry text
 # add entries here!
 # format: mkent NAME TEXT
 #
+
+#sep=
+#s=$d$f0$sep$t
+
+#w=
+#wmname="WM" "$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
+
+
 mkent "OS" "$(cat /etc/os-release | grep NAME -m 1 | sed 's/NAME=//g' | sed 's/\"//g')"
 mkent "User" "$(printenv USER)"
 mkent "Shell" "$(basename $(printenv SHELL))"
+mkent "WM" "$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
 mkent "Date" "$(date '+%d %B %Y')"
+mkent "Uptime" "$(uptime -p)"
 
 # print everything
 
@@ -67,4 +80,3 @@ for ENT in "${ENTS[@]}"; do
     printf "%s%b" "$PADC" "$ENT\n"
 done
 printf "%s%b" "$PADC" "$OUTB\n"
-
