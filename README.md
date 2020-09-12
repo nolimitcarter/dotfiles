@@ -15,11 +15,11 @@
 
 Hello! Thanks for visiting! This is my personal configuration for i3 window manager and some other applications too. More details below. 
  
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image6.jpg)
+
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image2.jpg)
 
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/i3ss.jpg)
-
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/cava.png)
+<!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/cava.png)-->
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/bashrc.png)
 
