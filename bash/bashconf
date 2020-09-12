@@ -40,6 +40,7 @@ alias x="exec bash"
 alias chmox="chmod +X"
 alias spot="ncspot"
 
+
 # cowsay aliases because why not?
 alias time="now | cowsay"
 alias ip="myIP | cowsay"

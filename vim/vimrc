@@ -36,7 +36,7 @@ set noerrorbells
 " g:gruvbox_contrast_dark
 "packadd! dracula
 "syntax enable
-colorscheme javacafe
+colorscheme nordy
 "some extra enter that was added after installing dracula
 let g:loaded_netrwPlugin = 1 " Disables netrw.
 
