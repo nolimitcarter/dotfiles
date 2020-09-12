@@ -64,6 +64,9 @@ if [[ ${EUID} == 0 ]] ; then
 fi
 
 # dircolors
+# for nord dir colors
+test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
+
 # if [ -x /usr/bin/dircolors ]; then 
 #	if [ -r ~/.dircolors ]; then
 #		eval "$(dircolors -b ~/.dircolors)"
