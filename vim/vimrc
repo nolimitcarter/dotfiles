@@ -8,7 +8,7 @@
 
 
 " syntaxing / cursor line
-syntax enable
+" syntax enable
 set encoding=utf-8
 set cul 
 hi CursorLine term=none cterm=none ctermbg=none
@@ -86,7 +86,6 @@ set viminfo='20,<1000,s1000
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'flazz/vim-colorschemes'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'airblade/vim-gitgutter'
 Plug 'flazz/vim-colorschemes'
