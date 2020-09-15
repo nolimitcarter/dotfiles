@@ -76,6 +76,7 @@ bindsym $mod+Return exec $myTerm
 # browser and websites
 set $myBrowser chromium
 bindsym $mod+w exec $myBrowser
+bindsym $mod+m exec firefox
 bindsym $mod+y exec $myBrowser https://youtube.com/
 bindsym $mod+g exec $myBrowser https://github.com/
 
