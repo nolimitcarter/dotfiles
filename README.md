@@ -31,7 +31,7 @@ Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many diff
 
 Most folders are OS specific besides the main repo itself. It's for Manjaro.
 
-Also, my polybar config is heavily inspired by DistroTube since most of his colors are ones I acitively use. 
+Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colors I acitively use. 
 
 ## Distro
 
