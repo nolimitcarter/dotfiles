@@ -19,7 +19,7 @@ Hello! Thanks for visiting! This is my personal configuration for i3 window mana
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image8.jpg)
 
-<!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/cava.png)-->
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image2.jpg)
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/bashrc.png)
 
