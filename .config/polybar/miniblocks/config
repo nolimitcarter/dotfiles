@@ -16,200 +16,405 @@
 ;
 ;==========================================================
 
-[colors]
-
-background = ${xrdb:color0:#222}
-foreground = ${xrdb:color7:#222}
-highlight = ${xrdb:color15:#222}
-
-;  _                    
-; | |__   __ _ _ __ ___ 
-; | '_ \ / _` | '__/ __|
-; | |_) | (_| | |  \__ \
-; |_.__/ \__,_|_|  |___/
-
-[bar/mainbar-i3]
-enable-ipc = true
-font-0=Cozette:pixelsize=10;2
-font-1=FontAwesome5Free:style=Solid:pixelsize=8:antialias=true;2
-font-2=IPAGothic:style=Regular:size=10:antialias=true;3
-monitor = ${env:MONITOR:HDMI-A-0}
-
-padding = 2
-border-size = 0
-border-color = ${colors.foreground}
-
-height = 30
-;radius = 20
-;Works very well with a radius like this! Put it on every bar.
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-override-redirect=false
-offset-y = 10
-
-wm-restack = bspwm
-
-[bar/ws]
-inherit = bar/mainbar-i3
-width = 14.5%
 
 
-offset-x = 10
-line-size = 1
 
-modules-left = bspwm
-scroll-up = bspwm-desknext
-scroll-down = bspwm-deskprev
 
-[bar/music]
-inherit = bar/mainbar-i3
-enable-ipc = true
-width = 25%
 
-offset-x = 37.5%
+; #################### Bar launcher #########################
 
-; Spotify (uses playerctl)
-; modules-left = previous playpause next 
-; modules-center = spotify
-; Mpd
-modules-center = mpd
+[bar/launcher]
+width = 2%
+height = 24px
+offset-x = 3.0%
+offset-y = 7px
+radius = 12.22
+fixed-center = true
 
-[bar/tray]
-inherit = bar/mainbar-i3
-width = 9%
+padding-left = 0
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
+;font-0 =  Fira Code Nerd Font:pixelsize=8.7:style=Bold;1
+font-0 = MaterialDesignIcons:pixelsize=12:style:Solid;3
+font-1 = BreezeSans:pixelsize=8:style=regular Condensed;1
+modules-left = 
+modules-center = launcher
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+bottom = true
 
-offset-x = 90.5%
+; #################### Bar songs #########################
 
-modules-left = pulseaudio time 
+[bar/songs]
+width = 23.8%
+height = 24px
+offset-x = 63.1% 
+offset-y = 7px
+radius = 10
+fixed-center = true
+background = #00000000
+foreground = #000000
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+font-0 = Fira Code Nerd Font :pixelsize=8.5:style=Regular;4
+font-1 = MaterialDesignIcons:pixelsize=14:style:Solid;5
+modules-left = 
+modules-center = song
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+bottom = true
 
-;                      _       _           
-;  _ __ ___   ___   __| |_   _| | ___  ___ 
-; | '_ ` _ \ / _ \ / _` | | | | |/ _ \/ __|
-; | | | | | | (_) | (_| | |_| | |  __/\__ \
-; |_| |_| |_|\___/ \__,_|\__,_|_|\___||___/
-                                         
-[module/wsnumber]
-type = custom/script
-exec = bspc query -D -d focused --names
-tail = true
-interval = 0
-format-margin = 2
-format = "<label>"
-scroll-up = bspc desktop -f next
-scroll-down = bspc desktop -f prev
+; #################### Bar player #########################
 
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:33:...%
-label-margin = 2
+[bar/player]
+width = 5%
+height = 24px
+offset-x = 9.0% 
+offset-y = 7px
+radius = 10
+fixed-center = true
+background = #0e1619
 
-[module/bspwm]
-type = internal/bspwm
-reverse-scroll = false
+padding-left = 2
+padding-right = 2
+module-margin-left = 2
+module-margin-right = 0
+;font-0 =  Fira Code Nerd Font:pixelsize=8.7:style=Bold;1
+font-0 = MaterialDesignIcons:pixelsize=12:style:Solid;2.5
+modules-left = 
+modules-center = prev toggle next
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+bottom = true
 
-label-focused = %name%
-label-focused-underline = ${colors.highlight}
-label-focused-foreground = ${colors.highlight}
+
+; #################### Bar Left #########################
+
+[bar/left]
+width = 9.5%
+height = 24px
+offset-x = 15.0%
+offset-y = 7px
+radius = 10
+fixed-center = true
+background = #00000000
+
+padding-left = 2
+padding-right = 2
+module-margin-left = 0
+module-margin-right = 0
+;font-0 =  Fira Code Nerd Font:pixelsize=8.7;1
+font-0 = MaterialDesignIcons:pixelsize=14:style:Solid;3
+font-1 = Fira Code Nerd Font :pixelsize=8.5:style=Regular;2
+modules-left = 
+modules-center = date
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+bottom = true
+
+; ######################## Bar Center ########################
+
+[bar/center]
+width = 19%
+height = 24px
+offset-x = 40.2%
+offset-y = 7px
+radius = 10
+fixed-center = true
+background = #0e1619
+foreground = #9ae0bd
+padding-left = 2
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
+font-0 = Fira Code Nerd Font :pixelsize=9;1
+font-1 = MaterialDesignIcons:pixelsize=12:style:Solid;2
+modules-left =  
+modules-center = i3   
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+bottom = true
+
+
+; ###################### Bar Right ########################
+
+;[bar/right]
+;width = 13%
+;height = 24px
+;offset-x = 22.3%
+;offset-y = 7px
+;radius = 10
+;fixed-center = true
+;background = #00000000
+
+;padding-left = 0
+;padding-right = 6
+;module-margin-left = 1
+;module-margin-right = 0
+;font-0 = System San Francisco:pixelsize=8.5:style=Regular;1
+;font-1 = MaterialDesignIcons:pixelsize=12:style:Solid;2.6
+;modules-right =  volume   
+;wm-restack = i3
+;override-redirect = true
+;cursor-click = pointer
+;cursor-scroll = default
+;bottom = true
+
+
+
+
+; ###################### Bar power ########################
+
+[bar/power]
+width = 10.5%
+height = 24px
+offset-x = 88.2%
+offset-y = 7px
+radius = 10
+fixed-center = true
+background = #0e1619
+
+padding-left = 4
+padding-right = 4
+module-margin-left = 0
+module-margin-right = 1
+font-0 = System San Francisco:pixelsize=8.5:style=Regular;1
+font-1 = MaterialDesignIcons:pixelsize=10:style:Solid;2.6
+;modules-right = power-menu 
+modules-left = volume battery wlan power-menu
+
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+bottom = true
+
+;tray-position = center
+;tray-detached = true
+;tray-maxsize =13
+;tray-transparent = false
+;tray-background = #0e1619
+;tray-scale = 0.90
+
+
+
+
+
+
+
+
+
+
+;#################### Modules ####################
+
+[module/i3]
+
+type = internal/i3
+format = <label-state> <label-mode>
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode-padding = 2
+label-mode-foreground = #b3b3b3
+label-mode-background = #0e1619
+
+; focused = Active workspace on focused monitor
+label-focused = ""
 label-focused-padding = 1
+label-focused-font = 3
 
-label-occupied = %name%
-label-occupied-foreground = ${colors.highlight}
-label-occupied-padding = 1
+; unfocused = Inactive workspace on any monitor
+;label-unfocused = ""
+label-unfocused = ""
+label-unfocused-padding = 1
+label-unfocused-font = 3
 
-label-empty = %name%
-label-empty-padding = 1
+; urgent = Workspace with urgency hint set
+label-urgent = ""
+label-urgent-foreground = #ff8080
+label-urgent-font = 3
+label-urgent-padding = 1
 
-[module/mpd]
-type = internal/mpd
-host = 127.0.0.1
-port = 6600
-format-online = <icon-prev> <toggle> <icon-next>   <label-song>  <label-time>
-format-online-margin = 2
+[module/date]
 
-format-offline = <label-offline>
-label-offline =   offline
-format-offline-padding = 2
+type = custom/script
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+exec =  /home/eloy/Downloads/sc/date.sh
+interval = 15
+tail = true
+label-foreground = #ffffff
 
-label-song-maxlen = 50
-label-song-ellipsis = true
+[module/power-menu]
 
-[module/time]
-type = internal/date
-interval = 10
-format-margin = 2
+type = custom/script
 
-time = "%H:%M"
-date = "%d %b"
+exec = echo " 󰤆"
+format-foreground =#e6e6e6
+click-left = /home/eloy/Downloads/sc/powermenu.sh &
+interval = 600
 
-label = %date%, %time%
 
-[module/pulseaudio]
+
+[module/volume]
+
 type = internal/pulseaudio
 
-format-volume-margin = 1
-format-volume = <ramp-volume> <label-volume>
-label-volume = %percentage:3:3%%
-use-ui-max = false
-interval = 5
+format = <label>
 
-ramp-volume-0 = ""
-ramp-volume-1 = ""
-ramp-volume-2 = ""
+label-volume = "󰎆 %{T2}%percentage%%%{T-} "
+label-volume-foreground = #607290
+format-foreground =  #607290
+
+label-muted = "󰎊  "
+label-muted-foreground = #607290
+interval = 3
 
 
-label-muted = "  muted"   
-label-muted-padding = 0
+;[module/cpu]
 
-;Spotify modules
 
-[module/previous]
+;type = internal/cpu
+
+;interval = 6
+;format = <label>
+
+;format-prefix = "󰍛 " 
+;label = "%{T2}%percentage%%%{T2} "
+;label-foreground =#000000
+;format-foreground =#004d99
+
+
+;[module/memory]
+
+;type = internal/memory
+
+;interval = 6
+;format-prefix = "󰮯 "
+;label = "%{T2}%percentage_used%%%{T-} " 
+;label-foreground =#000000
+;format-foreground =#b300b3
+
+
+[module/launcher]
+
+
+type = custom/text
+
+content = "%{T4} 󰛝 %{T-}"
+content-background =  #0e1619
+content-foreground = #6dbaf4
+content-padding = 1
+
+click-left = rofi -show drun -eh 2 -bw 0 &
+interval = 600
+
+[module/battery]
+
+
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+format-charging =<animation-charging>%{T3}<label-charging>%{T-}
+
+format-discharging =<ramp-capacity>%{T3}<label-discharging>%{T-} 
+
+format-full = 󰂄%{T3}100%%{T-}
+format-full-foreground = #00b38f
+label-charging-foreground = #00b38f
+label-discharging-foreground = #00b38f
+
+animation-charging-0 = 󱊤
+animation-charging-1 = 󱊥
+animation-charging-2 = 󱊦
+animation-charging-foreground = #00b38f
+animation-charging-framerate = 900
+
+ramp-capacity-0 = %{F#FF004B}󰂃%{F-}
+ramp-capacity-1 = %{F#FF8000}󰁺%{F-}
+ramp-capacity-2 = %{F#FF8000}󰁻%{F-}
+ramp-capacity-3 = %{F#FF8000}󰁼%{F-}
+ramp-capacity-4 =󰁽
+ramp-capacity-5 =󰁾
+ramp-capacity-6 =󰁿
+ramp-capacity-7 =󰂀
+ramp-capacity-8 =󰂁
+ramp-capacity-9 =󰂂
+ramp-capacity-10 =󰁹 
+ramp-capacity-foreground = #00b38f
+ramp-capacity-framerate = 750
+interval = 5.0
+
+
+
+[module/prev]
 type = custom/script
-exec = echo " "
-exec-if = "pgrep spotify"
-click-left = "playerctl previous"
+exec = echo "%{T5}󰒮 %{T-}" &
+format = "%{F#9fc5da}<label>%{F-}"
+interval = 600
+tail = true
+
+click-left = playerctl --player=spotify previous &
+
+[module/toggle]
+type = custom/script
+exec = [[ "$(playerctl -p spotify status 2>/dev/null)" == "Playing" ]] && echo "󰏦" || echo "󰐍"
+interval = 3
+format = "%{F#ffa366}<label>%{F-}"
+tail = true
+click-left = playerctl --player=spotify play-pause &
 
 
 [module/next]
 type = custom/script
-exec = echo "  "
-exec-if = "pgrep spotify"
-click-left = "playerctl next"
+exec = echo "%{T5}󰒭 %{T-}" &
+format = "%{F#9fc5da}<label>%{F-}"
+interval = 600
 
-[module/playpause]
-type = custom/script
-exec = spotifystatus
-exec-if = "pgrep spotify"
-format-padding = 1
 tail = true
-interval = 0
-click-left = "playerctl -p spotify play-pause"
+click-left = playerctl --player=spotify next &
 
-
-[module/spotify]
+[module/song]
 type = custom/script
-exec = playerctl -p spotify metadata --format '{{artist}} - {{title}}'
-exec-if = "pgrep spotify"
-format-padding = 1
+exec = /home/eloy/Downloads/sc/song.sh 2>/dev/null || echo "No player found"
+format = "<label>  "
+format-prefix = "%{F#000000} 󰓇 %{F-}"
+format-background = #00000000 
+interval = 10
+format-foreground = #ffffff
+
 tail = true
-interval = 1
 
-[settings]
-screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = true
+[module/wlan]
+type = internal/network
+interface = wlp2s0
+;interval = 12.0
+format-connected = <ramp-signal>
+label-connected = %essid%
+label-disconnected =  󰤭
+label-disconnected-foreground = #6c809e
+ramp-signal-0 = %{F#ffc299}󰤫%{F-}
+ramp-signal-1 = %{F#ffc299}󰤟%{F-}
+ramp-signal-2 =  󰤢
+ramp-signal-3 =  󰤥
+ramp-signal-4 =  󰤨
+ramp-signal-foreground = #6dbaf4
 
-[global/wm]
-margin-top = 0
-margin-bottom = 0
 
-; vim:ft=dosini
+
