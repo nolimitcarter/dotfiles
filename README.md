@@ -49,7 +49,7 @@ Currently running on Manjaro, Ubuntu, Arch, Arco, and OS X
 | CLI Email Client     | Mutt                                                                                                 |
 | Window Managers      | i3 & bspwm                                                                                           |
 | CLI Web Browser      | Lynx                                                                                                 |
-| Apps Launcher        | Dmenu                                                                                                |
+| Apps Launcher        | Dmenu/ rofi                                                                                          |
 | Wallpaper Launcher   | Nitrogen                                                                                             |
 
 ## License
