@@ -37,7 +37,6 @@ alias tryhackme="sudo openvpn nolimitcarter.ovpn"
 alias c="cmatrix"
 alias clock="tty-clock -c -C 7 -r -f '%A, %B %d'"
 alias x="exec bash"
-alias chmox="chmod +X"
 alias spot="ncspot"
 
 # cowsay aliases because why not?
