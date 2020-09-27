@@ -1,82 +1,61 @@
-#!/bin/bash
-#
-# Minimalist sysinfo script
-#
-# nolimitcarter
-# github.com/nolimitcarter
-#################################
+#!/bin/sh
+
+# Term stolen from gk
+# https://github.com/6gk/fet.sh/blob/d31ae95231d640f0c4e6c48fd2918fc6dd88dd84/fet.sh#L11-L26
+while [ ! "$term" ]; do
+	while IFS=':	' read -r key val; do
+		case $key in
+			PPid) ppid=$val; break;;
+		esac
+	done < "/proc/${ppid:-$PPID}/status"
+
+	read -r name < "/proc/$ppid/comm"
+	case $name in
+		*sh) ;;
+		"${0##*/}") ;;
+		*[Ll]ogin*|*init*) term=linux;;
+		*) term="$name";;
+	esac
+done
+
+id_bloat=$(xprop -root _NET_SUPPORTING_WM_CHECK)
+id=${id_bloat##* }
+wm_bloat=$(xprop -id "$id" _NET_WM_NAME)
+distro=$(. /etc/os-release ; echo "$ID")
+shell="$(basename ${SHELL})"
+packages="$(pacman -Qq | wc -l)"
+wm="$(echo $wm_bloat | cut -d'"' -f 2)"
+
 
 # color escapes
-BLK="\033[38;2;0;0;0m"
-RED="\033[38;2;255;0;0m"
-GRN="\033[38;2;0;128;0m"
-YLW="\033[38;2;255;255;0m"
-BLU="\033[38;2;95;175;255m"   #0;175;255m"
-PUR="\033[38;2;255;215;255m"
-CYN="\033[38;2;95;175;255m"   #0;255;255m"
-BRED="\033[38;2;255;0;0m"
-BGRN="\033[38;2;0;128;128m"
-BYLW="\033[38;2;255;255;0m"
-BBLU="\033[38;2;0;175;255m"
-BPUR="\033[38;2;255;215;255m" #192;192;192m"
-BCYN="\033[38;2;95;175;255m"  #0;255;255m"
-WHT="\e[37m"
-RST="\e[0m"
+bold="$(tput bold)"
+white="$(tput setaf 7)"
+yellow="$(tput setaf 12)"
+red="$(tput setaf 1)"
+blue="$(tput setaf 4)"
+green="$(tput setaf 2)"
+orange="$(tput setaf 8)"
+purple="$(tput setaf 5)"
+cyan="$(tput setaf 6)"
+reset="$(tput sgr0)"
+cbg="${reset}${bold}${bgaccent}${white}"
+cr="${reset}"
+c0="${reset}${bold}"
+c1="${reset}${accent}"
 
 # build the color bars
 BAR="━━━━━"
 ((LEN = ${#BAR} * 6))
-OUTT="$PUR$BAR$PUR$BAR$CYN$BAR$CYN$BAR$PUR$BAR$PUR$BAR$RST"
-OUTB="$BPUR$BAR$BPUR$BAR$BCYN$BAR$BCYN$BAR$BPUR$BAR$BPUR$BAR$RST"
-
-# array for info entries
-ENTS=()
-
-# function for creating entries
-mkent() {
-    if [[ "$#" != 2 ]]; then
-        printf "!! invalid number of arguments to make_entry().\n"
-        exit
-    fi
-
-    local ENT="$2"
-    while ((${#ENT} < LEN - ${#1})); do
-        ENT=" $ENT"
-    done
-
-    ENT="$CNAME""$1""$CTEXT""$ENT""$RST"
-    ENTS+=("$ENT")
-}
+OUTT="$white$BAR$white$BAR$blue$BAR$blue$BAR$white$BAR$white$BAR$RST"
+OUTB="$purple$BAR$purple$BAR$cyan$BAR$cyan$BAR$purple$BAR$purple$BAR$RST"
 
 
-# entry settings
-CNAME="$BLU" # color of entry name
-CTEXT="$WHT" # color of entry text
-
-#
-# add entries here!
-# format: mkent NAME TEXT
-#
-
-#sep=
-#s=$d$f0$sep$t
-
-#w=
-#wmname="WM" "$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
-
-
-mkent "OS" "$(cat /etc/os-release | grep NAME -m 1 | sed 's/NAME=//g' | sed 's/\"//g')"
-mkent "User" "$(printenv USER)"
-mkent "Shell" "$(basename $(printenv SHELL))"
-mkent "WM" "$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
-mkent "Date" "$(date '+%d %B %Y')"
-mkent "Uptime" "$(uptime -p)"
-
-# print everything
-
-# sysinfo
-printf "%s%b" "$PADC" "$OUTT\n"
-for ENT in "${ENTS[@]}"; do
-    printf "%s%b" "$PADC" "$ENT\n"
-done
-printf "%s%b" "$PADC" "$OUTB\n"
+cat <<EOF
+$white$BAR$white$BAR$blue$BAR$blue$BAR$white$BAR$white$BAR$RST
+${c0}${CYN}      ----      ${c0}${blue}${c0}${yellow} os ${reset}${c0}${blue}  ${cr}${white}${distro}${reset}
+${c0}${CYN}     / O O\     ${c0}${blue}${c0}${yellow} wm ${reset}${c0}${blue}  ${cr}${white}${wm}${reset}
+${c0}${CYN}    |      |    ${c0}${blue}${c0}${yellow} tm ${reset}${c0}${blue}  ${cr}${white}${term}${reset}
+${c0}${CYN}    |/\/\/\|    ${c0}${blue}${c0}${yellow} pk ${reset}${c0}${blue}  ${cr}${white}${packages}${reset}
+${c0}${orange}   ----------   ${c0}${blue}${c0}${yellow} sh ${reset}${c0}${blue}  ${cr}${white}${shell}${reset}
+$white$BAR$white$BAR$blue$BAR$blue$BAR$white$BAR$white$BAR$RST
+EOF
