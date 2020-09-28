@@ -6,8 +6,8 @@
 
 <p align="center">
 <a href="#setup"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/b5DYRxb/setup.png"></a>
-<a href="https://github.com/owl4ce/dotfiles/wiki/Keybinds"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/VVc5S9d/keybinds.png"></a>
-<a href="https://github.com/owl4ce/dotfiles/wiki/Gallery"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/C1sdMw9/gallery.png"></a>
+<a href="https://github.com/nolimitcarter/dotfiles/wiki/Keybinds"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/VVc5S9d/keybinds.png"></a>
+<a href="https://github.com/nolimitcarter/dotfiles/wiki/Gallery"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/C1sdMw9/gallery.png"></a>
 <a href="#notes"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/g75Z25g/notes.png"></a>
 </p>
 
@@ -15,7 +15,7 @@
 
 Hello! Thanks for visiting! This is my personal configuration for i3 window manager and some other applications too. More details below. 
  
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image9.jpg)
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image10.jpg)
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image8.jpg)
 

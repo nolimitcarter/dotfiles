@@ -51,11 +51,12 @@ OUTB="$purple$BAR$purple$BAR$cyan$BAR$cyan$BAR$purple$BAR$purple$BAR$RST"
 
 
 cat <<EOF
-$white$BAR$white$BAR$blue$BAR$blue$BAR$white$BAR$white$BAR$RST
+
+  $white$BAR$white$BAR$blue$BAR$blue$BAR$white$BAR$white$BAR$RST
 ${c0}${CYN}      ----      ${c0}${blue}${c0}${yellow} os ${reset}${c0}${blue}  ${cr}${white}${distro}${reset}
 ${c0}${CYN}     / O O\     ${c0}${blue}${c0}${yellow} wm ${reset}${c0}${blue}  ${cr}${white}${wm}${reset}
 ${c0}${CYN}    |      |    ${c0}${blue}${c0}${yellow} tm ${reset}${c0}${blue}  ${cr}${white}${term}${reset}
 ${c0}${CYN}    |/\/\/\|    ${c0}${blue}${c0}${yellow} pk ${reset}${c0}${blue}  ${cr}${white}${packages}${reset}
 ${c0}${orange}   ----------   ${c0}${blue}${c0}${yellow} sh ${reset}${c0}${blue}  ${cr}${white}${shell}${reset}
-$white$BAR$white$BAR$blue$BAR$blue$BAR$white$BAR$white$BAR$RST
+  $white$BAR$white$BAR$blue$BAR$blue$BAR$white$BAR$white$BAR$RST
 EOF
