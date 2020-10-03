@@ -76,6 +76,9 @@ export PATH=$HOME/home:$PATH
 PATH=$PATH:/usr/games
 export PATH=$HOME/repos/github.com/nolimitcarter/tools/recontools:$PATH
 export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/lib/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 
 
