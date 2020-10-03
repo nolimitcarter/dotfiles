@@ -45,6 +45,10 @@ alias ip="myIP | cowsay"
 alias cowpi="givePi | cowsay"
 alias welcome="welcome | cowsay"
 
+# masscan aliases
+alias masscan1="masscan -p1-65535 -iL $ipFile --max-rate 1800 -oG $outPutFile.log"
+alias masscan2="masscan -p1-4000 "
+
 # vpn
 alias startvpn="sudo protonvpn c -f"
 alias randomvpn="sudo protonvpn c -r"
