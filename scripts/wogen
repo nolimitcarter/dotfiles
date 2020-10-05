@@ -1,0 +1,48 @@
+Not a member of Pastebin yet? Sign Up, it unlocks many cool features!
+ 2.06 KB
+     
+#!/usr/bin/env bash
+#====================================
+# Dont change this script as a kids ;)
+# Authos : koboi137
+# Contact : https://fb.com/CBH7.codex
+#====================================
+ 
+echo "--[ Wordlist generator v0.2-beta (www.backboxindonesia.or.id) ]--"
+echo -n "[?] Enter domain/hostname : "
+read hostn
+echo "[*] Downloading files..."
+xterm -geometry 96x25+0+0 -title "Downloading files..." -e "wget --reject=jpg,jpeg,png,gif,ico,avi,mp3,mp4,mpg,mpeg,swf,zip,rar,exe,bz2,tar,gz -r -l 2 $hostn"
+echo "[*] Grep words in case..."
+grep -hr "" $hostn/ | tr '[:space:]' '\n' | sort -u > $hostn.lst
+echo "[*] Egrep words in case..."
+egrep -v '('\,'|'\;'|'\}'|'\{'|'\<'|'\>'|'\:'|'\='|'\"'|'\/'|'\/'|'\['|'\]')' $hostn.lst | sort -u > $hostn.list
+echo "[*] Mixing words..."
+cat $hostn.lst >> $hostn.list
+echo "[*] Sorting words..."
+cat $hostn.list | sort -u >> $hostn.ls
+echo "[*] Filtering words..."
+for nom in $(seq 1 50); do
+    cat $hostn.ls | sed "s/{/|/g" | sed "s/}/|/g" | sed "s/=/|/g" | sed 's/["]/|/g' | sed "s/(/|/g" | sed "s/)/|/g" | sed "s/,/|/g" | sed "s/:/|/g" | sed "s/;/|/g" | sed "s/[']/|/g" | sed "s/&/|/g" | sed "s/+/|/g" | sed "s/</|/g" | sed "s/>/|/g" | sed "s/%/|/g" | sed "s/@/|/g" | sed "s/-/|/g" | sed "s/_/|/g" | sed "s/#/|/g" | sed "s/?/|/g" | sed "s/*/|/g" | sed "s/~/|/g" | sed "s/'/|/g" | sed "s/[/]/|/g" | sed "s/[\]/|/g" | sed "s/[!]/|/g" | cut -d "|" -f $nom | sort -u >> $hostn.word
+done
+echo "[*] Sorting words..."
+cat $hostn.word | sort -u >> $hostn.1
+echo "[*] Filtering words..."
+for non in $(seq 1 10); do
+    cat $hostn.1 | cut -d"." -f $non | sort -u >> $hostn.a
+done
+echo "[*] Sorting words..."
+cat $hostn.a | sort -u > $hostn.dict
+echo "[*] Generate words with john..."
+xterm -geometry 96x25+0+0 -title "Generate words with john..." -e "john --wordlist=$hostn.dict --rules --stdout | sort -u >> $hostn.john"
+echo "[-] Removing files..."
+rm $hostn.lst
+rm $hostn.list
+rm $hostn.ls
+rm $hostn.word
+rm $hostn.1
+rm $hostn.a
+rm -rf $hostn/
+echo "[+] Saved $(pwd)/$hostn.dict"
+echo "[+] Saved $(pwd)/$hostn.john"
+echo "[+] Done..."
