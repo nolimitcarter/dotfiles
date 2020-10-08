@@ -13,7 +13,7 @@
 
 ## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>
 
-Hello! Thanks for visiting! This is my personal collection of configuration files.
+Thanks for visiting! This is my personal collection of configuration files.
  
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image10.jpg)
 
