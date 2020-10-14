@@ -19,6 +19,7 @@ gaps outer 1
 smart_borders on
 smart_borders no_gaps
 border_radius 2
+hide_edge_borders none
 
 #font pango:monospace 8
 font xft:Monoid 9
@@ -28,12 +29,17 @@ smart_borders on
 new_float normal
 hide_edge_borders none
 bindsym $mod+u border none
-bindsym $mod+o border normal 
+bindsym $mod+n border normal 
+bindsym $mod+o border pixel 1
 
 for_window [class=".*"] split toggle
 for_window [class="^.*"] default_border pixel 0
 for_window [class="^.*"] default_floating_border pixel 0
 for_window [class=".*"] border pixel 0
+
+# border style
+new_window pixel 1
+new_float normal
 
 # startup
 exec --no-startup-id /usr/bin/picom --backend glx --paint-on-overlay --vsync opengl-swc
@@ -141,6 +147,17 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# Lock screen
+bindsym $mod+\ exec --no-startup-id blurlock
+
+# Theme colors
+# class                   border  backgr. text    indic.   child_border
+  client.focused          #556064 #556064 #80FFF9 #FDF6E3
+  client.focused_inactive #2F3D44 #2F3D44 #AD69AF #454948
+  client.unfocused        #2F3D44 #2F3D44 #AD69AF #454948
+  client.urgent           #CB4B16 #FDF6E3 #AD69AF #268BD2
+  client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
 # focus the child container
 #bindsym $mod+d focus child
