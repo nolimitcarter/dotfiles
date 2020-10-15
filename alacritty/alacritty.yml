@@ -55,23 +55,28 @@ scrolling:
   history: 0
   multiplier: 3
   #auto_scroll: true
-
+  
 # Font configuration
 font:
    normal:
-     family: Hack
+     family: Hack Nerd Font
      style: Regular
    bold:
-     family: Hack
-     style: Regular
+     family: Hack Nerd Font
+     style: Bold
    italic:
-     family: Hack
-     style: Regular
+     family: Hack Nerd Font
+     style: Italic
      
-   size: 9.5
-  #offset:
+   size: 9
+
+
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+  # offset:
   #  x: 0
   #  y: 0
+
 
   #glyph_offset:
   # x: 0
