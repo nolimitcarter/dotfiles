@@ -1,4 +1,5 @@
 #!/bin/sh
+# https://github.com/nolimitcarter
 
 while [ ! "$term" ]; do
 	while IFS=':	' read -r key val; do
