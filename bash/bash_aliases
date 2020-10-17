@@ -56,7 +56,7 @@ alias choosevpn="sudo protonvpn connect, c"
 alias securevpn="sudo protonvpn c --sc"
 alias stopvpn="sudo protonvpn d" 
 alias reconnectvpn="sudo protonvpn reconnect, r" 
-alias nmap="grc nmap" 
+alias nmap="nmap -sV -Pn" 
 
 # apt aliases
 alias v="neofetch"
