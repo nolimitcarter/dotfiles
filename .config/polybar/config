@@ -82,7 +82,7 @@ volume-max = #bf616a
 
 [bar/mainbar-i3]
 ;https://github.com/jaagr/polybar/wiki/Configuration
-monitor = ${env:MONITOR:HDMI-A-0}
+monitor = ${env:MONITOR:DisplayPort-2}
 
 ;monitor-fallback = HDMI-A-0
 monitor-strict = false
