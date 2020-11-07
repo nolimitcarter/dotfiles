@@ -102,6 +102,10 @@ Plug 'jiangmiao/auto-pairs'
 " ctrl+Y, , for expand completion
 Plug 'mattn/emmet-vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+" Debugger Plugins
+Plug 'puremourning/vimspector'
+Plug 'szw/vim-maximizer'
+
 call plug#end()
 
 let g:go_fmt_fail_silently = 0 " let me out even with errors
