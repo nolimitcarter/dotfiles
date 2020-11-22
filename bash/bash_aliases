@@ -39,6 +39,7 @@ alias clock="tty-clock -c -C 7 -r -f '%A, %B %d'"
 alias x="exec bash"
 alias spot="ncspot"
 alias nr="nitrogen --restore"
+alias suspend="systemctl suspend"
 
 # cowsay aliases because why not?
 alias time="now | cowsay"
