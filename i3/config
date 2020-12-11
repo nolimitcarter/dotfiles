@@ -33,9 +33,12 @@ bindsym $mod+n border normal
 bindsym $mod+o border pixel 1
 
 for_window [class=".*"] split toggle
-for_window [class="^.*"] default_border pixel 0
-for_window [class="^.*"] default_floating_border pixel 0
-for_window [class=".*"] border pixel 0
+for_window [class="^.*"] default_border pixel 2
+for_window [class="^.*"] default_floating_border pixel 2
+for_window [class=".*"] border pixel 2
+
+# Toggle border
+bindsym $mod+Shift+t border toggle
 
 # border style
 new_window pixel 1
@@ -236,6 +239,14 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
+
+# Color settings
+# class                 border  backgr  text    indicator child_border
+client.focused          #f993f6 #f993f6 #282A36 #f993f6   #f993f6
+client.focused_inactive #93c3f9 #93c3f9 #282A36 #93c3f9   #93c3f9
+client.unfocused        #44475A #44475A #F8F8F2 #44475A   #44475A
+client.urgent           #FF5555 #FF5555 #282A36 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A3
 
 bindsym $mod+r mode "resize"
 
