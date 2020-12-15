@@ -28,7 +28,7 @@ Thanks for visiting! This is my personal collection of configuration files and s
 
 Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many different additions added to each configuration file. Bash, Tmux, and Alacritty combined make the possibilities limitless with productivity and speed. The Bash and Vim configs above have many different features including autocomplete for text, go to file which is one of my remaps, and nerdtree which allows you to look at all directories at once and swtich between them quickly.  
 
-Most folders are OS specific besides the main repo itself. It's for Manjaro.
+Most folders are OS specific besides the main repo itself, it's mainly for Arch based distros.
 
 Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colors I acitively use. 
 
