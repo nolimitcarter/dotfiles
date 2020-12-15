@@ -15,9 +15,9 @@
 
 Thanks for visiting! This is my personal collection of configuration files and scripts. More details below.
  
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image10.jpg)
-
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image22.jpg)
+
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image10.jpg)
 
 <!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image2.jpg)-->
 
