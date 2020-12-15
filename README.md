@@ -35,12 +35,12 @@ Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colo
 
 ## Distro
 
-Currently running on Manjaro, Ubuntu, Arch, Arco, and OS X
+Parts of these files are currently running on Manjaro, Ubuntu, Arch, and OS X
 
 ## Main environment details
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
-| Distro               | Gnome/ Manjaro                                                                                       |
+| Main Distro          | Gnome/ Manjaro                                                                                       |
 | Terminal             | Alacritty                                                                                            |
 | Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
