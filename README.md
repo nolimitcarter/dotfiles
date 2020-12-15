@@ -15,9 +15,9 @@
 
 Thanks for visiting! This is my personal collection of configuration files and scripts. More details below.
  
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image10.jpg)
-
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image22.jpg)
+
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image10.jpg)
 
 <!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image2.jpg)-->
 
@@ -25,22 +25,21 @@ Thanks for visiting! This is my personal collection of configuration files and s
 
 
 ## Info
-Screenshots: Top: Manjaro with i3wm and polybar. Other 3: Ubuntu with gtile
 
 Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many different additions added to each configuration file. Bash, Tmux, and Alacritty combined make the possibilities limitless with productivity and speed. The Bash and Vim configs above have many different features including autocomplete for text, go to file which is one of my remaps, and nerdtree which allows you to look at all directories at once and swtich between them quickly.  
 
-Most folders are OS specific besides the main repo itself. It's for Manjaro.
+Most folders are OS specific besides the main repo itself, it's mainly for Arch based distros.
 
 Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colors I acitively use. 
 
 ## Distro
 
-Currently running on Manjaro, Ubuntu, Arch, Arco, and OS X
+Parts of these files are currently running on Manjaro, Ubuntu, Arch, and OS X
 
 ## Main environment details
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
-| Distro               | Gnome/ Manjaro                                                                                       |
+| Main Distro          | Gnome/ Manjaro                                                                                       |
 | Terminal             | Alacritty                                                                                            |
 | Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
