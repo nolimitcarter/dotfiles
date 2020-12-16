@@ -1,0 +1,1 @@
+zathura - PDF viewer
