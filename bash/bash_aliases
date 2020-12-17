@@ -40,6 +40,7 @@ alias x="exec bash"
 alias spot="ncspot"
 alias nr="nitrogen --restore"
 alias suspend="systemctl suspend"
+alias pdf="zathura"
 
 # cowsay aliases because why not?
 alias time="now | cowsay"
