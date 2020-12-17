@@ -59,13 +59,13 @@ scrolling:
 # Font configuration
 font:
    normal:
-     family: Hack Nerd Font Mono
+     family: SourceCodePro # Nerd Font Mono giving weird offset
      style: Regular
    bold:
-     family: Hack Nerd Font Mono
+     family: SourceCodePro # Nerd Font Mono giving weird offset
      style: Bold
    italic:
-     family: Hack Nerd Font Mono
+     family: Nerd Font Mono
      style: Italic
      
    size: 9
