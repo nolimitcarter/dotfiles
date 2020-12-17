@@ -1,6 +1,6 @@
 <p align="center"> 
   <a name="top" href="https://github.com/nolimitcarter/dotfiles">
-    <img width="50%" src="pics/dotfiles.png">
+    <img width="50%" src="assets/dotfiles.png">
   </a>
 </p>
 
@@ -15,13 +15,13 @@
 
 Thanks for visiting! This is my personal collection of configuration files and scripts. More details below.
  
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image22.jpg)
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image22.jpg)
 
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image10.jpg)
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image10.jpg)
 
-<!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image2.jpg)-->
+<!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image2.jpg)-->
 
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/pics/image8.jpg)
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image8.jpg)
 
 
 ## Info
