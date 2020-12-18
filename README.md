@@ -15,6 +15,21 @@
 
 This is my personal collection of configuration files and scripts. More details below.
 
+| Items/Components     | Values/Dependencies                                                                                  |
+|----------------------|------------------------------------------------------------------------------------------------------|
+| Main Distro          | Gnome/ Manjaro                                                                                       |
+| Terminal             | Alacritty                                                                                            |
+| Shell                | Bash                                                                                                 |
+| Multiplexer          | Tmux                                                                                                 |
+| Text Editor          | Vim                                                                                                  |
+| IDE                  | VScode                                                                                               |
+| CLI Email Client     | Mutt                                                                                                 |
+| Window Managers      | i3 & bspwm                                                                                           |
+| CLI Web Browser      | Lynx                                                                                                 |
+| Apps Launcher        | Dmenu/ rofi                                                                                          |
+| Wallpaper Launcher   | Nitrogen                                                                                             |
+
+
 ## Gallery
  
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image27.jpg)
@@ -39,19 +54,6 @@ Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colo
 Parts of these files are currently running on Manjaro, Ubuntu, Arch, and OS X
 
 ## Main environment details
-| Items/Components     | Values/Dependencies                                                                                  |
-|----------------------|------------------------------------------------------------------------------------------------------|
-| Main Distro          | Gnome/ Manjaro                                                                                       |
-| Terminal             | Alacritty                                                                                            |
-| Shell                | Bash                                                                                                 |
-| Multiplexer          | Tmux                                                                                                 |
-| Text Editor          | Vim                                                                                                  |
-| IDE                  | VScode                                                                                               |
-| CLI Email Client     | Mutt                                                                                                 |
-| Window Managers      | i3 & bspwm                                                                                           |
-| CLI Web Browser      | Lynx                                                                                                 |
-| Apps Launcher        | Dmenu/ rofi                                                                                          |
-| Wallpaper Launcher   | Nitrogen                                                                                             |
 
 ## License
 
