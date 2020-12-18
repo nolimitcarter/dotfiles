@@ -14,6 +14,8 @@
 ## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>
 
 This is my personal collection of configuration files and scripts. More details below.
+
+## Gallery
  
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image27.jpg)
 
