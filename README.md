@@ -21,7 +21,7 @@ This is my personal collection of configuration files and scripts. More details 
 
 <!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image22.jpg)-->
 
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image8.jpg)
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image22.jpg)
 
 
 ## Info
