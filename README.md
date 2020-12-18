@@ -15,11 +15,11 @@
 
 This is my personal collection of configuration files and scripts. More details below.
  
+![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image28.jpg)
+
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image26.jpg)
 
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image22.jpg)
-
-<!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image2.jpg)-->
+<!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image22.jpg)-->
 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image8.jpg)
 
