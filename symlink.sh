@@ -23,10 +23,14 @@ ln -sf "cwd"/bash/bashrc ~/.bashrc
 ln -sf "cwd"/bash/bash_aliases ~/.bash_aliases
 ln -sf "cwd"/bash/bash_profile ~/.profile
 
+# Rofi
+## Make sure to make the nord.rasi file in /usr/share/rofi/themes
+touch /usr/share/rofi/themes/nord.rasi
+ln -sf "cwd"/.config/rofi/nord.rasi /usr/share/rofi/themes/nord.rasi
+
 # Etc. 
-ln -sf "cwd"/.config/zathura ~/.config/zathura/zathurarc
+ln -sf "cwd"/.config/zathura/zathurarc ~/.config/zathura/zathurarc
 ln -sf "cwd"/.config/conky/conkyrc ~/.config/conky/conkyrc
 ln -sf "cwd"/.fonts ~/.fonts
-
 
 
