@@ -51,8 +51,9 @@ Parts of these files are currently running on Manjaro, Ubuntu, Arch, and OS X
 | CLI Email Client     | Mutt                                                                                                 |
 | Window Managers      | i3 & bspwm                                                                                           |
 | CLI Web Browser      | Lynx                                                                                                 |
-| Apps Launcher        | Dmenu/ rofi                                                                                          |
+| App Launcher         | rofi                                                                                                 |
 | Wallpaper Launcher   | Nitrogen                                                                                             |
+| PDF Viewer           | Zathura                                                                                              |
 
 ## License
 
