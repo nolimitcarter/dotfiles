@@ -42,7 +42,7 @@ Parts of these files are currently running on Manjaro, Ubuntu, Arch, and OS X
 
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
-| Main Distro          | Gnome/ Manjaro                                                                                       |
+| Main Distro          | Arch based/Gnome                                                                                     |
 | Terminal             | Alacritty                                                                                            |
 | Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
