@@ -52,6 +52,9 @@ alias welcome="welcome | cowsay"
 alias masscan1="sudo masscan -p1-65535 -iL $ipFile --max-rate 1800 -oG $outPutFile.log"
 alias masscan2="sudo masscan -p1-4000 "
 
+# killing a specific process
+alias killid="kill $(pgrep -f '$1')"
+
 # vpn
 alias startvpn="sudo protonvpn c -f"
 alias randomvpn="sudo protonvpn c -r"
