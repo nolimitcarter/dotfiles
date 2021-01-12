@@ -1,0 +1,11 @@
+#!/bin/bash
+# Kill a Specific Process ID 
+
+kill $(pgrep -f '$1')
+
+if [[ -e /tmp/$1.pid ]]; then # $1 may need to be changed to name of the actual script (test.py.pid)
+  kill `cat /tmp/$1.pid`
+  rm /tmp/$1.pid
+else 
+  echo "$1 is not running"
+fi
