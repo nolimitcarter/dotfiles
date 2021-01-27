@@ -1,6 +1,6 @@
-##########################
-# nolimitcarters aliases #
-##########################
+###############################
+# nolimitcarters bash aliases #
+###############################
 
 
 alias ls="ls -x --color=auto"
