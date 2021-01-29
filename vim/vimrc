@@ -82,9 +82,28 @@ set viminfo='20,<1000,s1000
 " set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=darkgrey
 
+" has somehting to do with transparency 
+" highlight Normal guibg=none
+
+" trimming extra white-space
+"fun! TrimWhitespace()
+"  let l:save = winsaveview()
+"  keeppatterns %s/\s\+$//e
+"  call winrestview(l:save)
+"endfun
+
+"augroup nolimitcarter
+"  autocmd!
+"  autocmd BufWritePre * :call TrimWhitespace()
+"augroup END
+
+
 " <3 vim plugins
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'airblade/vim-gitgutter'
