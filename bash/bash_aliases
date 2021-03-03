@@ -45,6 +45,9 @@ alias push="git push"
 alias pull="git pull"
 alias auto="git add -A && git commit -m 'added' && git push"
 
+# touch readme.md
+alias readme="touch README.md"
+
 # cowsay aliases because why not?
 alias time="now | cowsay"
 alias ip="myIP | cowsay"
