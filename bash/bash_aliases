@@ -37,13 +37,17 @@ alias nr="nitrogen --restore"
 alias suspend="systemctl suspend"
 alias pdf="zathura"
 
-# commiting to github
+# Git
 alias add="git add -A"
 alias commit="git commit -m"
 alias commited="git commit -m 'added'"
 alias push="git push" 
 alias pull="git pull"
 alias auto="git add -A && git commit -m 'added' && git push"
+alias branch="git branch"
+alias checkout="git checkout"
+alias merge="git merge"
+
 
 # touch readme.md
 alias readme="touch README.md"
