@@ -40,7 +40,7 @@ alias pdf="zathura"
 # Git
 alias add="git add -A"
 alias commit="git commit -m"
-alias commited="git commit -m 'added'"
+alias commited="git commit -m 'testing live...'"
 alias push="git push" 
 alias pull="git pull"
 alias auto="git add -A && git commit -m 'added' && git push"
