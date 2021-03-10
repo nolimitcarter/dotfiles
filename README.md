@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-<a href="#setup"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/b5DYRxb/setup.png"></a>
-<a href="https://github.com/nolimitcarter/dotfiles/wiki/Keybinds"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/VVc5S9d/keybinds.png"></a>
-<a href="https://github.com/nolimitcarter/dotfiles/wiki/Gallery"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/C1sdMw9/gallery.png"></a>
-<a href="#notes"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/g75Z25g/notes.png"></a>
+<a href="#setup"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/b2VzWrg/setup.png"></a>
+<a href="https://github.com/nolimitcarter/dotfiles/wiki/Keybinds"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/Fgpgc2C/keybinds.png"></a>
+<a href="https://github.com/nolimitcarter/dotfiles/wiki/Gallery"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/ZKTbkRy/gallery.png"></a>
+<a href="#notes"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/RznJp0s/notes.png"></a>
 </p>
 
 ## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>
