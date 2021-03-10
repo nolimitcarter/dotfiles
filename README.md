@@ -34,6 +34,8 @@ Most folders are OS specific besides the main repo itself, it's mainly for Arch 
 
 Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colors I acitively use. 
 
+### Wallpapers are added for easy config
+
 ## Distro
 
 Parts of these files are currently running on Manjaro, Ubuntu, Arch, and OS X
