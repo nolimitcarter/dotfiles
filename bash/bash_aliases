@@ -36,6 +36,7 @@ alias spot="ncspot"
 alias nr="nitrogen --restore"
 alias suspend="systemctl suspend"
 alias pdf="zathura"
+alias chmox="chmod +x"
 
 # Git
 alias add="git add -A"
