@@ -82,7 +82,7 @@ if &background == "dark"
 	hi VertSplit       ctermfg=237    ctermbg=237    cterm=none    guifg=#3A3A3A    guibg=#3A3A3A    gui=none
 	hi LineNr          ctermfg=244    ctermbg=237    guifg=#808080    guibg=#3A3A3A
 
-	hi Title           ctermfg=109    guifg=#87AFAF
+	hi Title           ctermfg=109    guifg=#87AFA8
 	hi SpecialKey      ctermfg=114    guifg=#87D787
 	hi NonText         ctermfg=244    guifg=#808080
 	hi Conceal         ctermfg=77     ctermbg=bg    guifg=#5FD75F    guibg=bg
