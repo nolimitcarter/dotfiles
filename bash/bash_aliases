@@ -41,7 +41,7 @@ alias chmox="chmod +x"
 # Git
 alias add="git add -A"
 alias commit="git commit -m"
-alias commited="git commit -m 'automated from the terminal:)'"
+alias commited="git commit -m 'automated from the terminal :)'"
 alias push="git push" 
 alias pull="git pull"
 alias testing="git add -A && git commit -m 'live testing...' && git push"
