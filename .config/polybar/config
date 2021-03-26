@@ -127,7 +127,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = arrow1 networkspeedup networkspeeddown arrow2 memory2 arrow3 cpu2 arrow2 pavolume pulseaudio arrow3 arch-aur-updates arrow2 date
+modules-right = arrow1 networkspeedup networkspeeddown arrow2 memory2 arrow3 cpu2 arrow3 pavolume pulseaudio arrow3 arch-aur-updates arrow2 date arrow2
 
 separator = 
 
@@ -760,7 +760,7 @@ format-background = ${colors.background}
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #494c52
+content-foreground = #292c34
 ;#8d62a9
 content-background = #292d3e
 
@@ -770,7 +770,7 @@ type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
 content-foreground = #b7d4f7
-content-background = #494c52
+content-background = #292c34
 ;#8d62a9
 
 [module/arrow3]
@@ -781,7 +781,7 @@ content-font = 2
 content-foreground = #b7d4f7
 ;#668bd7
 ;#8b62a9
-content-background = #494c52
+content-background = #282c34
 ;#668bd7
 
 ################################################################################
@@ -796,7 +796,7 @@ exec = ~/.config/polybar/scripts/check-all-updates.sh
 interval = 1000
 label = Updates: %output%
 format-foreground = #fefefe
-format-background = #494c52
+format-background = #282c34
 ;#8d62ad
 format-prefix = "  "
 format-prefix-foreground = #fefefe
@@ -978,7 +978,7 @@ type = internal/cpu
 ; Default: 1
 interval = 1
 format-foreground = #fefefe
-format-background = #494c52
+format-background = #282c34
 ; #8d62ad
 format-prefix = " "
 format-prefix-foreground = #fefefe
@@ -1015,7 +1015,7 @@ time-alt = %l:%M%p
 format-prefix = " "
 format-prefix-foreground = #fefefe
 format-foreground = #fefefe
-format-background = #494c52
+format-background = #282c34
 ;#668bd7
 label = "%date% %time% "
 
@@ -1217,7 +1217,7 @@ format = Mem <label>
 format-prefix = " "
 format-prefix-foreground = #fefefe
 format-foreground = #fefefe
-format-background = #494c52 
+format-background = #282c34
 ;#668bd7
 
 ################################################################################
@@ -1320,14 +1320,15 @@ format-underline = #FFBB00
 [module/pavolume]
 type = custom/script
 tail = true
-label = %output%
+format = <label>
+label =  Volume: %output%
 exec = ~/.config/polybar/scripts/pavolume.sh --listen
 click-right = exec pavucontrol
 click-left = ~/.config/polybar/scripts/pavolume.sh --togmute
 scroll-up = ~/.config/polybar/scripts/pavolume.sh --up
 scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
 format-foreground = #fefefe
-format-background = #494c52
+format-background = #282c34
 ;#668bd7
 
 
