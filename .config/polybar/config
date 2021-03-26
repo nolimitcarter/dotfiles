@@ -760,7 +760,8 @@ format-background = ${colors.background}
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #8d62a9
+content-foreground = #494c52
+;#8d62a9
 content-background = #292d3e
 
 [module/arrow2]
@@ -768,16 +769,20 @@ content-background = #292d3e
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #668bd7
-content-background = #8d62a9
+content-foreground = #b7d4f7
+content-background = #494c52
+;#8d62a9
 
 [module/arrow3]
 ; grey to Blue
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #8b62a9
-content-background = #668bd7
+content-foreground = #b7d4f7
+;#668bd7
+;#8b62a9
+content-background = #494c52
+;#668bd7
 
 ################################################################################
 ###############################################################################
@@ -791,7 +796,8 @@ exec = ~/.config/polybar/scripts/check-all-updates.sh
 interval = 1000
 label = Updates: %output%
 format-foreground = #fefefe
-format-background = #8d62ad
+format-background = #494c52
+;#8d62ad
 format-prefix = "  "
 format-prefix-foreground = #fefefe
 
@@ -972,7 +978,8 @@ type = internal/cpu
 ; Default: 1
 interval = 1
 format-foreground = #fefefe
-format-background = #8d62ad
+format-background = #494c52
+; #8d62ad
 format-prefix = " "
 format-prefix-foreground = #fefefe
 
@@ -1008,7 +1015,8 @@ time-alt = %l:%M%p
 format-prefix = " "
 format-prefix-foreground = #fefefe
 format-foreground = #fefefe
-format-background = #668bd7
+format-background = #494c52
+;#668bd7
 label = "%date% %time% "
 
 #################################################################
@@ -1209,7 +1217,8 @@ format = Mem <label>
 format-prefix = " "
 format-prefix-foreground = #fefefe
 format-foreground = #fefefe
-format-background = #668bd7
+format-background = #494c52 
+;#668bd7
 
 ################################################################################
 
@@ -1318,7 +1327,8 @@ click-left = ~/.config/polybar/scripts/pavolume.sh --togmute
 scroll-up = ~/.config/polybar/scripts/pavolume.sh --up
 scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
 format-foreground = #fefefe
-format-background = #668bd7
+format-background = #494c52
+;#668bd7
 
 
 
@@ -1670,8 +1680,10 @@ label-maxlen = 50
 
 format-prefix = "  "
 format-prefix-underline = #292d3e
-format-underline = #e1acff
-format-foreground = #e1acff
+format-underline = #b7d4f7
+;#e1acff
+format-foreground = #b7d4f7 
+;#e1acff
 format-background = ${colors.background}
 
 ###############################################################################
