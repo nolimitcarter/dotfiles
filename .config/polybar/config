@@ -1681,7 +1681,7 @@ label-maxlen = 50
 
 format-prefix = "  "
 format-prefix-underline = #292d3e
-format-underline = #b7d4f7
+format-underline = #b7d4f7 
 ;#e1acff
 format-foreground = #b7d4f7 
 ;#e1acff
