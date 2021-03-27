@@ -127,7 +127,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = arrow1 networkspeedup networkspeeddown arrow2 memory2 arrow3 cpu2 arrow3 pavolume pulseaudio arrow3 arch-aur-updates arrow2 date arrow2
+modules-right = networkspeedup networkspeeddown arrow2 memory2 arrow3 cpu2 arrow3 pavolume pulseaudio arrow3 arch-aur-updates arrow2 date arrow3 
 
 separator = 
 
@@ -760,9 +760,9 @@ format-background = ${colors.background}
 type = custom/text
 content = "%{T2} %{T-}"
 content-font = 2
-content-foreground = #292c34
+content-foreground = #282c34
 ;#8d62a9
-content-background = #292d3e
+content-background = #b7d4f7
 
 [module/arrow2]
 ; grey to Blue
@@ -783,6 +783,18 @@ content-foreground = #b7d4f7
 ;#8b62a9
 content-background = #282c34
 ;#668bd7
+
+[module/arrow4]
+; grey to Blue
+type = custom/text
+content = "%{T2} %{T-}"
+content-font = 2
+content-foreground = #282c34
+;#668bd7
+;#8b62a9
+content-background = #282c34
+;#668bd7
+
 
 ################################################################################
 ###############################################################################
@@ -997,7 +1009,7 @@ format = <label>
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = Cpu %percentage:3%%
+label = Cpu:%percentage:3%%
 
 ################################################################################
 
@@ -1018,6 +1030,7 @@ format-foreground = #fefefe
 format-background = #282c34
 ;#668bd7
 label = "%date% %time% "
+
 
 #################################################################
 
@@ -1213,7 +1226,7 @@ interval = 1
 ;   %mb_total%
 label = %percentage_used%%
 
-format = Mem <label>
+format = Mem:  <label>
 format-prefix = " "
 format-prefix-foreground = #fefefe
 format-foreground = #fefefe
