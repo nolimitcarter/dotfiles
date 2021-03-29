@@ -127,7 +127,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = networkspeedup networkspeeddown arrow2 memory2 arrow3 cpu2 arrow3 pavolume pulseaudio arrow3 arch-aur-updates arrow2 date arrow3 
+modules-right = networkspeedup networkspeeddown memory2 line cpu2 line pavolume line arch-aur-updates line date arrow3 
 
 separator = 
 
@@ -607,6 +607,13 @@ content-foreground = #282c34
 content-background = #282c34
 ;#668bd7
 
+[module/line]
+type = custom/text
+content = "%{T2} |%{T-}"
+content-font = 2
+content-foreground = #282c34
+content-background = #282c34
+
 
 ################################################################################
 ###############################################################################
@@ -622,9 +629,10 @@ label = Updates: %output%
 format-foreground = ##fefefe
 format-background = #282c34
 ;#8d62ad
-format-prefix = "  "
+format-prefix = " "
 format-prefix-foreground = #fefefe
-
+format-prefix-underline = #292d3e
+format-underline = #b7d4f7 
 
 [module/aur-updates]
 type = custom/script
@@ -815,7 +823,8 @@ label-font = 1
 ;   <ramp-load>
 ;   <ramp-coreload>
 format = <label>
-
+format-prefix-underline = #292d3e
+format-underline = #b7d4f7 
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load
@@ -832,8 +841,8 @@ type = internal/date
 interval = 5
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = " %a %b %d, %Y"
-date-alt = " %a %b %d, %Y"
+date = "%a %b %d, %Y"
+date-alt = "%a %b %d, %Y"
 time = %H:%M
 time-alt = %l:%M%p
 format-prefix = " "
@@ -841,8 +850,9 @@ format-prefix-foreground = #fefefe
 format-foreground = ##fefefe
 format-background = #282c34
 ;#668bd7
-label = "%date% %time% "
-
+label = "%date% %time%"
+format-prefix-underline = #292d3e
+format-underline = #b7d4f7 
 
 #################################################################
 
@@ -1044,6 +1054,8 @@ format-prefix-foreground = #fefefe
 format-foreground = ##fefefe
 format-background = #282c34
 ;#668bd7
+format-prefix-underline = #292d3e
+format-underline = #b7d4f7 
 
 ################################################################################
 
@@ -1146,7 +1158,7 @@ format-underline = #FFBB00
 type = custom/script
 tail = true
 format = <label>
-label =  Volume: %output%
+label = Volume: %output%
 exec = ~/.config/polybar/scripts/pavolume.sh --listen
 click-right = exec pavucontrol
 click-left = ~/.config/polybar/scripts/pavolume.sh --togmute
@@ -1155,7 +1167,8 @@ scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
 format-foreground = ##fefefe
 format-background = #282c34
 ;#668bd7
-
+format-prefix-underline = #292d3e
+format-underline = #b7d4f7 
 
 
 ################################################################################
