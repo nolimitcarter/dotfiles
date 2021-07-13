@@ -1,5 +1,4 @@
 #!/bin/bash
 
-sudo pacman-mirrors -g
+sudo pacman-mirrors --fasttrack && sudo pacman -Syyu
 
-sudo pacman -Syu
