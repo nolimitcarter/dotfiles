@@ -37,6 +37,8 @@ alias nr="nitrogen --restore"
 alias suspend="systemctl suspend"
 alias pdf="zathura"
 alias chmox="chmod +x"
+alias c="xclip"
+alias v="xclip -o"
 
 # Git
 alias add="git add -A"
