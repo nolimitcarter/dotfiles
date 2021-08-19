@@ -58,7 +58,6 @@ alias readme="touch README.md"
 
 # cowsay aliases because why not?
 alias time="now | cowsay"
-alias ip="myIP | cowsay"
 alias cowpi="givePi | cowsay"
 alias welcome="welcome | cowsay"
 
