@@ -4,5 +4,5 @@ greeting="Welcome"
 user=$(whoami)
 day=$(date +%A)
 
-echo $greeting back boostmod3! Today is $day. Lets get it!
+echo $greeting back boostmod3! Today is $day. 
 echo "Your bash version is $BASH_VERSION, Enjoy!"
