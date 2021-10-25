@@ -87,6 +87,7 @@ set $myBrowser chromium
 bindsym $mod+w exec $myBrowser
 bindsym $mod+m exec firefox
 bindsym $mod+y exec $myBrowser https://youtube.com/
+bindsym $mod+t exec $myBrowser https://twitch.tv/
 bindsym $mod+g exec $myBrowser https://github.com/
 
 # kill focused window
@@ -134,10 +135,11 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+t layout tabbed
-bindsym $mod+e layout toggle split
+
+## change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+#bindsym $mod+t layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
