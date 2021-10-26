@@ -158,7 +158,7 @@ bindsym $mod+\ exec --no-startup-id blurlock
   #client.focused          #556064 #556064 #80FFF9 #FDF6E3
   #client.focused_inactive #2F3D44 #2F3D44 #AD69AF #454948
   #client.unfocused        #2F3D44 #2F3D44 #AD69AF #454948
-  #client.urgent           #CB4B16 #FDF6E3 #AD69AF #268BD2
+  #client.urgent           #b7d4f7 #FDF6E3 #AD69AF #268BD2
   #client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
 # focus the child container
