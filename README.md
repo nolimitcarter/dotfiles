@@ -25,11 +25,11 @@
 
 ## Table of Contents
 
-* [gallery](##Gallery)
+* [gallery](#Gallery)
 * [about](##About)
 * [distro](##Distro)
 * [info](##Info)
-* [license](##License
+* [license](##License)
 
 
 <!--<p align="center">
@@ -43,7 +43,7 @@
 
 This is my personal collection of configuration files and scripts. More details below.
 
-## Gallery
+# Gallery
  
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image27.jpg)
 
