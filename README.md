@@ -23,6 +23,14 @@
  ░░░░░░░░░░
 ```
 
+## Table of Contents
+
+* [gallery](##Gallery)
+* [about](##About)
+* [distro](##Distro)
+* [info](##Info)
+* [license](##License
+
 
 <!--<p align="center">
 <a href="#setup"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/b2VzWrg/setup.png"></a>
@@ -46,7 +54,7 @@ This is my personal collection of configuration files and scripts. More details 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image22.jpg)
 
 
-## Info
+## About
 
 Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many different additions added to each configuration file. Bash, Tmux, and Alacritty combined make the possibilities limitless with productivity and speed. The Bash and Vim configs above have many different features including autocomplete for text, go to file which is one of my remaps, and nerdtree which allows you to look at all directories at once and swtich between them quickly.  
 
@@ -58,7 +66,7 @@ Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colo
 
 Parts of these files are currently running on Manjaro, Ubuntu, Arch, and OS X
 
-## Main environment details
+## Info
 
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
