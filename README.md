@@ -25,6 +25,8 @@
 
 ## Table of Contents
 
+This is my personal collection of configuration files and scripts. More details below.
+
 * [gallery](#Gallery)
 * [about](##About)
 * [info](##Info)
@@ -40,7 +42,6 @@
 
 <!--## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>-->
 
-This is my personal collection of configuration files and scripts. More details below.
 
 # Gallery
  
