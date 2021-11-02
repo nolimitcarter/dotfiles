@@ -27,7 +27,6 @@
 
 * [gallery](#Gallery)
 * [about](##About)
-* [distro](##Distro)
 * [info](##Info)
 * [license](##License)
 
@@ -62,15 +61,11 @@ Most folders are OS specific besides the main repo itself, it's mainly for Arch 
 
 Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colors I acitively use. 
 
-# Distro
-
-Parts of these files are currently running on Manjaro, Ubuntu, Arch, and OS X
-
 # Info
 
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
-| Main Distro          | Arch based/Gnome                                                                                     |
+| Main Distro          | Arch based/Debian                                                                                    |
 | Terminal             | Alacritty                                                                                            |
 | Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
