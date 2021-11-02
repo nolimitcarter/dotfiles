@@ -54,7 +54,7 @@ This is my personal collection of configuration files and scripts. More details 
 ![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image22.jpg)
 
 
-## About
+# About
 
 Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many different additions added to each configuration file. Bash, Tmux, and Alacritty combined make the possibilities limitless with productivity and speed. The Bash and Vim configs above have many different features including autocomplete for text, go to file which is one of my remaps, and nerdtree which allows you to look at all directories at once and swtich between them quickly.  
 
@@ -62,11 +62,11 @@ Most folders are OS specific besides the main repo itself, it's mainly for Arch 
 
 Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colors I acitively use. 
 
-## Distro
+# Distro
 
 Parts of these files are currently running on Manjaro, Ubuntu, Arch, and OS X
 
-## Info
+# Info
 
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
@@ -83,7 +83,7 @@ Parts of these files are currently running on Manjaro, Ubuntu, Arch, and OS X
 | Wallpaper Launcher   | Nitrogen                                                                                             |
 | PDF Viewer           | Zathura                                                                                              |
 
-## License
+# License
 
 Licensed under the GPL - see the [LICENSE](LICENSE.md) for details.
 
