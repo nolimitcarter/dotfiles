@@ -28,9 +28,9 @@
 This is my personal collection of configuration files and scripts. More details below.
 
 * [gallery](#Gallery)
-* [about](##About)
-* [info](##Info)
-* [license](##License)
+* [about](#About)
+* [info](#Info)
+* [license](#License)
 
 
 <!--<p align="center">
