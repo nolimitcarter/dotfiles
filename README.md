@@ -5,7 +5,7 @@
 </p>
 
 
-'''
+```
       ██            ██     ████ ██  ██
      ░██           ░██    ░██░ ░░  ░██
      ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
@@ -22,8 +22,8 @@
  ░▓        ▓
  ░▓▓▓▓▓▓▓▓▓▓
  ░░░░░░░░░░
+```
 
-'''
 
 <p align="center">
 <a href="#setup"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/b2VzWrg/setup.png"></a>
