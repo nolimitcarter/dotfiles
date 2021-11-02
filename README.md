@@ -60,6 +60,8 @@ Alacritty terminal used with Bash, Tmux, Vim, Mutt, Lynx, etc. and the many diff
 
 Most folders are OS specific besides the main repo itself, it's mainly for arch based distros.
 
+OS specific files can be found in the envs repo.
+
 Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colors I acitively use. 
 
 # Info
