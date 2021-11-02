@@ -1,4 +1,4 @@
-<p align="center"> 
+<!--<p align="center"> 
   <a name="top" href="https://github.com/nolimitcarter/dotfiles">
     <img width="50%" src="assets/dotfiles.png">
   </a>
@@ -30,7 +30,7 @@
 <a href="https://github.com/nolimitcarter/dotfiles/wiki/Keybinds"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/Fgpgc2C/keybinds.png"></a>
 <a href="https://github.com/nolimitcarter/dotfiles/wiki/Gallery"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/ZKTbkRy/gallery.png"></a>
 <a href="#notes"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/RznJp0s/notes.png"></a>
-</p>
+</p> -->
 
 ## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>
 
