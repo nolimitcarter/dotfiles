@@ -62,8 +62,6 @@ Most folders are OS specific besides the main repo itself, it's mainly for arch 
 
 OS specific files can be found in the envs repo.
 
-Credits to DistroTube for my polybar setup. Afterall, his bar uses the same colors I acitively use. 
-
 # Info
 
 | Items/Components     | Values/Dependencies                                                                                  |
