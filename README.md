@@ -17,9 +17,8 @@
 
   ▓▓▓▓▓▓▓▓▓▓
  ░▓ about  ▓ custom linux config files
- ░▓ author ▓ carter <>
- ░▓ code   ▓ http://github.com/nolimitcarter/dotfiles
- ░▓        ▓
+ ░▓ author ▓ nolimitcarter <carters.sh>
+ ░▓ code   ▓ https://github.com/nolimitcarter/dotfiles
  ░▓▓▓▓▓▓▓▓▓▓
  ░░░░░░░░░░
 ```
