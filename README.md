@@ -31,7 +31,7 @@
 <a href="#notes"><img width="120px" style="padding: 0 10px;" src="https://i.ibb.co/RznJp0s/notes.png"></a>
 </p> -->
 
-## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>
+<!--## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>-->
 
 This is my personal collection of configuration files and scripts. More details below.
 
