@@ -220,4 +220,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-LS_COLORS="fi=1;92:di=1;34;1:ex=4;31:*.mp3=1;32;41"
+LS_COLORS="fi=1;92:di=1;34;1:ex=4;35:*.mp3=1;32;41"
