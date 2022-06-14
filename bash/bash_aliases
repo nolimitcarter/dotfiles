@@ -66,7 +66,7 @@ alias masscan1="sudo masscan -p1-65535 -iL $ipFile --max-rate 1800 -oG $outPutFi
 alias masscan2="sudo masscan -p1-4000 "
 
 # vpn
-alias startvpn="sudo protonvpn c -f"
+alias startvpn="protonvpn-cli c -f"
 alias randomvpn="sudo protonvpn c -r"
 alias choosevpn="sudo protonvpn connect, c"
 alias securevpn="sudo protonvpn c --sc"
