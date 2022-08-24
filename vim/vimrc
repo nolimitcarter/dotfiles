@@ -73,8 +73,8 @@ set nowrap
 set showbreak=▹ 
 
 " autocomplete in insert mode on ctrl+N 
-set complete
-set completeopt
+" set complete
+" set completeopt
 set wildmenu
  
 " universal copy and paste, prevents yanks and deletes
