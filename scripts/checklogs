@@ -1,0 +1,3 @@
+#!/bin/bash
+
+journalctl -u sshd | tail -n 500
