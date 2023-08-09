@@ -41,7 +41,7 @@ $REPOS:\
 $HOME
 
 # some wack sh#t for Manjaro to work
-export VIMRUNTIME="/usr/share/vim/vim82"
+export VIMRUNTIME="/usr/share/vim/vim90"
 
 # editor 
 export EDITOR=vim
