@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Author: Alexander Epstein https://github.com/alexanderepstein
+#
+# Example usage: short tinyurl.com/jhkj
 
 currentVersion="1.23.0"
 configuredClient=""

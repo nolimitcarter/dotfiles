@@ -3,6 +3,8 @@
 # Bash utility for getting specific network info
 # Author: Jake Meyer
 # Github: https://github.com/jakewmeyer
+#
+# Example usage: 
 
 currentVersion="1.23.0"
 configuredClient=""
