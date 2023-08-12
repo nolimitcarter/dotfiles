@@ -2,3 +2,5 @@
 
 sudo pacman-mirrors --fasttrack && sudo pacman -Syyu
 
+# sudo pacman-mirrors -f5 && sudo pacman -Syyu
+# sudo pacman-mirrors --continent && sudo pacman -Syyu
