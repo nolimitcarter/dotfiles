@@ -201,7 +201,12 @@ imap ii <C-[>
 """"""""""""""""""""""""""""""
 " Fixes Mouse in Alacritty "
 """"""""""""""""""""""""""""""
+
+" allows mouse input 
+" shift, highlight, ctrl c for copy
+" shift, right click for paste 
 set mouse=a
+
 "" spelling
 if v:version >= 700
         " Enable spell check for text files

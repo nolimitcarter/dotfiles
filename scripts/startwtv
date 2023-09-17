@@ -1,5 +1,0 @@
-#!/bin/bash 
-
-main2.sh
-nitrogen --restore
-powerkit
