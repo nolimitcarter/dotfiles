@@ -65,7 +65,7 @@ fi
 
 PROMPT_LONG=20
 PROMPT_MAX=95
-PROMPT_AT=@
+PROMPT_AT=
 
 __ps1() {
 	local P='⟹ ' dir="${PWD##*/}" B countme short long double \
@@ -82,11 +82,11 @@ __ps1() {
 	countme="$USER$PROMPT_AT$(hostname):$dir($B)\$ "
 
 	[[ $B == master || $B == main ]] && b="$r"
-	[[ -n "$B" ]] && B="$g($b$B$g)"
+	[[ -n "$B" ]] && B=" $g$b$B$g"
 
-	short="$u♛ \u$g$PROMPT_AT$h\h$g:$w$dir$B\n$p$P$x "
-	long=" $u♛ \u$g$PROMPT_AT$h\h$g:$w$dir$B\n $p$P$x "
-	double=" $u♛ \u$g$PROMPT_AT$h\h$g:$w$dir\n$g $B\n $p$P$x "
+	short="\n$u♛ boost$g$PROMPT_AT$h\n$g:$w$dir$B$p$P$x "
+	long="\n$u♛ boost$g$PROMPT_AT$h\n$w$dir$B $p$P$x "
+  double="\n$u♛ boost$g$PROMPT_AT$h\n$w$dir$B $p$P$x "
 
 	if ((${#countme} > PROMPT_MAX)); then
 		PS1="$double"
