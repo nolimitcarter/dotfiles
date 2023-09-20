@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# use pactl list sinks short for device list
+
+pactl set-default-sink alsa_output.usb-Corsair_CORSAIR_HS70_Pro_Wireless_Gaming_Headset-00.analog-stereo
