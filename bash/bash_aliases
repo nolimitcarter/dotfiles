@@ -29,7 +29,7 @@ alias status="nmcli g"
 alias grep="grep --color=auto"
 alias q:="exit"
 alias tryhackme="sudo openvpn nolimitcarter.ovpn"
-alias c="cmatrix -r"
+alias cmatrix="cmatrix -r"
 alias clock="tty-clock -c -C 7 -r -f '%A, %B %d'"
 alias x="exec bash"
 alias spot="ncspot"
@@ -47,8 +47,8 @@ alias commited="git commit -m 'automated from the terminal :)'"
 alias push="git push" 
 alias pull="git pull"
 alias testing="git add -A && git commit -m 'live testing...' && git push"
-alias auto="git add -A && git commit -m 'automated from the terminal:)' && git push"
-alias branch="git branch"
+alias automate="git add -A && git commit -m 'automated commit' && git push"
+alias branch="git branch" 
 alias checkout="git checkout"
 alias merge="git merge"
 
@@ -70,7 +70,7 @@ alias startvpn="protonvpn-cli c -f"
 alias randomvpn="sudo protonvpn c -r"
 alias choosevpn="sudo protonvpn connect, c"
 alias securevpn="sudo protonvpn c --sc"
-alias stopvpn="protonvpn-cli d" 
+alias stopvpn="protonvpn d" 
 alias reconnectvpn="sudo protonvpn reconnect, r" 
 alias showip="sudo protonvpn-cli --ip" 
 alias nmap="nmap -sV -Pn" 
@@ -100,6 +100,7 @@ export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/lib/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+# export VIMRUNTIME=/usr/share/vim/vim90
 
 
 

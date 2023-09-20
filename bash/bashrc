@@ -241,11 +241,13 @@ if [ -f $1 ] ;then
  fi
 }
 
-automate ()
+auto ()
 {
   git add -A 
+# doesn't require "message"
   git commit -m "$*"
-#  git commit -a -m "$1" 
+# does require "message"
+# git commit -a -m "$1" 
   git push
 }
 
