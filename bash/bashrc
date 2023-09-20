@@ -122,7 +122,8 @@ if [ "$TERM" != "dumb" ]; then
 fi
 
 # grep autocomplete/helper made with go 
-source ~/repos/github.com/nolimitcarter/cloned/gf/gf-completion.bash
+# haven't used in a while - autocomplete not really needed
+# source ~/repos/github.com/nolimitcarter/cloned/gf/gf-completion.bash
 
 # bash tab completion because why not??
 bind "set completion-ignore-case on"
@@ -156,7 +157,7 @@ myclock ()
 # define a word using define dog and lynx
 define () 
 { 
-	lynx- dump "http://www.google.com/search?hl=en&q=define%3A+${1}&btnG=Google+Search" | grep -m 3 -w "*"  | sed 's/;/ -/g' | cut -d- -f1 > /tmp/templookup.txt
+	lynx --dump "http://www.google.com/search?hl=en&q=define%3A+${1}&btnG=Google+Search" | grep -m 3 -w "*"  | sed 's/;/ -/g' | cut -d- -f1 > /tmp/templookup.txt
 	if [[ -s /tmp/templookup.txt ]] ;then
 		until ! read response
 			do 
@@ -238,6 +239,14 @@ if [ -f $1 ] ;then
     else
       echo "'$1' is not a valid file"
  fi
+}
+
+automate ()
+{
+  git add -A 
+  git commit -m "$*"
+#  git commit -a -m "$1" 
+  git push
 }
 
 
