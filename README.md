@@ -42,6 +42,7 @@ This is my personal collection of configuration files and scripts. More details 
 
 <!--## <p align="center">nolimitcarter's .config files (dotfiles) for Linux and OS X</p>-->
 
+<!--
 
 # Gallery
  
@@ -51,8 +52,7 @@ This is my personal collection of configuration files and scripts. More details 
 
 <!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image22.jpg)-->
 
-![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image22.jpg)
-
+<!--![preview](https://github.com/nolimitcarter/dotfiles/blob/master/assets/image22.jpg)-->
 
 # About
 
