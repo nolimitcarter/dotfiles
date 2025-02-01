@@ -1,13 +1,11 @@
 #!/bin/sh
-# helpful script taken from https://github.com/rwxrob/dotfiles/blob/main/scripts/cheat
 
 cheat() {
   where="$1"
-  if [ $# -ge 1 ]; then
-    shift
-  fi
-  IFS=+ curl -sS "http://cht.sh/$where/ $*"
+  shift
+  # URL encode the arguments
+  encoded_args=$(printf "%s\n" "$@" | jq -sRr @uri)
+  curl -sS "http://cht.sh/$where/$encoded_args"
 }
 
 cheat "$@"
-
