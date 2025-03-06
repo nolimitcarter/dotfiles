@@ -1,0 +1,7 @@
+#!/bin/sh
+
+xrandr --output DP-1 --primary --mode 2560x1080 --pos 1080x1080 --rotate normal --output eDP-1 --off 
+#--output DP-3 --mode 1680x1050 --pos 1080x1080 --above DP-1 --rotate normal 
+
+nitrogen --restore
+#xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1080x1080 --rotate normal 
