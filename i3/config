@@ -1,5 +1,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
+#
+#
+# Note that parts of this config are outdated and will show errors when ran
+# colors.foreground is not properly set requring you to set format-foreground to underline color
 
 set $mod Mod1
 set $inner_gaps 15
