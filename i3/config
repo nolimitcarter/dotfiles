@@ -21,8 +21,8 @@ gaps outer 1
 
 ################# i3-radius #######################
 smart_borders on
-smart_borders no_gaps
-border_radius 2
+#smart_borders no_gaps
+#border_radius 2
 hide_edge_borders none
 
 #font pango:monospace 8
@@ -155,7 +155,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # Lock screen
-bindsym $mod+\ exec --no-startup-id blurlock
+bindsym $mod+backslash exec --no-startup-id blurlock
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
