@@ -71,7 +71,6 @@ OS specific files can be found in the envs repo.
 | Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
 | Text Editor          | Vim                                                                                                  |
-| IDE                  | VScode                                                                                               |
 | CLI Email Client     | Mutt                                                                                                 |
 | Window Managers      | i3 & bspwm                                                                                           |
 | CLI Web Browser      | Lynx                                                                                                 |
