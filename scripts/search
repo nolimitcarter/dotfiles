@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# search what team does max verstappen race for?
+#
+# Check if a search query is provided
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <search query>"
+    exit 1
+fi
+
+# Convert arguments into a single query string
+query=$(echo "$*" | sed 's/ /+/g')
+
+# DuckDuckGo search URL
+search_url="https://duckduckgo.com/?q=$query"
+
+# Open the search results in the default web browser
+xdg-open "$search_url" 2>/dev/null || open "$search_url" 2>/dev/null || echo "Please open: $search_url"
