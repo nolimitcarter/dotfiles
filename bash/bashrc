@@ -5,7 +5,7 @@
 #  |_.__/ \__,_|___/_| |_|_|  \___|    https://github.com/nolimitcarter
 #
 
-[ -z "$OS" ] && OS='uname'
+[ -z "$OS" ] && OS=$(uname)
 case "$OS" in
   *indows* )        PLATFORM=windows ;;
   Linux )           PLATFORM=linux ;;
