@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Shows the top 20 CPU-consuming processes 
+
+ps -eo pid,psr,comm,%cpu --sort=-%cpu | head -20
