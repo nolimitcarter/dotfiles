@@ -1,0 +1,5 @@
+#!/bin/bash
+## Easy access to Windows drives
+
+cd /mnt/c
+
