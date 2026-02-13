@@ -39,6 +39,7 @@ alias pdf="zathura"
 alias chmox="chmod +x"
 alias c="xclip"
 alias v="xclip -o"
+alias psh="pwsh"
 
 # Git
 alias add="git add -A"
