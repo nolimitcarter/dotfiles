@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Using brightnessctl for setting screen brightness, prompts you to enter 1-100
+read -p "Enter brightness percentage (0-100): " percent
+# Set brightness, ensuring it's treated as percentage
+brightnessctl set "$percent"%
