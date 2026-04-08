@@ -1,0 +1,68 @@
+That's a very new version — it uses strict TOML and a lot of the old keys are removed. Here's a clean, minimal config that will work with 0.16.1 keeping your fonts and colors:
+toml[window]
+padding.x = 4
+padding.y = 6
+decorations = "full"
+opacity = 1.0
+title = "Alacritty"
+
+[scrolling]
+history = 0
+multiplier = 3
+
+[font]
+size = 9.0
+
+[font.normal]
+family = "SourceCodePro"
+style = "Regular"
+
+[font.bold]
+family = "SourceCodePro"
+style = "Bold"
+
+[font.italic]
+family = "Nerd Font Mono"
+style = "Italic"
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+unfocused_hollow = true
+
+[mouse]
+hide_when_typing = true
+
+[env]
+TERM = "xterm-256color"
+
+[colors.primary]
+background = "0x282a36"
+foreground = "0xbbc5ff"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#ffffff"
+
+[colors.selection]
+text = "0x282a36"
+background = "0xbbc5ff"
+
+[colors.normal]
+black =   "0x282a36"
+red =     "0xf07178"
+green =   "0xc3e88d"
+yellow =  "0xffcb6b"
+blue =    "0x82aaff"
+magenta = "0xc792ea"
+cyan =    "0x89ddff"
+white =   "0xd0d0d0"
+
+[colors.bright]
+black =   "0x434758"
+red =     "0xff8b92"
+green =   "0xddffa7"
+yellow =  "0xffe585"
+blue =    "0x9cc4ff"
+magenta = "0xe1acff"
+cyan =    "0xa3f7ff"
+white =   "0xffffff"
