@@ -1,5 +1,4 @@
-That's a very new version — it uses strict TOML and a lot of the old keys are removed. Here's a clean, minimal config that will work with 0.16.1 keeping your fonts and colors:
-toml[window]
+[window]
 padding.x = 4
 padding.y = 6
 decorations = "full"
