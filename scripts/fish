@@ -22,6 +22,7 @@
 #     
 #     sudo apt install libcurses-perl
 #     sudo cpan install Term::Animation
+#     sudo pacman -S perl-term-animation
 #############################################################################
 # Author:
 #   Kirk Baucom <kbaucom@schizoid.com>
