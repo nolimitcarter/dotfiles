@@ -65,7 +65,7 @@ OS specific files can be found in the envs repo.
 
 | Items/Components     | Values/Dependencies                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------|
-| Distro               | Arch/Debian                                                                                    |
+| Distro               | Manjaro                                                                                              |
 | Terminal             | Alacritty                                                                                            |
 | Shell                | Bash                                                                                                 |
 | Multiplexer          | Tmux                                                                                                 |
