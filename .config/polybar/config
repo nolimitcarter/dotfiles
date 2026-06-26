@@ -123,7 +123,8 @@ module-margin-left = 0
 module-margin-right = 0
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "SourceCodePro:style=Regular:size=9;2"
+#font-0 = "SourceCodePro:style=Regular:size=9;2"
+font-0 = "JetBrainsMono Nerd Font:style=Regular:size=10;2"
 font-1 = "UbuntuMono Nerd Font:size=16;3"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
@@ -131,7 +132,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = networkspeedup networkspeeddown memory2 line cpu2 line pavolume line arch-aur-updates line pub-ip line date line battery arrow3 
+modules-right = networkspeedup networkspeeddown memory2 line cpu2 line pavolume line pub-ip line date line arch-aur-updates line battery arrow3 
 
 separator = 
 
@@ -147,8 +148,7 @@ tray-padding = 4
 tray-scale = 1.0
 
 #i3: Make the bar appear below windows
-;wm-restack = i3
-;override-redirect = true
+;wm-restack = i3;override-redirect = true
 
 ; Enable support for inter-process messaging
 ; See the Messaging wiki page for more details.
@@ -629,13 +629,14 @@ content-background = #282c34
 type = custom/script
 exec = ~/.config/polybar/scripts/check-all-updates.sh
 interval = 1000
-label = Updates: %output%
+label = %output%
+#label = Updates: %output%
 format-foreground = #b7d4f7
 format-background = #282c34
 ;#8d62ad
-format-prefix = " "
+format-prefix = ""
 format-prefix-foreground = #fefefe
-format-prefix-underline = #292d3e
+format-prefix-underline = #b7d4f7
 format-underline = #b7d4f7 
 
 [module/aur-updates]
@@ -822,7 +823,7 @@ interval = 1
 format-foreground = #b7d4f7
 format-background = #282c34
 ; #8d62ad
-format-prefix = " "
+#format-prefix = " "
 format-prefix-foreground = #fefefe
 
 label-font = 1
@@ -857,7 +858,7 @@ date = "%a %d %b"
 date-alt = "%a %b %d, %Y"
 time = %H:%M
 time-alt = %l:%M%p
-format-prefix = " "
+#format-prefix = " "
 format-prefix-foreground = #fefefe
 format-foreground = #b7d4f7
 format-background = #282c34
@@ -1061,7 +1062,7 @@ interval = 1
 label = %percentage_used%%
 
 format = Mem:  <label>
-format-prefix = " "
+#format-prefix = " "
 format-prefix-foreground = #fefefe
 format-foreground = #b7d4f7
 format-background = #282c34
@@ -1170,7 +1171,8 @@ format-underline = #FFBB00
 type = custom/script
 tail = true
 format = <label>
-label = Volume: %output%
+label = Volume: %output%
+#label =  Volume: %output%
 exec = ~/.config/polybar/scripts/pavolume.sh --listen
 click-right = exec pavucontrol
 click-left = ~/.config/polybar/scripts/pavolume.sh --togmute
@@ -1195,7 +1197,7 @@ format-foreground = #b7d4f7
 format-background = ${colors.background}
 format-underline = #b7d4f7
 label = %output%
-format-prefix = ""
+#format-prefix = ""
 format-prefix-foreground = #b7d4f7
 
 ################################################################################
