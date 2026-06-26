@@ -635,7 +635,7 @@ format-foreground = #b7d4f7
 format-background = #282c34
 ;#8d62ad
 format-prefix = ""
-format-prefix-foreground = #fefefe
+format-prefix-foreground = #b7d4f7
 format-prefix-underline = #b7d4f7
 format-underline = #b7d4f7 
 
