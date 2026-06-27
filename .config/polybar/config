@@ -84,7 +84,7 @@ volume-max = #bf616a
 
 [bar/mainbar-i3]
 ;https://github.com/jaagr/polybar/wiki/Configuration
-monitor = ${env:MONITOR:eDP-1}
+monitor = ${env:MONITOR:DP-1}
 ;monitor = ${env:MONITOR:eDP1}
 ;monitor = ${env:MONITOR:fallback-value}
 
@@ -124,15 +124,16 @@ module-margin-right = 0
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
 #font-0 = "SourceCodePro:style=Regular:size=9;2"
-font-0 = "JetBrainsMono Nerd Font:style=Regular:size=10;2"
+# Best size adjustments: 10;2, 9;2 
+font-0 = "JetBrainsMono Nerd Font:style=Regular:size=8;2"
 font-1 = "UbuntuMono Nerd Font:size=16;3"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
 font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
-modules-left = i3 xwindow
+modules-left = archlogo i3 xwindow
 modules-center = 
-modules-right = networkspeedup networkspeeddown memory2 line cpu2 line pavolume line pub-ip line date line arch-aur-updates line battery arrow3 
+modules-right = networkspeedup networkspeeddown memory2 line cpu2 line pub-ip line date line arch-aur-updates line pavolume line battery arrow3 
 
 separator = 
 
@@ -649,6 +650,13 @@ format-background = ${colors.background}
 format-prefix = "  "
 format-prefix-foreground = #FFBB00
 format-underline = #FFBB00
+
+[module/archlogo]
+type = custom/text
+content = " "
+content-foreground = #b7d4f7
+content-background = ${colors.background}
+content-padding = 1
 
 ################################################################################
 
@@ -1171,7 +1179,9 @@ format-underline = #FFBB00
 type = custom/script
 tail = true
 format = <label>
-label = Volume: %output%
+label = %output%
+format-prefix = "  "
+format-prefix-underline = #b7d4f7
 #label =  Volume: %output%
 exec = ~/.config/polybar/scripts/pavolume.sh --listen
 click-right = exec pavucontrol
@@ -1181,7 +1191,6 @@ scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
 format-foreground = #b7d4f7
 format-background = #282c34
 ;#668bd7
-format-prefix-underline = #292d3e
 format-underline = #b7d4f7 
 
 
