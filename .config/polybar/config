@@ -1069,7 +1069,7 @@ interval = 1
 ;   %mb_total%
 label = %percentage_used%%
 
-format = Mem:  <label>
+format = Mem: <label>
 #format-prefix = " "
 format-prefix-foreground = #fefefe
 format-foreground = #b7d4f7
