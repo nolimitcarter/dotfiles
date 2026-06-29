@@ -1,9 +1,10 @@
-#  ____ _____ 
-# |  _ \_   _|  Derek Taylor (DistroTube)
-# | | | || |    http://www.youtube.com/c/DistroTube
-# | |_| || |    http://www.gitlab.com/dwt1/ 
-# |____/ |_|  	
-
+;               _       _
+;   _ __   ___ | |_   _| |__   __ _ _ __
+;  | '_ \ / _ \| | | | | '_ \ / _` | '__|
+;  | |_) | (_) | | |_| | |_) | (_| | |
+;  | .__/ \___/|_|\__, |_.__/ \__,_|_|       nolimitcarter
+;  |_|            |___/                      https://github.com/nolimitcarter
+;
 ;=====================================================
 ;
 ; To learn more about how to configure Polybar
@@ -635,7 +636,7 @@ label = %output%
 format-foreground = #b7d4f7
 format-background = #282c34
 ;#8d62ad
-format-prefix = ""
+format-prefix = " "
 format-prefix-foreground = #b7d4f7
 format-prefix-underline = #b7d4f7
 format-underline = #b7d4f7 
@@ -653,7 +654,7 @@ format-underline = #FFBB00
 
 [module/archlogo]
 type = custom/text
-content = " "
+content = "  boost"
 content-foreground = #b7d4f7
 content-background = ${colors.background}
 content-padding = 1
@@ -849,7 +850,7 @@ format-underline = #b7d4f7
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = Cpu:%percentage:3%%
+label =  Cpu:%percentage:3%%
 
 ################################################################################
 
@@ -871,7 +872,7 @@ format-prefix-foreground = #fefefe
 format-foreground = #b7d4f7
 format-background = #282c34
 ;#668bd7
-label = "%date% %time%"
+label = " %date% %time%"
 format-prefix-underline = #292d3e
 format-underline = #b7d4f7 
 
@@ -1069,7 +1070,7 @@ interval = 1
 ;   %mb_total%
 label = %percentage_used%%
 
-format = Mem: <label>
+format =  Mem: <label>
 #format-prefix = " "
 format-prefix-foreground = #fefefe
 format-foreground = #b7d4f7
@@ -1200,12 +1201,14 @@ format-underline = #b7d4f7
 ;https://linuxconfig.org/polybar-a-better-wm-panel-for-your-linux-system
 type = custom/script
 exec = ~/.config/polybar/scripts/pub-ip.sh
-interval = 100
+click-left = ~/.config/polybar/scripts/pub-ip.sh toggle
+interval = 2
+#interval = 100
 format-foreground = #b7d4f7
 #format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-underline = #b7d4f7
-label = %output%
+label = 󰖩 %output%
 #format-prefix = ""
 format-prefix-foreground = #b7d4f7
 
